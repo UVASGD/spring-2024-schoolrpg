@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Uu]ser[Ss]ettings/
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
@@ -42,6 +43,8 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+/.vscode/
+*.vsconfig
 
 # Unity3D generated meta files
 *.pidb.meta
