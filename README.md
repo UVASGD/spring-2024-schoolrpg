@@ -1,2 +1,2 @@
-# ProjectTemplate
-This is a project template for SGD semester projects.
+# School of Nightmares
+This is the GitHub + Unity project for School of Nightmares, Spring 2024 SGD project!
