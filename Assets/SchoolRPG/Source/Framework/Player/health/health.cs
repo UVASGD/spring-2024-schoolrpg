@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static death.Death;
-
+//basic health number worker. 
 namespace health
 {
     public class health : MonoBehaviour
