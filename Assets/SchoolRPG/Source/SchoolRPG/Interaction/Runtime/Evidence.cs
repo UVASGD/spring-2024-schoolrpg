@@ -1,35 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Evidence : MonoBehaviour
+namespace SchoolRPG.Interaction.Runtime
 {
-
-    public string[] objLines;
-    private GameObject dialogueBox;
-    // Start is called before the first frame update
-    void Start()
+    public class Evidence : MonoBehaviour
     {
-        dialogueBox = GameObject.FindWithTag("DialogueBox");
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void EvidenceObserved()
-    {
-        Debug.Log("Evidence Observed");
-        
-        if (dialogueBox == null)
+        public string[] objLines;
+        private GameObject dialogueBox;
+        // Start is called before the first frame update
+        void Start()
         {
-            Debug.Log("Dialogue Box Missing");
-        } else
-        {
-            dialogueBox.GetComponent<Dialogue>().StartDialogue(objLines);
+            dialogueBox = GameObject.FindWithTag("DialogueBox");
         }
 
+        // Update is called once per frame
+        void Update()
+        {
+        
+        }
+
+        public void EvidenceObserved()
+        {
+            Debug.Log("Evidence Observed");
+        
+            if (dialogueBox == null)
+            {
+                Debug.Log("Dialogue Box Missing");
+            } else
+            {
+                dialogueBox.GetComponent<Dialogue.Runtime.Dialogue>().StartDialogue(objLines);
+            }
+
+        }
     }
 }

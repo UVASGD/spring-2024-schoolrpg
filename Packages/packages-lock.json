@@ -1,5 +1,59 @@
 {
   "dependencies": {
+    "com.eflatun.scenereference": {
+      "version": "https://github.com/starikcetin/Eflatun.SceneReference.git#4.0.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.settings-manager": "2.0.1",
+        "com.unity.nuget.newtonsoft-json": "3.0.2"
+      },
+      "hash": "7dbcaf0327bcba279f2dcd07b824a693b1091beb"
+    },
+    "com.mackysoft.serializereference-extensions": {
+      "version": "https://github.com/mackysoft/Unity-SerializeReferenceExtensions.git?path=Assets/MackySoft/MackySoft.SerializeReferenceExtensions",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "301cb4b12cf419c60509836d23d2bd482c131368"
+    },
+    "com.mushakushi.attributes": {
+      "version": "https://github.com/Mushakushi/UnityAttributes.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "55ed30dab260ea547f7168bc6e0f0cb01cabcb00"
+    },
+    "com.mushakushi.datastructures": {
+      "version": "https://github.com/Mushakushi/DataStructures.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "fd411817a76609f21b72be129f937e974989c1f4"
+    },
+    "com.mushakushi.internaldebug": {
+      "version": "https://github.com/Mushakushi/InternalDebug.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "913df5a6ecf483cd1052b943b42dd40cb1a9c640"
+    },
+    "com.mushakushi.uitoolkitautofitting": {
+      "version": "https://github.com/Mushakushi/UIToolkitAutofitting.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ui": "1.0.0"
+      },
+      "hash": "b9eb68166a11c75a4d40063560e762de1ef2f22e"
+    },
+    "com.mushakushi.unitypooling": {
+      "version": "https://github.com/Mushakushi/UnityPooling.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "4f15b1bc0b90974ee1107106db0acdc25a8ecfba"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.4",
       "depth": 1,
@@ -143,7 +197,7 @@
       }
     },
     "com.unity.ide.rider": {
-      "version": "3.0.27",
+      "version": "3.0.28",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -171,6 +225,13 @@
     },
     "com.unity.mathematics": {
       "version": "1.2.6",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -234,6 +295,12 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
+    },
+    "com.unity.ui": {
+      "version": "2.0.0",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.visualscripting": {
       "version": "1.9.1",
