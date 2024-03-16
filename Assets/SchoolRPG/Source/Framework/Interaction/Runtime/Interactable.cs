@@ -9,6 +9,9 @@ public class Interactable : MonoBehaviour
     public UnityEvent interactAction;
     private Canvas dialogueCanvas;
     private bool inDialogue; // make this a STATE?
+    
+    // for collecting
+    public bool isCollectable;
 
     // Start is called before first update
     void Start()
@@ -38,16 +41,20 @@ public class Interactable : MonoBehaviour
         // If inside interaction zone and dialogue has NOT STARTED, start dialogue.
 
         if (inside == true && Input.GetKeyDown(KeyCode.E)) 
-        {         
-            if (!dialogueCanvas.enabled)
+        {
+            Debug.Log("collectable? " + isCollectable);
+            if (!dialogueCanvas.enabled && !isCollectable)
             {
                 Debug.Log("START DIALOGUE");
                 interactAction.Invoke();
+            }
+            if(isCollectable)
+            {
+                Debug.Log("collected");
+                this.transform.parent.gameObject.SetActive(false);
             }
         }
          
         // the update has no way of knowing if the dialogue needs to end
     }
-
-
 }
