@@ -12,6 +12,8 @@ public class Interactable : MonoBehaviour
     
     // for collecting
     public bool isCollectable;
+    public CollectableType type;
+    private Player player;
 
     // Start is called before first update
     void Start()
@@ -21,6 +23,7 @@ public class Interactable : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        player = col.GetComponent<Player>();
         if(col.gameObject.tag == "Player")
         {
             inside = true;
@@ -52,9 +55,15 @@ public class Interactable : MonoBehaviour
             {
                 Debug.Log("collected");
                 this.transform.parent.gameObject.SetActive(false);
+                player.inventory.Add(type);
             }
         }
          
         // the update has no way of knowing if the dialogue needs to end
     }
+}
+
+public enum CollectableType
+{
+    NONE, CARROT, BLIRBY
 }
