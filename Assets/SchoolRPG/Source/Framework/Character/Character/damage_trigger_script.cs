@@ -1,4 +1,4 @@
-using static player.Healthcontrol.Healthcontorloer;
+
 using UnityEngine;
 namespace damageTrigger
 {
@@ -12,12 +12,7 @@ namespace damageTrigger
             if (other.gameObject == targetObject)
             {
                 // Check if the object has a Health component
-                Health health = other.GetComponent<Health>();
-                if (health != null)
-                {
-                    // Deal damage to the target object
-                    health.TakeDamage(damageAmount);
-                }
+                targetObject.health.health.takeDamage(1); 
             }
         }
     }
