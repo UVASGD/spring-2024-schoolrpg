@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace death
-{
+
     public class Death : MonoBehaviour
     {
         // Start is called before the first frame update
@@ -19,4 +18,3 @@ namespace death
 
         }
     }
-}
