@@ -1,18 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class InputComponent : MonoBehaviour
+namespace SchoolRPG.Input.Runtime
 {
-    // Start is called before the first frame update
-    void Start()
+    public class InputComponent : MonoBehaviour
     {
-        
-    }
+        /// <summary>
+        /// The <see cref="PlayerInput"/>.
+        /// </summary>
+        [SerializeField, Tooltip("The Player Input Component.")] 
+        private PlayerInput playerInput;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        /// <summary>
+        /// The <see cref="InputEventChannel"/> to send input events to. 
+        /// </summary>
+        [SerializeField, Tooltip("The InputEventChannel to send input events to.")]
+        private InputEventChannel inputEventChannel; 
+    
+        public void OnMove(InputAction.CallbackContext value)
+        {
+            // if (value.canceled) return; 
+            inputEventChannel.RaiseOnMove(value.ReadValue<Vector2>());
+        }
+
+        public void OnInteract(InputAction.CallbackContext value)
+        {
+            if (!(value.started || playerInput.inputIsActive)) return;
+            inputEventChannel.RaiseOnInteract();
+        }
+
+        public void DeactivateInput()
+        {
+            playerInput.DeactivateInput();
+        }
+
+        public void ActivateInput()
+        {
+            playerInput.ActivateInput();
+        }
     }
 }
