@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.ai.navigation": "1.1.5",
     "com.eflatun.scenereference": "https://github.com/starikcetin/Eflatun.SceneReference.git#4.0.0",
     "com.mackysoft.serializereference-extensions": "https://github.com/mackysoft/Unity-SerializeReferenceExtensions.git?path=Assets/MackySoft/MackySoft.SerializeReferenceExtensions",
     "com.mushakushi.attributes": "https://github.com/Mushakushi/UnityAttributes.git",
