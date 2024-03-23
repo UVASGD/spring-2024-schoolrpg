@@ -10,15 +10,17 @@ public class Inventory
     public class Slot
     {
         public CollectableType type;
+        public Sprite icon;
 
         public Slot()
         {
             type = CollectableType.NONE;
         }
 
-        public void AddItem(CollectableType type)
+        public void AddItem(Interactable item)
         {
-            this.type = type;
+            this.type = item.type;
+            this.icon = item.icon;
         }
     }
 
@@ -32,13 +34,15 @@ public class Inventory
         }
     }
 
-    public void Add(CollectableType typeToAdd)
+    public void Add(Interactable item)
     {
         foreach(Slot slot in slots)
         {
             if(slot.type == CollectableType.NONE)
             {
-                slot.AddItem(typeToAdd);
+                Debug.Log("Add-if works");
+                slot.AddItem(item);
+                Debug.Log("type" + slot.type);
                 return;
             }
         }

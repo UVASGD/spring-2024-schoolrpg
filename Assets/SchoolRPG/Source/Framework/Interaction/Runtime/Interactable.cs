@@ -14,6 +14,7 @@ public class Interactable : MonoBehaviour
     public bool isCollectable;
     public CollectableType type;
     private Player player;
+    public Sprite icon;
 
     // Start is called before first update
     void Start()
@@ -45,7 +46,7 @@ public class Interactable : MonoBehaviour
 
         if (inside == true && Input.GetKeyDown(KeyCode.E)) 
         {
-            Debug.Log("collectable? " + isCollectable);
+            // Debug.Log("collectable? " + isCollectable);
             if (!dialogueCanvas.enabled && !isCollectable)
             {
                 Debug.Log("START DIALOGUE");
@@ -53,9 +54,10 @@ public class Interactable : MonoBehaviour
             }
             if(isCollectable)
             {
-                Debug.Log("collected");
+                // Debug.Log("collected");
                 this.transform.parent.gameObject.SetActive(false);
-                player.inventory.Add(type);
+                Debug.Log("this: " + this.type);
+                player.inventory.Add(this);
             }
         }
          
