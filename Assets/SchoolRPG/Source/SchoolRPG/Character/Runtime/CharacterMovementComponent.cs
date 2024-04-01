@@ -13,7 +13,6 @@ namespace SchoolRPG.Source.SchoolRPG.Character.Runtime
         /// <summary>
         /// The normalized movement direction this frame. 
         /// </summary>
-        [field: SerializeField, Tooltip("The movement amount this frame.")]
         public Vector2 MovementDirection { get; protected set; }
 
         /// <summary>
@@ -46,11 +45,15 @@ namespace SchoolRPG.Source.SchoolRPG.Character.Runtime
         {
             IsActive = true; 
         }
-
-        public void Move(Vector2 value)
+        
+        /// <summary>
+        /// Moves the character in this direction. 
+        /// </summary>
+        /// <param name="direction">The direction to move.</param>
+        public void Move(Vector2 direction)
         {
             if (!IsActive) return;
-            MovementDirection = value; 
+            MovementDirection = direction; 
         }
 
         /// <summary>

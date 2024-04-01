@@ -8418,8 +8418,9 @@ GameObject:
   m_Component:
   - component: {fileID: 871692434}
   - component: {fileID: 871692433}
-  - component: {fileID: 871692432}
-  - component: {fileID: 871692431}
+  - component: {fileID: 871692437}
+  - component: {fileID: 871692436}
+  - component: {fileID: 871692435}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -8427,41 +8428,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!195 &871692431
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871692430}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 2
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &871692432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871692430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f319fabfca9195547ae8727a6ca37899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 863873370}
 --- !u!212 &871692433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8529,6 +8495,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &871692435
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871692430}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &871692436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871692430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f829ae62a0c154396b6027bdad3e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Rb>k__BackingField: {fileID: 871692435}
+  <Speed>k__BackingField: 0.5
+  <FrictionFactor>k__BackingField: 0.5
+  <IsActive>k__BackingField: 0
+--- !u!114 &871692437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871692430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549f75fa75bbd6542b479d5ae6172ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Target>k__BackingField: {fileID: 863873370}
+  <CharacterMovementComponent>k__BackingField: {fileID: 871692436}
+  movementDirection: {x: 0, y: 0, z: 0}
 --- !u!1 &1174429691
 GameObject:
   m_ObjectHideFlags: 0
@@ -11363,6 +11387,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 8806353750458591221}
+  - {fileID: 871692434}
   - {fileID: 1198966820}
   - {fileID: 777347849}
   - {fileID: 1264673467}
@@ -11374,6 +11399,5 @@ SceneRoots:
   - {fileID: 2087627738}
   - {fileID: 1855450409}
   - {fileID: 178709731}
-  - {fileID: 871692434}
   - {fileID: 274305791}
   - {fileID: 651786353}
