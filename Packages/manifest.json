@@ -1,13 +1,14 @@
 {
   "dependencies": {
-    "com.unity.ai.navigation": "1.1.5",
     "com.eflatun.scenereference": "https://github.com/starikcetin/Eflatun.SceneReference.git#4.0.0",
-    "com.mackysoft.serializereference-extensions": "https://github.com/mackysoft/Unity-SerializeReferenceExtensions.git?path=Assets/MackySoft/MackySoft.SerializeReferenceExtensions",
+    "com.mackysoft.serializereference-extensions": "1.3.1",
     "com.mushakushi.attributes": "https://github.com/Mushakushi/UnityAttributes.git",
     "com.mushakushi.datastructures": "https://github.com/Mushakushi/DataStructures.git",
     "com.mushakushi.internaldebug": "https://github.com/Mushakushi/InternalDebug.git",
+    "com.mushakushi.menuframework": "https://github.com/Mushakushi/UIToolkitMenuFramework.git?path=Assets/Mushakushi.MenuFramework",
     "com.mushakushi.uitoolkitautofitting": "https://github.com/Mushakushi/UIToolkitAutofitting.git",
     "com.mushakushi.unitypooling": "https://github.com/Mushakushi/UnityPooling.git",
+    "com.unity.ai.navigation": "1.1.5",
     "com.unity.collab-proxy": "2.2.0",
     "com.unity.feature.2d": "2.0.0",
     "com.unity.ide.rider": "3.0.28",
@@ -49,6 +50,17 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0"
-  }
+    "com.unity.modules.xr": "1.0.0",
+    "com.rotaryheart.serializabledictionarylite": "2.6.11"
+  },
+  "scopedRegistries": [
+    {
+      "name": "package.openupm.com",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.mackysoft.serializereference-extensions",
+        "com.rotaryheart.serializabledictionarylite"
+      ]
+    }
+  ]
 }

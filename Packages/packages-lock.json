@@ -11,11 +11,11 @@
       "hash": "7dbcaf0327bcba279f2dcd07b824a693b1091beb"
     },
     "com.mackysoft.serializereference-extensions": {
-      "version": "https://github.com/mackysoft/Unity-SerializeReferenceExtensions.git?path=Assets/MackySoft/MackySoft.SerializeReferenceExtensions",
+      "version": "1.3.1",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {},
-      "hash": "301cb4b12cf419c60509836d23d2bd482c131368"
+      "url": "https://package.openupm.com"
     },
     "com.mushakushi.attributes": {
       "version": "https://github.com/Mushakushi/UnityAttributes.git",
@@ -38,6 +38,16 @@
       "dependencies": {},
       "hash": "913df5a6ecf483cd1052b943b42dd40cb1a9c640"
     },
+    "com.mushakushi.menuframework": {
+      "version": "https://github.com/Mushakushi/UIToolkitMenuFramework.git?path=Assets/Mushakushi.MenuFramework",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ui": "1.0.0",
+        "com.unity.inputsystem": "1.7.0"
+      },
+      "hash": "dc93f66f16018203902fe749d27c6d1826ff7d1b"
+    },
     "com.mushakushi.uitoolkitautofitting": {
       "version": "https://github.com/Mushakushi/UIToolkitAutofitting.git",
       "depth": 0,
@@ -53,6 +63,13 @@
       "source": "git",
       "dependencies": {},
       "hash": "4f15b1bc0b90974ee1107106db0acdc25a8ecfba"
+    },
+    "com.rotaryheart.serializabledictionarylite": {
+      "version": "2.6.11",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
     },
     "com.unity.2d.animation": {
       "version": "9.0.4",
