@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static death.Death;
+using static Death;
 //basic health number worker. 
 
     public class health : MonoBehaviour

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using static health.health;
-using static death.Death; 
+using static health;
+using static Death; 
 using UnityEngine;
 
     public class health_controller : MonoBehaviour

@@ -1,5 +1,6 @@
 
 using UnityEngine;
+ 
 namespace damageTrigger
 {
     public class DamageTrigger : MonoBehaviour
@@ -9,10 +10,10 @@ namespace damageTrigger
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject == targetObject)
+            if (other.gameObject == targetObject && other.gameObject.health)
             {
                 // Check if the object has a Health component
-                targetObject.health.health.takeDamage(1); 
+                targetObject.health.takeDamage(1); 
             }
         }
     }
