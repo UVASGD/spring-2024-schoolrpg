@@ -1,5 +1,76 @@
 {
   "dependencies": {
+    "com.eflatun.scenereference": {
+      "version": "https://github.com/starikcetin/Eflatun.SceneReference.git#4.0.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.settings-manager": "2.0.1",
+        "com.unity.nuget.newtonsoft-json": "3.0.2"
+      },
+      "hash": "7dbcaf0327bcba279f2dcd07b824a693b1091beb"
+    },
+    "com.mackysoft.serializereference-extensions": {
+      "version": "1.3.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.mushakushi.attributes": {
+      "version": "https://github.com/Mushakushi/UnityAttributes.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "55ed30dab260ea547f7168bc6e0f0cb01cabcb00"
+    },
+    "com.mushakushi.datastructures": {
+      "version": "https://github.com/Mushakushi/DataStructures.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "fd411817a76609f21b72be129f937e974989c1f4"
+    },
+    "com.mushakushi.internaldebug": {
+      "version": "https://github.com/Mushakushi/InternalDebug.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "913df5a6ecf483cd1052b943b42dd40cb1a9c640"
+    },
+    "com.mushakushi.menuframework": {
+      "version": "https://github.com/Mushakushi/UIToolkitMenuFramework.git?path=Assets/Mushakushi.MenuFramework",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ui": "1.0.0",
+        "com.unity.inputsystem": "1.7.0"
+      },
+      "hash": "82902ac3e4d063d4271a7f4be2913b1fcc27ab4e"
+    },
+    "com.mushakushi.uitoolkitautofitting": {
+      "version": "https://github.com/Mushakushi/UIToolkitAutofitting.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ui": "1.0.0"
+      },
+      "hash": "b9eb68166a11c75a4d40063560e762de1ef2f22e"
+    },
+    "com.mushakushi.unitypooling": {
+      "version": "https://github.com/Mushakushi/UnityPooling.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "4f15b1bc0b90974ee1107106db0acdc25a8ecfba"
+    },
+    "com.rotaryheart.serializabledictionarylite": {
+      "version": "2.6.11",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.4",
       "depth": 1,
@@ -94,6 +165,15 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.ai.navigation": {
+      "version": "1.1.5",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.ai": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.burst": {
       "version": "1.8.11",
       "depth": 3,
@@ -143,7 +223,7 @@
       }
     },
     "com.unity.ide.rider": {
-      "version": "3.0.27",
+      "version": "3.0.28",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -165,13 +245,45 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {},
+    "com.unity.inputsystem": {
+      "version": "1.7.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.mathematics": {
       "version": "1.2.6",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.settings-manager": {
+      "version": "2.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.splines": {
+      "version": "2.5.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.settings-manager": "1.0.3",
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.ugui": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
@@ -214,6 +326,12 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
+    },
+    "com.unity.ui": {
+      "version": "2.0.0",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.visualscripting": {
       "version": "1.9.1",
