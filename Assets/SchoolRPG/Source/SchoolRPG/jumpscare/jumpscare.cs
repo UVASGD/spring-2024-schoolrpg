@@ -4,35 +4,45 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-public class jumpscare : MonoBehaviour
+namespace jumpscare
 {
-    // Start is called before the first frame update
-    void Start()
+    public class jumpscare : MonoBehaviour
     {
-        
-    }
-    /*
-     * When area object interacts with player
-     * Then, trigger the animation attached to the
-     * area. since none of that exists tbh I cant test
-     * it. 
-     */
+        // Start is called before the first frame update
+        void Start()
+        {
 
-    private void OnTriggerEnter(Collider other)
-    {
-        //place holder names for real event.
-        if (other.gameObject.name == "Player"){
-            if (gameObject != null)
+        }
+        /*
+         * When area object interacts with player
+         * Then, trigger the animation attached to the
+         * area. since none of that exists tbh I cant test
+         * it.
+         */
+
+        private void OnTriggerEnter(Collider other)
+        {
+            //place holder names for real event.
+            if (other.gameObject.name == "Player")
             {
-                gameObject.animation.animation(true);
-                other.animation.animation(true); 
+                if (gameObject != null)
+                {
+                    gameObject.animation.animation.ani();
+                    other.animation.animation.ani();
+                }
             }
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void OnEventEnd()
+        {
+            gameObject.animation.animation.endAni();
+            other.animation.animation.endAni(); 
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
-}
+} 

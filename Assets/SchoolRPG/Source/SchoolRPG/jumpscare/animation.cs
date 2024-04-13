@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
+namespace animation { 
 public class animation: MonoBehaviour
 {
     Animator anim = new Animator();
@@ -22,6 +23,8 @@ public class animation: MonoBehaviour
 
     void endAni()
     {
-        anim.SetBool("isRunning", true);
+        anim.SetBool("isRunning", false);
     }
+} 
+    } 
 } 
