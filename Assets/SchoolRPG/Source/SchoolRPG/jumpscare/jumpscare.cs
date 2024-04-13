@@ -21,11 +21,11 @@ public class jumpscare : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //place holder names for real event.
-        if other.gameObject.name == "Player"{
+        if (other.gameObject.name == "Player"){
             if (gameObject != null)
             {
-                gameObject.animation();
-                other.animation(); 
+                gameObject.animation.animation(true);
+                other.animation.animation(true); 
             }
         }
     }
