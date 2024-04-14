@@ -43,6 +43,10 @@ public class Inventory
                 Debug.Log("Add-if works");
                 slot.AddItem(item);
                 Debug.Log("type" + slot.type);
+                if (slot.type == CollectableType.CARROT)
+                {
+                    Debug.Log("Has carrot");
+                }
                 return;
             }
         }
