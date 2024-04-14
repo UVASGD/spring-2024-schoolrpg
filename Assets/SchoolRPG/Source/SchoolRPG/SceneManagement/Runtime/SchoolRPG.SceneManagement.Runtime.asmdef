@@ -2,7 +2,8 @@
     "name": "SchoolRPG.SceneManagement.Runtime",
     "rootNamespace": "",
     "references": [
-        "GUID:caca889fed6088d40b22c2d7e2909c31"
+        "GUID:caca889fed6088d40b22c2d7e2909c31",
+        "GUID:f6772791f1e9e2041b58a4d8602de722"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
