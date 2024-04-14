@@ -10,11 +10,12 @@ namespace damageTrigger
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject == targetObject && other.gameObject.health)
+            /*if (other.gameObject == targetObject && other.gameObject.health)
             {
                 // Check if the object has a Health component
                 targetObject.health.takeDamage(1); 
-            }
+            }*/
+
         }
     }
 }
