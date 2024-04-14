@@ -56,6 +56,7 @@ public class Interactable : MonoBehaviour
             {
                 // Debug.Log("collected");
                 this.transform.parent.gameObject.SetActive(false);
+                //this.transform.parent.gameObject.show()
                 Debug.Log("this: " + this.type);
                 player.inventory.Add(this);
             }
