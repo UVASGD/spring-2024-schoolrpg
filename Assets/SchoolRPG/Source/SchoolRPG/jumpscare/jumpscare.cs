@@ -14,7 +14,9 @@ namespace jumpscare
 
         }
 
-        private GameObject other; 
+        private GameObject player;
+        private GameObject popuplauncher; 
+        private GameObject Square; 
         /*
          * When area object interacts with player
          * Then, trigger the animation attached to the
@@ -30,7 +32,8 @@ namespace jumpscare
                 if (gameObject != null)
                 {
                     gameObject.animation.animation.ani();
-                    other.animation.animation.ani();
+                    player.square.popup_launcherer.ShowPopUp();
+                    
                 }
             }
         }
@@ -38,7 +41,8 @@ namespace jumpscare
         private void OnEventEnd()
         {
             gameObject.animation.animation.endAni();
-            other.animation.animation.endAni(); 
+            other.animation.animation.endAni();
+            player.square.popup_launcherer.HidePopUp();
         }
 
         // Update is called once per frame

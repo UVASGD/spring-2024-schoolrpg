@@ -24,6 +24,7 @@ public class animation: MonoBehaviour
     void endAni()
     {
         anim.SetBool("isRunning", false);
+        
     }
 } 
     } 
