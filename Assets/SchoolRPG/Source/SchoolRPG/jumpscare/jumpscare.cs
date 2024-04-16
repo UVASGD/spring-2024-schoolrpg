@@ -13,6 +13,8 @@ namespace jumpscare
         {
 
         }
+
+        private GameObject other; 
         /*
          * When area object interacts with player
          * Then, trigger the animation attached to the
