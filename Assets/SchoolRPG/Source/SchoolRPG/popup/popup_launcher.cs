@@ -7,23 +7,24 @@ namespace pop_up_launcher{
 public class popup_launcher : MonoBehaviour
 {
     // Reference to the pop-up window GameObject
-    public  GameObject Square;
-    public static GameObject Player; 
+    
+    public static GameObject Player = GameObject.Find("Player"); 
     
     // Method to hide the pop-up window
-    public void ShowPopUp()
+    public static void ShowPopUp()
     {
-        private Vector2 Square_y_position = new Vector2( Player.transform.position.y+ 1f);
-        Square.SetActive(true);
-        Square.position.x = Player.transform.position.x;
-        Square.position.y = Square_y_position; 
+        GameObject.SetActive(true);
+        private Vector2 _squareYPosition = new Vector2( Player.transform.position.y+ 1f);
+        
+        GameObject.transform.position.x = Player.transform.position.x;
+        GameObject.transform.position.y = Square_y_position; 
 
     }
 
-    public void HidePopUp()
+    public static void HidePopUp()
     {
-        // Deactivate the pop-up window
-        Square.SetActive(false);
+        GameObject.SetActive(false);
+        // Deactivate the pop-up windowsSquare.SetActive(false);
         
         // Alternatively, you can destroy the pop-up window:
         // Destroy(popUpWindow);
