@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PuzzleObject", menuName = "ScriptableObjects/PuzzleObject")]
-public class PuzzleScriptableObject : ScriptableObject
+public class PuzzleScriptableObject : ScriptableObject // Inefficient lol could be better but
 {
     public bool[] completion = new bool[9];
     public bool level1; // Level as scriptable object? Number, locked status, completion, NPC(?) --> Only thinking about this bc there seems to be a lot of different level traits I'm calling on.
@@ -37,7 +37,7 @@ public class PuzzleScriptableObject : ScriptableObject
         }
     }
 
-    public void unlockFloor(int lvl) { // Inefficient lol
+    public void unlockFloor(int lvl) { 
         if (lvl == 2 && level1 == true) {
             Debug.Log("Level 2 unlocked.");
         }

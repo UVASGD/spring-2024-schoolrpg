@@ -68,5 +68,5 @@ public class Interactable : MonoBehaviour
 
 public enum CollectableType
 {
-    NONE, CARROT, BLIRBY
+    NONE, CARROT, BLIRBY, TEST
 }
