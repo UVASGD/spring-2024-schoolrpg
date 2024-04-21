@@ -52,6 +52,9 @@ public class Interactable : MonoBehaviour
                 Debug.Log("START DIALOGUE");
                 interactAction.Invoke();
             }
+            
+        }
+        if (inside == true && Input.GetKeyDown(KeyCode.P)){
             if(isCollectable)
             {
                 // Debug.Log("collected");
@@ -68,5 +71,5 @@ public class Interactable : MonoBehaviour
 
 public enum CollectableType
 {
-    NONE, CARROT, BLIRBY, TEST
+    NONE, CARROT, BLIRBY, CIG
 }

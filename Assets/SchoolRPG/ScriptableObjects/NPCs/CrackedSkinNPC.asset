@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d26a60fceffa47cab8140214f573f69, type: 3}
-  m_Name: PuzzleObject
+  m_Script: {fileID: 11500000, guid: 6ebea59c693fc457ba66dc8007abf163, type: 3}
+  m_Name: CrackedSkinNPC
   m_EditorClassIdentifier: 
-  completion: 010000000000000000
-  level1: 0
-  level2: 0
-  level3: 0
+  myName: Cracked Skin
+  id: 6
+  floor: 3
+  item: 3

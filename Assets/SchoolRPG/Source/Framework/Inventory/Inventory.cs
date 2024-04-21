@@ -52,6 +52,17 @@ public class Inventory
         }
     }
 
+    public bool Contains(CollectableType item) {
+        foreach(Slot slot in slots) {
+            if (slot.type == CollectableType.NONE) { //CollectableType.item?
+                //Debug.Log("Item in inventory.");
+                return true;
+            }
+        }
+        return false;
+
+    }
+
     public string toString()
     {
         string str = "";
