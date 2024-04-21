@@ -11,7 +11,7 @@ public class popup_launcher : MonoBehaviour
 
     public void start()
     {
-        gameObject.transform.localPosition = new Vector3(1f, 1f, 0);
+        gameObject.transform.localPosition = new Vector3(1f, 1f,0);
     }
 
     // Method to hide the pop-up window
