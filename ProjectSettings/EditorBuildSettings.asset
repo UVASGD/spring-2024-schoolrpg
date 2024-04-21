@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/SchoolRPG/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/menu.unity
+    guid: 9a1bab38fcbf64e92b67cdaf3be20716
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/Main.unity
+    guid: ddae3630f42a7a443b23bdb20b50a771
   m_configObjects: {}
