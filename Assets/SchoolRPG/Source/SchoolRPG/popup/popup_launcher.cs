@@ -11,13 +11,13 @@ public class popup_launcher : MonoBehaviour
     public static GameObject Player = GameObject.Find("Player"); 
     
     // Method to hide the pop-up window
-    public static void ShowPopUp()
+    public void ShowPopUp()
     {
         GameObject.SetActive(true);
-        private Vector2 _squareYPosition = new Vector2( Player.transform.position.y+ 1f);
         
-        GameObject.transform.position.x = Player.transform.position.x;
-        GameObject.transform.position.y = Square_y_position; 
+        
+        GameObject.Transform.localPosition.x = 1f;
+        GameObject.Transform.localPosition.y = 1f; 
 
     }
 
