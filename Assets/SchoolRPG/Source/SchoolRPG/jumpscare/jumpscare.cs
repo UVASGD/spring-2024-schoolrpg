@@ -1,7 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Net;
+using pop_up_launcher;
 using UnityEngine;
 
 namespace jumpscare
@@ -14,9 +15,16 @@ namespace jumpscare
 
         }
 
-        private GameObject player;
-        private GameObject popuplauncher; 
-        private GameObject Square; 
+        private BoxCollider BoxCollider; 
+
+        private GameObject player = GameObject.Find("player");
+        GameObject square = GameObject.Find("square");
+        popup_launcher popup_launcher = square.GetComponent<popup_launcher>();
+
+        
+        private Collision collision;
+        private GameObject other = GameObject.Find(Collision.collider.name); 
+
         /*
          * When area object interacts with player
          * Then, trigger the animation attached to the
@@ -24,26 +32,24 @@ namespace jumpscare
          * it.
          */
 
-        private void OnTriggerEnter(Collider other)
+        private void OnCollisionEnter()
         {
+            
             //place holder names for real event.
             if (other.gameObject.name == "Player")
             {
                 if (gameObject != null)
                 {
-                    gameObject.animation.animation.ani();
-                    player.square.popup_launcherer.ShowPopUp();
+                    
+                    ani.ani();
+                    otherAnimation.ani(); 
+                    popup_launcher.ShowPopUp();
                     
                 }
             }
         }
 
-        private void OnEventEnd()
-        {
-            gameObject.animation.animation.endAni();
-            other.animation.animation.endAni();
-            player.square.popup_launcherer.HidePopUp();
-        }
+
 
         // Update is called once per frame
         void Update()
