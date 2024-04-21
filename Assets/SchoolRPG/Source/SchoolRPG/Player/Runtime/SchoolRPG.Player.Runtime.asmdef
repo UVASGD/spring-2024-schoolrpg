@@ -2,9 +2,14 @@
     "name": "SchoolRPG.Player.Runtime",
     "rootNamespace": "",
     "references": [
-        "GUID:52759cb1f2ba634428bcf45223d129f0",
         "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:b4001484b03a7b54ea443dc8586bce0d"
+        "GUID:a83209b0aa96a104ba57da60af46e27d",
+        "GUID:0056e90a88a71484daf1982d1a40c32d",
+        "GUID:e78dcd7cee7bb6d458a396e5e737e189",
+        "GUID:b3885f2a3e91dd24b80fc6dd280058ca",
+        "GUID:270233a332258b2458ae209552599e80",
+        "GUID:c6792527096c0564ebc4987a88665371",
+        "GUID:b19d7e316acb3e048a3277d5ace06cf0"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

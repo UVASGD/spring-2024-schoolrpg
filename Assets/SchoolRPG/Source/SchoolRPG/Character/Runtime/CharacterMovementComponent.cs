@@ -1,7 +1,10 @@
 using UnityEngine;
 
-namespace SchoolRPG.Source.SchoolRPG.Character.Runtime
+namespace SchoolRPG.Character.Runtime
 {
+    /// <summary>
+    /// Base component the movement for all characters. 
+    /// </summary>
     public class CharacterMovementComponent : MonoBehaviour
     {
         /// <summary>

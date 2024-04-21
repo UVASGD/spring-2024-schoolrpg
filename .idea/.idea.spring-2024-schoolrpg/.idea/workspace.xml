@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dfc5fe5a-2ce3-4b9c-8851-18a7aa2392ef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.spring-2024-schoolrpg/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.spring-2024-schoolrpg/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software/MEC/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software/MEC/Editor/MecIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software/MEC/Editor/MecIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software/MEC/Quick Start Guide.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software/MEC/Timing.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software/MEC/TrinarySoftware.MEC.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Dialogue/DialogueEventChannel.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/InventoryEventChannel.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/InventoryEventChannel.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/Items.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/Items/InventoryItemBlirby.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/Items/InventoryItemBlirby.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/Items/InventoryItemCarrot.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/Items/InventoryItemCarrot.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/Items/InventoryItemRock.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/Items/InventoryItemRock.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/PlayerInventory.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory/PlayerInventory.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Menus.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Menus/Inventory.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Menus/Inventory/InventoryItem.uxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Menus/Inventory/InventoryItem.uxml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Menus/Inventory/InventoryMenu.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Menus/Inventory/InventoryMenu.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Menus/Inventory/InventoryMenu.uxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Menus/Inventory/InventoryMenu.uxml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Menus/MenuEventChannel.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Menus/MenuEventChannel.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/PauseSystem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/PauseSystem/PauseEventChannel.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/PauseSystem/PauseEventChannel.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern/Runtime.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern/Runtime/CommandInvoker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern/Runtime/ICommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueEventChannel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/TalkScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/TalkScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/Inventory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/InventoryEventChannel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/InventoryEventChannel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/InventoryItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/InventoryItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/InventoryManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/InventoryManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/PopulateInventoryExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/SelectedItemNameExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/SelectedItemNameExtension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/PauseSystem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/PauseSystem/Runtime/PauseEventChannel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/PauseSystem/Runtime/PauseEventChannel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/PauseSystem/Runtime/PauseState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/PauseSystem/Runtime/PauseState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/PauseSystem/Runtime/SchoolRPG.PauseSystem.Runtime.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/PauseSystem/Runtime/SchoolRPG.PauseSystem.Runtime.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerInteractionController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerInteractionController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerNextDialogueCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerNextDialogueCommand.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerNextDialogueCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerNextDialogueCommandHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerOpenInventoryCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerOpenInventoryCommand.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerOpenInventoryCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerOpenInventoryCommandHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UITKTextSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UITKTextSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityDefaultRuntimeTheme.tss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityDefaultRuntimeTheme.tss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Mushakushi.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UIElements.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Profiling.Editor.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.UI.Builder.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Experimental.GraphView.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Overlays.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.PackageManager.UI.Internal.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Search.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.ShortcutManagement.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Tilemaps.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.U2D.Animation.SpriteLibraryEditor.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.U2D.Animation.Upgrading.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.U2D.Animation.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.U2D.Layout.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.UIElements.Debugger.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.UIElements.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEngine.UIElements.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.spring-2024-schoolrpg/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.spring-2024-schoolrpg/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Inventory.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software/MEC.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos/NavMeshLink Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos/NavMeshLink Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos/NavMeshModifierVolume Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos/NavMeshModifierVolume Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos/NavMeshSurface Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos/NavMeshSurface Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos/NavMeshSurface2d Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos/NavMeshSurface2d Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos/NavMeshSurfaceGears Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Gizmos/NavMeshSurfaceGears Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/LICENSE.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software/MEC/Quick Start Guide.pdf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Input.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Dialogue.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/AgentOverride2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/AgentOverride2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/CollectSources2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/CollectSources2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/CollectSourcesCache2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/CollectSourcesCache2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshAgentAttributePropertyDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshAgentAttributePropertyDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshAreaAttributePropertyDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshAreaAttributePropertyDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software/MEC/Timing.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshAssetManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshAssetManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Trinary Software/MEC/TrinarySoftware.MEC.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshLinkEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshLinkEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshModifierEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshModifierEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshModifierTilemapEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshModifierTilemapEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/RootSources2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Editor/RootSources2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/AgentOverride2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/AgentOverride2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/AgentRotate2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/AgentRotate2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/AgentRotateSmooth2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/AgentRotateSmooth2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/CollectSources2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/CollectSources2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/CollectSourcesCache2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/CollectSourcesCache2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshAgentAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshAgentAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshAreaAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshAreaAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshBuilder2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshBuilder2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshBuilderState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshBuilderState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshComponents.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/SchoolRPG.Interaction.Runtime.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshComponents.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/SchoolRPG.Dialogue.Runtime.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshExtension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshExtensionsProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshExtensionsProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshLink.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshLink.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshModifier.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshModifier.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshModifierTilemap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshModifierTilemap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshModifierVolume.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshModifierVolume.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshSurface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/NavMeshSurface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/RootSources2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/RootSources2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/RotateAgentInstantly.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/RotateAgentInstantly.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/RotateAgentSmoothly.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/NavMeshComponents/Scripts/RotateAgentSmoothly.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Unity/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Unity/LICENSE.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Unity/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/Unity/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/navmeshplus.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/navmeshplus.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus/package.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Opaque_to_trans.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Opaque_to_trans.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saves.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saves.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/blirby.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/blirby.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/blirby.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/blirby.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/carrots.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/carrots.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/carrots.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/carrots.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/empty_item.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/empty_item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/empty_item.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Art/UI/Inventory/empty_item.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/InputSystem/PlayerInputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/InputSystem/PlayerInputActions.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Prefabs/InputEventChannel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Input/InputEventChannel.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Prefabs/InputEventChannel.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Input/InputEventChannel.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Prefabs/NewBehaviourScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Prefabs/NewBehaviourScript.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Prefabs/Player.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Prefabs/Player.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Prefabs/Slot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Prefabs/Slot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/Main.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/Main.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene 1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene 1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene 1.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene 1/NavMesh-NavMeshObject.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene 1/NavMesh-NavMeshObject.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/ScriptableObjects/Dialogue/DialogueEventChannel.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Scenes/SampleScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Camera/Runtime/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Camera/Runtime/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Framework.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Framework.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Framework/Interaction.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Framework/Interaction.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Framework/Interaction/Runtime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Framework/Interaction/Runtime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Framework/Interaction/Runtime/Interactable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Framework/Interaction/Runtime/Interactable.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Camera.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Camera.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Camera/Runtime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Camera/Runtime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Camera/Runtime/CameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Camera/Runtime/CameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/Camera/Runtime/CameraController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character/Character.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character/Character.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character/Runtime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character/Runtime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character/Runtime/CharacterMovementComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character/Runtime/CharacterMovementComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character/Runtime/CharacterMovementComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character/Runtime/CharacterMovementComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character/Runtime/SchoolRPG.Character.Runtime.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Character/Runtime/SchoolRPG.Character.Runtime.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern/Runtime/CommandInvoker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern/Runtime/CommandInvoker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern/Runtime/ICommand.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern/Runtime/ICommand.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/Dialogue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/Dialogue.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueEventChannel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueEventChannel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Input/Runtime/InputComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Input/Runtime/InputComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Input/Runtime/InputEventChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Input/Runtime/InputEventChannel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Input/Runtime/InputEventChannel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Input/Runtime/InputEventChannel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Input/Runtime/SchoolRPG.Input.Runtime.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Input/Runtime/SchoolRPG.Input.Runtime.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Input/Runtime/SchoolRPG.Input.Runtime.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Input/Runtime/SchoolRPG.Input.Runtime.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/Evidence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/Evidence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/Evidence.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/Evidence.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/InventoryItemData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/InventoryItemData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Inventory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Inventory.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Inventory_UI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Inventory_UI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/Inventory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/Inventory.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/PopulateInventoryExtension.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/PopulateInventoryExtension.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/SchoolRPG.Inventory.Runtime.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/SchoolRPG.Inventory.Runtime.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/SchoolRPG.Inventory.Runtime.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/SchoolRPG.Inventory.Runtime.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/NPC.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/NPC.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/NPC/Runtime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/NPC/Runtime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/NPC/Runtime/NpcMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/NPC/Runtime/NpcMovementController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/NPC/Runtime/SchoolRPG.NPC.Runtime.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern/Runtime/SchoolRPG.CommandPattern.Runtime.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/NPC/Runtime/SchoolRPG.NPC.Runtime.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/CommandPattern/Runtime/SchoolRPG.CommandPattern.Runtime.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/PauseSystem/Runtime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/PauseSystem/Runtime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerFactory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerInputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerInputHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/PlayerInputHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/SchoolRPG.Player.Runtime.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Player/Runtime/SchoolRPG.Player.Runtime.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement/Runtime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement/Runtime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement/Runtime/SaveData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement/Runtime/SaveData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement/Runtime/SceneData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement/Runtime/SceneData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement/Runtime/SceneEventChannel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement/Runtime/SceneEventChannel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement/Runtime/SchoolRPG.SceneManagement.Runtime.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/SchoolRPG.Dialogue.Runtime.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/SceneManagement/Runtime/SchoolRPG.SceneManagement.Runtime.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Interaction/Runtime/SchoolRPG.Interaction.Runtime.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/health.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/health.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/jumpscare.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/jumpscare.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/test.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/test.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/PanelSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/PanelSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/PanelSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/PanelSettings.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/popup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/popup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/popup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/popup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mushakushi.Attributes.Editor.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolRPG.Dialogue.Runtime.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mushakushi.Attributes.Runtime.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolRPG.Interaction.Runtime.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mushakushi.DataStructures.Runtime.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolRPG.NPC.Runtime.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mushakushi.InternalDebug.Runtime.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolRPG.SchoolRPG.Runtime.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mushakushi.Pooling.Runtime.csproj.DotSettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mushakushi.Singletons.Runtime.csproj.DotSettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mushakushi.Splines.Editor.csproj.DotSettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mushakushi.Splines.Runtime.csproj.DotSettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mushakushi.UIToolkit.Runtime.csproj.DotSettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolRPG.Input.Runtime.csproj.DotSettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolRPG.Player.Runtime.csproj.DotSettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolRPG.SceneManagement.Runtime.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolRPG.Character.Runtime.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UpgradeLog.htm" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/91dfc2dc18dd4d3f98f344ca2d718967d400/17/da8d35aa/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/91dfc2dc18dd4d3f98f344ca2d718967d400/2d/a404fbc8/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/91dfc2dc18dd4d3f98f344ca2d718967d400/a4/f7db2274/NavMeshPath.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d303c2bf72cd4cec95665b89c457d265d2b8ef3ed6da17cd4f85587c2f9de7/System.Linq.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueEventChannel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.mushakushi.menuframework@82902ac3e4/Runtime/ExtensionFramework/IMenuExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.mushakushi.menuframework@82902ac3e4/Runtime/ExtensionFramework/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.mushakushi.menuframework@82902ac3e4/Runtime/ExtensionFramework/MenuController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.mushakushi.menuframework@82902ac3e4/Runtime/ExtensionFramework/MenuEventChannel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.mushakushi.menuframework@82902ac3e4/Runtime/ExtensionFramework/MenuEventExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.mushakushi.menuframework@82902ac3e4/Runtime/ExtensionFramework/MenuEventExtensionWithDictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.mushakushi.menuframework@82902ac3e4/Runtime/ExtensionFramework/MenuExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.mushakushi.menuframework@82902ac3e4/Runtime/Extensions/UnityEventButtonExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.mushakushi.menuframework@82902ac3e4/Runtime/SerializableUQuery/UQueryBuilderSerializable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2eewZdaf72FZy60jV1iiXvNgdfE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\mushakushi\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\mushakushi\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\mushakushi\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Standalone Player.Start Unity">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\mushakushi\OneDrive\Documents\UVA\SGD\spring-2024-schoolrpg -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\mushakushi\OneDrive\Documents\UVA\SGD\spring-2024-schoolrpg" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\mushakushi\OneDrive\Documents\UVA\SGD\spring-2024-schoolrpg -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\mushakushi\OneDrive\Documents\UVA\SGD\spring-2024-schoolrpg" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfc5fe5a-2ce3-4b9c-8851-18a7aa2392ef" name="Changes" comment="" />
+      <created>1712278409996</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712278409996</updated>
+      <workItem from="1712278414421" duration="846000" />
+      <workItem from="1712353661995" duration="2735000" />
+      <workItem from="1713109726990" duration="7617000" />
+      <workItem from="1713310242483" duration="41302000" />
+      <workItem from="1713667813265" duration="12000" />
+      <workItem from="1713667921590" duration="506000" />
+      <workItem from="1713668871391" duration="3103000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

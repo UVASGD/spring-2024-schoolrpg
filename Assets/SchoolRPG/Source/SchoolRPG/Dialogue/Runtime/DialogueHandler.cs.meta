@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/SchoolRPG/Prefabs/NewBehaviourScript.cs.meta
+guid: 48c6cda5dc8c71a4fa2abb421caa0f24
+========
+guid: 0dd6890928d9ecd4aab48346bc33d40a
+>>>>>>>> inventory:Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueHandler.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
