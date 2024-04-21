@@ -1,0 +1,4 @@
+repository "SchoolOfNightmaresDemo@narcatz@cloud"
+  path "/"
+    br "/main"
+    co "/main"
