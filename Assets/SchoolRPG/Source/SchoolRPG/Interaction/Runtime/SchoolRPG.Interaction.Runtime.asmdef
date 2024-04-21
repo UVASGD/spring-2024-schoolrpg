@@ -1,0 +1,18 @@
+{
+    "name": "SchoolRPG.Interaction.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b19d7e316acb3e048a3277d5ace06cf0",
+        "GUID:270233a332258b2458ae209552599e80",
+        "GUID:055b056ed9a2ac64b8126408231ad5de"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

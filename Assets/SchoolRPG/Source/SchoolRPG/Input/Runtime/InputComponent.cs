@@ -17,16 +17,22 @@ namespace SchoolRPG.Input.Runtime
         [SerializeField, Tooltip("The InputEventChannel to send input events to.")]
         private InputEventChannel inputEventChannel; 
     
-        public void OnMove(InputAction.CallbackContext value)
+        public void OnMove(InputAction.CallbackContext callbackContext)
         {
             // if (value.canceled) return; 
-            inputEventChannel.RaiseOnMove(value.ReadValue<Vector2>());
+            inputEventChannel.RaiseOnMove(callbackContext.ReadValue<Vector2>());
         }
 
-        public void OnInteract(InputAction.CallbackContext value)
+        public void OnInteract(InputAction.CallbackContext callbackContext)
         {
-            if (!(value.started || playerInput.inputIsActive)) return;
+            if (!callbackContext.started || !playerInput.inputIsActive) return;
             inputEventChannel.RaiseOnInteract();
+        }
+
+        public void OnInventory(InputAction.CallbackContext callbackContext)
+        {
+            if (!callbackContext.started || !playerInput.inputIsActive) return;
+            inputEventChannel.RaiseOnInventory();
         }
 
         public void DeactivateInput()

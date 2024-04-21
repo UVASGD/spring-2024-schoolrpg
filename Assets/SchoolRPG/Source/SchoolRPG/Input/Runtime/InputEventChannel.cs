@@ -27,7 +27,12 @@ namespace SchoolRPG.Input.Runtime
         /// <summary>
         /// Callback on input deactivated. 
         /// </summary>
-        public event Action OnDeactivateInput; 
+        public event Action OnDeactivateInput;
+
+        /// <summary>
+        /// Callback on inventory button pressed.
+        /// </summary>
+        public event Action OnInventory; 
 
         /// <summary>
         /// Raises the <see cref="OnMove"/> event. 
@@ -39,6 +44,11 @@ namespace SchoolRPG.Input.Runtime
         /// Raises the <see cref="OnInteract"/> event. 
         /// </summary>
         public void RaiseOnInteract() => OnInteract?.Invoke();
+
+        /// <summary>
+        /// Raises the <see cref="OnInventory"/> event.
+        /// </summary>
+        public void RaiseOnInventory() => OnInventory?.Invoke();
 
         /// <summary>
         /// Raises the <see cref="OnActivateInput"/> event. 

@@ -1,36 +1,20 @@
+using SchoolRPG.Inventory.Runtime;
 using UnityEngine;
 
 namespace SchoolRPG.Interaction.Runtime
 {
-    public class Evidence : MonoBehaviour
+    public class Evidence : TalkScript
     {
+        [SerializeField]
+        private InventoryItem inventoryItem;
 
-        public string[] objLines;
-        private GameObject dialogueBox;
-        // Start is called before the first frame update
-        void Start()
+        [SerializeField]
+        private InventoryEventChannel inventoryEventChannel;
+
+        public override void OnInteract()
         {
-            dialogueBox = GameObject.FindWithTag("DialogueBox");
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
-
-        public void EvidenceObserved()
-        {
-            Debug.Log("Evidence Observed");
-        
-            if (dialogueBox == null)
-            {
-                Debug.Log("Dialogue Box Missing");
-            } else
-            {
-                dialogueBox.GetComponent<Dialogue.Runtime.Dialogue>().StartDialogue(objLines);
-            }
-
+            base.OnInteract();
+            inventoryEventChannel.RaiseOnAddInventoryItem(inventoryItem);
         }
     }
 }

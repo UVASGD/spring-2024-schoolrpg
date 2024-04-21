@@ -1,5 +1,5 @@
+using SchoolRPG.Character.Runtime;
 using SchoolRPG.Input.Runtime;
-using SchoolRPG.Source.SchoolRPG.Character.Runtime;
 using UnityEngine;
 
 namespace SchoolRPG.Player.Runtime
@@ -20,39 +20,48 @@ namespace SchoolRPG.Player.Runtime
         /// </summary>
         [field: SerializeField, Tooltip("The " + nameof(CharacterMovementComponent) + " that handles movement")]
         public CharacterMovementComponent CharacterMovementComponent { get; private set; }
+        
+        /// <summary>
+        /// The <see cref="PlayerInteractionController"/> that controls interaction.
+        /// </summary> 
+        [field: SerializeField]
+        public PlayerInteractionController PlayerInteractionController { get; private set; }
+        
+        [field: SerializeField]
+        public PlayerNextDialogueCommand PlayerNextDialogueCommand { get; private set; }
 
         private void OnEnable()
         {
-            InputEventChannel.OnMove += HandleInputMove;
-            InputEventChannel.OnInteract += HandleInputInteract;
-            InputEventChannel.OnActivateInput += HandleActivateInput;
-            InputEventChannel.OnActivateInput += HandleDeactivateInput; 
+            InputEventChannel.OnMove += HandleOnMove;
+            InputEventChannel.OnInteract += HandleOnInteract;
+            InputEventChannel.OnActivateInput += HandleOnActivateInput;
+            InputEventChannel.OnActivateInput += HandeOnDeactivateInput; 
         }
     
         private void OnDisable()
         {
-            InputEventChannel.OnMove -= HandleInputMove;
-            InputEventChannel.OnInteract -= HandleInputInteract; 
-            InputEventChannel.OnActivateInput -= HandleActivateInput;
-            InputEventChannel.OnActivateInput -= HandleDeactivateInput; 
+            InputEventChannel.OnMove -= HandleOnMove;
+            InputEventChannel.OnInteract -= HandleOnInteract; 
+            InputEventChannel.OnActivateInput -= HandleOnActivateInput;
+            InputEventChannel.OnActivateInput -= HandeOnDeactivateInput; 
         }
 
-        private void HandleInputMove(Vector2 value)
+        private void HandleOnMove(Vector2 value)
         {
             CharacterMovementComponent.Move(value);
         }
 
-        private void HandleInputInteract()
+        private void HandleOnInteract()
         {
-            // TODO - interaction component here
+            PlayerInteractionController.TryInteract();
         }
 
-        private void HandleActivateInput()
+        private void HandleOnActivateInput()
         {
             CharacterMovementComponent.Activate();
         }
 
-        private void HandleDeactivateInput()
+        private void HandeOnDeactivateInput()
         {
             CharacterMovementComponent.Deactivate();
         }

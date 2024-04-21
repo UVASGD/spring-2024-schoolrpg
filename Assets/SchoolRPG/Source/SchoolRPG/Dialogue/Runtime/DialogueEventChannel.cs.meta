@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Opaque_to_trans.cs.meta
+guid: 18b126972ff52cc42ac499411c8f8803
+========
+guid: 580109c3309b4d7a8917a4ba6c250b9d
+>>>>>>>> inventory:Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueEventChannel.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,4 +1,4 @@
-using SchoolRPG.Source.SchoolRPG.Character.Runtime;
+using SchoolRPG.Character.Runtime;
 using UnityEngine;
 using UnityEngine.AI;
 

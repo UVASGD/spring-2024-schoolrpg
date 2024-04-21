@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: ca24934b3fc8bda43a6616cf67747234
+<<<<<<<< HEAD:Assets/Saves.meta
+guid: da17c7124f019d349b583b281c53fcfe
+========
+guid: 05b6f6a1991e99e4d8f8121651bfc5fa
+>>>>>>>> inventory:Assets/SchoolRPG/Source/SchoolRPG/CommandPattern.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
