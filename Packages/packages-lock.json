@@ -1,15 +1,5 @@
 {
   "dependencies": {
-    "com.eflatun.scenereference": {
-      "version": "https://github.com/starikcetin/Eflatun.SceneReference.git#4.0.0",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.settings-manager": "2.0.1",
-        "com.unity.nuget.newtonsoft-json": "3.0.2"
-      },
-      "hash": "7dbcaf0327bcba279f2dcd07b824a693b1091beb"
-    },
     "com.mackysoft.serializereference-extensions": {
       "version": "1.3.1",
       "depth": 0,
@@ -23,20 +13,6 @@
       "source": "git",
       "dependencies": {},
       "hash": "55ed30dab260ea547f7168bc6e0f0cb01cabcb00"
-    },
-    "com.mushakushi.datastructures": {
-      "version": "https://github.com/Mushakushi/DataStructures.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "fd411817a76609f21b72be129f937e974989c1f4"
-    },
-    "com.mushakushi.internaldebug": {
-      "version": "https://github.com/Mushakushi/InternalDebug.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "913df5a6ecf483cd1052b943b42dd40cb1a9c640"
     },
     "com.mushakushi.menuframework": {
       "version": "https://github.com/Mushakushi/UIToolkitMenuFramework.git?path=Assets/Mushakushi.MenuFramework",
@@ -223,7 +199,7 @@
       }
     },
     "com.unity.ide.rider": {
-      "version": "3.0.28",
+      "version": "3.0.27",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -251,13 +227,6 @@
     },
     "com.unity.mathematics": {
       "version": "1.2.6",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.nuget.newtonsoft-json": {
-      "version": "3.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: a6b4a9409f7a0e24688b7f1786afb440
+<<<<<<<< HEAD:Assets/Opaque_to_trans.cs.meta
+guid: 55cdcd4a7071c7b47892e8e67204dc9a
+========
+guid: 580109c3309b4d7a8917a4ba6c250b9d
+>>>>>>>> inventory:Assets/SchoolRPG/Source/SchoolRPG/Dialogue/Runtime/DialogueEventChannel.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

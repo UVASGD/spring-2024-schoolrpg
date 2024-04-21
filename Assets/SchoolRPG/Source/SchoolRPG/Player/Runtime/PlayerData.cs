@@ -5,7 +5,7 @@ namespace SchoolRPG.Player.Runtime
     /// <summary>
     /// Stores the prefab and the control configuration of the players.
     /// </summary>
-    [CreateAssetMenu(fileName = "PlayerData", menuName = "ScriptableObjects/Player/Data Containers/Player Data")]
+    [CreateAssetMenu(fileName = nameof(PlayerData), menuName = "ScriptableObjects/Player/Player Data")]
     public class PlayerData: ScriptableObject
     {
         /// <summary>

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 4515bbbb8c2076a4a8bc3fa7294b1712
+<<<<<<<< HEAD:Assets/SchoolRPG/Source/SchoolRPG/Character/Character.meta
+guid: 71b63133f9fb71e4daced147ec2dbbcb
+========
+guid: 2234a5eab3ae8ef4698dbd6efd088be7
+>>>>>>>> inventory:Assets/SchoolRPG/Source/SchoolRPG/PauseSystem/Runtime.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -2,9 +2,7 @@
     "name": "SchoolRPG.Input.Runtime",
     "rootNamespace": "",
     "references": [
-        "GUID:c6792527096c0564ebc4987a88665371",
-        "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:49b49c76ee64f6b41bf28ef951cb0e50"
+        "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
