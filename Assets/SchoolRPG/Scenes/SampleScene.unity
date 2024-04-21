@@ -1739,6 +1739,7 @@ GameObject:
   - component: {fileID: 639976475}
   - component: {fileID: 639976474}
   - component: {fileID: 639976473}
+  - component: {fileID: 639976476}
   - component: {fileID: 639976472}
   m_Layer: 0
   m_Name: PlayerDetection
@@ -1916,6 +1917,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &639976476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639976470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce5ff5b27ff24f1692553525194eb1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc: {fileID: 11400000, guid: 43fe7c90bcd5d4515a8d8d6b76af7851, type: 2}
+  puzzle: {fileID: 11400000, guid: 9caeaf7b769374321ab40210acb1600d, type: 2}
 --- !u!1 &652864625
 GameObject:
   m_ObjectHideFlags: 0
@@ -9443,6 +9458,7 @@ MonoBehaviour:
       icon: {fileID: 0}
     - type: 0
       icon: {fileID: 0}
+  puzzle: {fileID: 0}
 --- !u!1001 &896717663
 PrefabInstance:
   m_ObjectHideFlags: 0
