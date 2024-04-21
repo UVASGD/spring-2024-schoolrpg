@@ -3,27 +3,30 @@ using UnityEditor;
 using UnityEditor.PackageManager.UI;
 using Vector2 = System.Numerics.Vector2;
 
-namespace pop_up_launcher{
+
 public class popup_launcher : MonoBehaviour
 {
+    public GameObject gameObject; 
     // Reference to the pop-up window GameObject
-    
-    public static GameObject Player = GameObject.Find("Player"); 
-    
+
+    public void start()
+    {
+        gameObject.transform.localPosition = new Vector3(1f, 1f, 0);
+    }
+
     // Method to hide the pop-up window
     public void ShowPopUp()
     {
-        GameObject.SetActive(true);
+        gameObject.SetActive(true);
         
         
-        GameObject.Transform.localPosition.x = 1f;
-        GameObject.Transform.localPosition.y = 1f; 
+        
 
     }
 
-    public static void HidePopUp()
+    public  void HidePopUp()
     {
-        GameObject.SetActive(false);
+        gameObject.SetActive(false);
         // Deactivate the pop-up windowsSquare.SetActive(false);
         
         // Alternatively, you can destroy the pop-up window:
@@ -32,4 +35,3 @@ public class popup_launcher : MonoBehaviour
 }
 
 
-}
