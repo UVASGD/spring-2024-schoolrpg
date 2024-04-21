@@ -8402,7 +8402,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8978404802416437263, guid: b0d4a05b65a3d3640b2db2a445f71564, type: 3}
   m_PrefabInstance: {fileID: 8806353750458591221}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109651181}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
@@ -8421,6 +8421,7 @@ GameObject:
   - component: {fileID: 871692437}
   - component: {fileID: 871692436}
   - component: {fileID: 871692435}
+  - component: {fileID: 871692439}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -8553,6 +8554,19 @@ MonoBehaviour:
   <Target>k__BackingField: {fileID: 863873370}
   <CharacterMovementComponent>k__BackingField: {fileID: 871692436}
   movementDirection: {x: 0, y: 0, z: 0}
+--- !u!114 &871692439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871692430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34bc19fc55a094b4ba5d2bda177373e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
 --- !u!1 &931317936
 GameObject:
   m_ObjectHideFlags: 0
