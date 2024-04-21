@@ -6,16 +6,20 @@ namespace damageTrigger
     public class DamageTrigger : MonoBehaviour
     {
         public int damageAmount = 1; // Amount of damage to deal
-        public GameObject targetObject; // Object to take damage
+        public GameObject player;
 
-        private void OnTriggerEnter(Collider other)
+        public static bool dealingDamage = false;
+        private bool hitting = false;
+
+
+        private void OnTriggerStay2D(Collider2D collision)
         {
-            /*if (other.gameObject == targetObject && other.gameObject.health)
+            if (collision.gameObject.Equals(player) && !dealingDamage)
             {
-                // Check if the object has a Health component
-                targetObject.health.takeDamage(1); 
-            }*/
-
+                // player take damage
+                dealingDamage = true;
+                player.GetComponent<health_controller>().takeDamage(1, player.GetComponent<SpriteRenderer>());
+            }
         }
     }
 }
