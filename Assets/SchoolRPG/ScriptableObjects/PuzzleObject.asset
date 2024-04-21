@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d26a60fceffa47cab8140214f573f69, type: 3}
   m_Name: PuzzleObject
   m_EditorClassIdentifier: 
+  completion: 010000000000000000
+  level1: 0
+  level2: 0
+  level3: 0
