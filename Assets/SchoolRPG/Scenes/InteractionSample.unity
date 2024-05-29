@@ -186,7 +186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &61836513
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -644,7 +644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &432190727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8523,7 +8523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1198966818
 Rigidbody2D:
   serializedVersion: 4
@@ -10533,13 +10533,13 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 863873370}
-  - {fileID: 1198966820}
   - {fileID: 1783904839}
+  - {fileID: 1198966820}
   - {fileID: 61836516}
+  - {fileID: 432190730}
   - {fileID: 777347849}
   - {fileID: 1264673467}
   - {fileID: 1787035854}
-  - {fileID: 432190730}
   - {fileID: 2009416044}
   - {fileID: 652864627}
   - {fileID: 2087627738}
