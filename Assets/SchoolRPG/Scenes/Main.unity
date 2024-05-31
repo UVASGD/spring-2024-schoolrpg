@@ -227,6 +227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2137469644631606673, guid: c11822629aa14ab4aad96059a3847b49, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4081873868393157726, guid: c11822629aa14ab4aad96059a3847b49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 144.2894
@@ -1064,6 +1068,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 8b62c4bf-8a0e-4ace-b356-342d30edae9b
     m_ActionName: Gameplay/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 98efab5c-94d4-4895-b602-32918c1705f3
+    m_ActionName: Gameplay/Inventory[/Keyboard/i]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -8447,7 +8455,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
