@@ -9458,7 +9458,7 @@ MonoBehaviour:
       icon: {fileID: 0}
     - type: 0
       icon: {fileID: 0}
-  puzzle: {fileID: 0}
+  puzzle: {fileID: 11400000, guid: 9caeaf7b769374321ab40210acb1600d, type: 2}
 --- !u!1001 &896717663
 PrefabInstance:
   m_ObjectHideFlags: 0
