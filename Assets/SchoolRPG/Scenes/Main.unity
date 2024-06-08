@@ -231,6 +231,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3361492568269372641, guid: c11822629aa14ab4aad96059a3847b49, type: 3}
+      propertyPath: <Rb>k__BackingField
+      value: 
+      objectReference: {fileID: 790541689}
     - target: {fileID: 4081873868393157726, guid: c11822629aa14ab4aad96059a3847b49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 144.2894
@@ -8394,6 +8398,22 @@ Transform:
   - {fileID: 1975760609}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &790541687 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3362032346036645111, guid: c11822629aa14ab4aad96059a3847b49, type: 3}
+  m_PrefabInstance: {fileID: 371513646}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &790541689 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3717452170372898245, guid: c11822629aa14ab4aad96059a3847b49, type: 3}
+  m_PrefabInstance: {fileID: 371513646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &871692430
 GameObject:
   m_ObjectHideFlags: 0
@@ -9471,8 +9491,8 @@ MonoBehaviour:
   rootDocument: {fileID: 0}
   <RootContainerName>k__BackingField: 
   <InitialFocusedElementClassName>k__BackingField: 
-  menuEventChannel: {fileID: 0}
-  <CurrentPlayerInput>k__BackingField: {fileID: 0}
+  menuEventChannel: {fileID: 11400000, guid: 56b737c440a00234a87a522320ef4b14, type: 2}
+  <CurrentPlayerInput>k__BackingField: {fileID: 790541687}
   <GlobalExtensions>k__BackingField: []
   references:
     version: 2
