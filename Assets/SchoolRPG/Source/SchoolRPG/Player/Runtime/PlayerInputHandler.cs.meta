@@ -3,7 +3,10 @@ guid: a16b28a663db42bfad2aff0465ee1297
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - <InputEventChannel>k__BackingField: {instanceID: 0}
+  - <CharacterMovementComponent>k__BackingField: {instanceID: 0}
+  - <PlayerInteractionController>k__BackingField: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
