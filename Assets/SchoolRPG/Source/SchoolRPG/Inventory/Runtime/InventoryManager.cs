@@ -29,8 +29,9 @@ namespace SchoolRPG.Inventory.Runtime
                 item.Count += newItem.Count;
                 return;
             }
-            
+
             inventory.inventoryItems.Add(newItem);
+            GameObject.Find(newItem.DisplayName).SetActive(false);
         }
     }
 }

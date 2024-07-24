@@ -10285,6 +10285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrot
       objectReference: {fileID: 0}
+    - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 147.11
