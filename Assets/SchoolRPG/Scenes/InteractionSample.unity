@@ -10289,6 +10289,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: inventoryItem.<FullIcon>k__BackingField
+      value: 
+      objectReference: {fileID: 747974171, guid: 79f40713df5fbc64d946eb798a0b08cf, type: 3}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: inventoryItem.<DisplayDescription>k__BackingField
+      value: Carrot Description
+      objectReference: {fileID: 0}
     - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 147.11

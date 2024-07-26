@@ -18,14 +18,20 @@ namespace SchoolRPG.Inventory.Runtime
         /// The description for this item in UI.
         /// </summary>
         [field: SerializeField]
-        public string Description { get; set; }
+        public string DisplayDescription { get; set; }
 
         /// <summary>
         /// The icon that represents this item in UI.
         /// </summary>
         [field: SerializeField]
         public Sprite Icon { get; set; }
-        
+
+        /// <summary>
+        /// The icon that represents this item in UI.
+        /// </summary>
+        [field: SerializeField]
+        public Sprite FullIcon { get; set; }
+
         /// <summary>
         /// The amount of this item. 
         /// </summary>
