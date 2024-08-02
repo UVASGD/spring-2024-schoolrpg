@@ -6,7 +6,8 @@ namespace SchoolRPG.Inventory.Runtime
     /// An inventory item. 
     /// </summary>
     [System.Serializable]
-    public struct InventoryItem
+    [CreateAssetMenu(fileName = nameof(InventoryItem), menuName = "ScriptableObjects/Inventory/Inventory Item")]
+    public class InventoryItem : ScriptableObject
     {   
         /// <summary>
         /// The name that represents this item. Also used as an id. 
