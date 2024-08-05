@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a2243b49d714c13ae0543ed63e7881a, type: 3}
   m_Name: InventoryItem 8
   m_EditorClassIdentifier: 
-  <DisplayName>k__BackingField: 
-  <Description>k__BackingField: 
+  <DisplayName>k__BackingField: Triangle 9
+  <DisplayDescription>k__BackingField: 
   <Icon>k__BackingField: {fileID: 0}
+  <FullIcon>k__BackingField: {fileID: 0}
   <Count>k__BackingField: 0

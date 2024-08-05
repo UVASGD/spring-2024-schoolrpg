@@ -13,8 +13,5 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   inventoryItems:
-  - <DisplayName>k__BackingField: Carrot
-    <DisplayDescription>k__BackingField: Carrot Description
-    <Icon>k__BackingField: {fileID: 21300000, guid: 6646f8533341d5147ac30d8d08418460, type: 3}
-    <FullIcon>k__BackingField: {fileID: 747974171, guid: 79f40713df5fbc64d946eb798a0b08cf, type: 3}
-    <Count>k__BackingField: 1
+  - {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+  - {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}

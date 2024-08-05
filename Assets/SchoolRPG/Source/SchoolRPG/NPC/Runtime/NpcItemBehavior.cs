@@ -7,14 +7,26 @@ using UnityEngine;
 public class NpcItemBehavior : MonoBehaviour
 {
     public Inventory inventory;
-    public List<InventoryItem> requiredItems;
+    public InventoryItem requiredItem;
     public GameObject passIndicator; // Some sort of icon to indicate the NPC has accepted the player's items
+    public InventoryEventChannel InventoryEventChannel;
+    public InventoryManager InventoryManager;
 
-    private void OnTriggerEnter(Collider other)
+    private InventoryItem selectedItem;
+
+    private void Start()
     {
+        Debug.Log("NPC item behavior activated");
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        selectedItem = InventoryManager.GetSelectedInventoryItem();
+        
         if (other.CompareTag("Player"))
         {
-            if (HasRequiredItems())
+            Debug.Log(selectedItem);
+            if (selectedItem != null && selectedItem.Equals(requiredItem))
             {
                 //placeholder thing for npc allowing player to pass
                 Debug.Log("Player has the required items for " + gameObject.name);
@@ -26,15 +38,4 @@ public class NpcItemBehavior : MonoBehaviour
         }
     }
 
-    private bool HasRequiredItems()
-    {
-        foreach(InventoryItem item in requiredItems)
-        {
-            if (!inventory.inventoryItems.Contains(item))
-            {
-                return false;
-            }
-        }
-        return true;
-    }
 }

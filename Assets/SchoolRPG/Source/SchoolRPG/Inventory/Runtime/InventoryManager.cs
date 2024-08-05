@@ -10,14 +10,18 @@ namespace SchoolRPG.Inventory.Runtime
         [SerializeField] 
         private Inventory inventory;
 
+        private InventoryItem selectedInventoryItem;
+
         private void OnEnable()
         {
             inventoryEventChannel.OnAddInventoryItem += AddItem;
+            inventoryEventChannel.OnSetSelectedInventoryItem += SetSelectedItem;
         }
 
         private void OnDisable()
         {
             inventoryEventChannel.OnAddInventoryItem -= AddItem;
+            inventoryEventChannel.OnSetSelectedInventoryItem -= SetSelectedItem;
         }
 
         private void AddItem(InventoryItem newItem)
@@ -27,12 +31,23 @@ namespace SchoolRPG.Inventory.Runtime
                 var item = inventory.inventoryItems[i];
                 if (item.DisplayName != newItem.DisplayName) continue;
                 item.Count += newItem.Count;
-                return;
+                break;
             }
             Debug.Log(newItem.DisplayName);
             Debug.Log(newItem.DisplayDescription);
             inventory.inventoryItems.Add(newItem);
             GameObject.Find(newItem.DisplayName).SetActive(false); // pick up object
+        }
+
+        private void SetSelectedItem(InventoryItem inventoryItem)
+        {
+            selectedInventoryItem = inventoryItem;
+            Debug.Log("Selected Inventory Item: " + selectedInventoryItem.DisplayName);
+        }
+
+        public InventoryItem GetSelectedInventoryItem()
+        {
+            return selectedInventoryItem;
         }
     }
 }
