@@ -16,47 +16,25 @@ MonoBehaviour:
   <Extensions>k__BackingField:
   - rid: 4099320659919241217
   - rid: 4099320659919241218
-  <MenuConnections>k__BackingField:
-    <ButtonNameToMenu>k__BackingField:
-      reorderableList:
-        canAdd: 1
-        canRemove: 1
-        draggable: 1
-        expandable: 1
-        multipleSelection: 1
-        isExpanded: 0
-        label:
-          m_Text: Keys
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        headerHeight: 18
-        footerHeight: 13
-        slideEasing: 0.15
-        verticalSpacing: 2
-        showDefaultBackground: 1
-        elementDisplayType: 0
-        elementNameProperty: 
-        elementNameOverride: 
-        elementIcon: {fileID: 0}
-      reqReferences: {fileID: 0}
-      isExpanded: 0
-      _keyValues: []
-      _keys: []
-      _values: []
-    menuEventChannel: {fileID: 0}
-    <Query>k__BackingField:
-      nameOptions: []
-      classOptions: []
-      selectors: []
+  - rid: 3718529149171662848
   references:
     version: 2
     RefIds:
+    - rid: 3718529149171662848
+      type: {class: SelectedItemDescriptionExtension, ns: SchoolRPG.Inventory.Runtime, asm: SchoolRPG.Inventory.Runtime}
+      data:
+        <Query>k__BackingField:
+          selectors:
+          - type: 0
+            state: 0
+            names:
+            - ItemDescription
+            classes: []
+        inventoryEventChannel: {fileID: 11400000, guid: 478189ecd867e2941af814dc3677cc13, type: 2}
     - rid: 4099320659919241217
       type: {class: PopulateInventoryExtension, ns: SchoolRPG.Inventory.Runtime, asm: SchoolRPG.Inventory.Runtime}
       data:
         <Query>k__BackingField:
-          nameOptions: []
-          classOptions: []
           selectors: []
         inventoryItemAsset: {fileID: 9197481963319205126, guid: 79dc6a2e9474e7143a054317c0a734ff, type: 3}
         inventoryItemAssetImageName: Image
@@ -67,7 +45,10 @@ MonoBehaviour:
       type: {class: SelectedItemNameExtension, ns: SchoolRPG.Inventory.Runtime, asm: SchoolRPG.Inventory.Runtime}
       data:
         <Query>k__BackingField:
-          nameOptions: []
-          classOptions: []
-          selectors: []
+          selectors:
+          - type: 0
+            state: 0
+            names:
+            - ItemName
+            classes: []
         inventoryEventChannel: {fileID: 11400000, guid: 478189ecd867e2941af814dc3677cc13, type: 2}
