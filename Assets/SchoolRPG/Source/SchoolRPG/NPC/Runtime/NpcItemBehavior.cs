@@ -25,11 +25,30 @@ public class NpcItemBehavior : MonoBehaviour
     private InventoryItem selectedItem;
     private bool passed;
     public string[] passDialogue;
+    private bool isInventoryOpened;
 
     private void Start()
     {
         Debug.Log("NPC item behavior activated");
         passed = false;
+    }
+
+    private void OnEnable(){
+        inputEventChannel.OnInventory += setIsInventoryOpened;
+    }
+
+    private void OnDisable(){
+        inputEventChannel.OnInventory -= setIsInventoryOpened;
+    }
+
+    private void setIsInventoryOpened(){
+        isInventoryOpened = !isInventoryOpened;
+    }
+
+    private void Update(){
+        if (!isInventoryOpened){
+            InventoryEventChannel.RaiseOnSetSelectedInventoryItem(new InventoryItem());
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)

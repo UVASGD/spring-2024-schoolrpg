@@ -1,12 +1,13 @@
 using UnityEngine;
 
+
 namespace SchoolRPG.Inventory.Runtime
 {
     public class InventoryManager: MonoBehaviour
     {
         [SerializeField]
         private InventoryEventChannel inventoryEventChannel;
-
+        
         [SerializeField] 
         private Inventory inventory;
 
@@ -47,7 +48,7 @@ namespace SchoolRPG.Inventory.Runtime
         private void SetSelectedItem(InventoryItem inventoryItem)
         {
             selectedInventoryItem = inventoryItem;
-            Debug.Log("Selected Inventory Item: " + selectedInventoryItem.DisplayName);
+            //Debug.Log("Selected Inventory Item: " + selectedInventoryItem.DisplayName);
         }
 
         public InventoryItem GetSelectedInventoryItem()
