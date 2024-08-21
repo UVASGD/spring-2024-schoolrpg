@@ -7084,12 +7084,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: m_Name
-      value: Carrot (3)
+      value: Triangle 3
       objectReference: {fileID: 0}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: inventoryItem
       value: 
-      objectReference: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+      objectReference: {fileID: 11400000, guid: 1eedea7aa89d499469aaf212bc815787, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -7319,6 +7319,7 @@ GameObject:
   - component: {fileID: 863873372}
   - component: {fileID: 863873375}
   - component: {fileID: 863873376}
+  - component: {fileID: 863873378}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -7538,6 +7539,23 @@ MonoBehaviour:
   <Speed>k__BackingField: 2
   <FrictionFactor>k__BackingField: 0.5
   <IsActive>k__BackingField: 0
+--- !u!114 &863873378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863873366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff8838ea914fe04ab7fcdc9406004c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+  - sdfasdfasdfas
+  - ewqrwerqwerqwerw
+  dialogueEventChannel: {fileID: 11400000, guid: 058e902fcc7f70b4fb25ee4d1dae0722, type: 2}
+  inputEventChannel: {fileID: 11400000, guid: 91f06163d93475147af2187c808381ed, type: 2}
 --- !u!4 &1034568689 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
@@ -7553,12 +7571,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: m_Name
-      value: Carrot (9)
+      value: Triangle 9
       objectReference: {fileID: 0}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: inventoryItem
       value: 
-      objectReference: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+      objectReference: {fileID: 11400000, guid: ededc993ef344e54d9f25b1676d8aa52, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -7623,12 +7641,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: m_Name
-      value: Carrot (6)
+      value: Triangle 6
       objectReference: {fileID: 0}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: inventoryItem
       value: 
-      objectReference: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+      objectReference: {fileID: 11400000, guid: d68f399aa0ba3124e95c8b1c863391fe, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -8294,12 +8312,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: m_Name
-      value: Carrot (5)
+      value: Triangle 5
       objectReference: {fileID: 0}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: inventoryItem
       value: 
-      objectReference: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+      objectReference: {fileID: 11400000, guid: 8117705f93b698846823bcb104673e6e, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -8364,12 +8382,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: m_Name
-      value: Carrot (7)
+      value: Triangle 7
       objectReference: {fileID: 0}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: inventoryItem
       value: 
-      objectReference: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+      objectReference: {fileID: 11400000, guid: c5f760399dc615747b22875575454cdd, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -10869,12 +10887,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: m_Name
-      value: Carrot (8)
+      value: Triangle 8
       objectReference: {fileID: 0}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: inventoryItem
       value: 
-      objectReference: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+      objectReference: {fileID: 11400000, guid: 5ea85c5dfcd044445a7c70b2bf9d29f0, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -10939,12 +10957,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: m_Name
-      value: Carrot (2)
+      value: Triangle 2
       objectReference: {fileID: 0}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: inventoryItem
       value: 
-      objectReference: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+      objectReference: {fileID: 11400000, guid: 39aef5e2864a87d4dabc03a997e47337, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -11009,12 +11027,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: m_Name
-      value: Carrot (4)
+      value: Triangle 4
       objectReference: {fileID: 0}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: inventoryItem
       value: 
-      objectReference: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+      objectReference: {fileID: 11400000, guid: 71e17667b5b6504488f1d30f37df6787, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle

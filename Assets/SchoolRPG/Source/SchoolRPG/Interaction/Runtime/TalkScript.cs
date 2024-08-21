@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using SchoolRPG.Dialogue.Runtime;
-using SchoolRPG.Inventory.Runtime;
 using UnityEngine;
 
 namespace SchoolRPG.Interaction.Runtime
