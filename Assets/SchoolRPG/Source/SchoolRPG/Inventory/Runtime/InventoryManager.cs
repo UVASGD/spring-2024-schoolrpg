@@ -12,6 +12,11 @@ namespace SchoolRPG.Inventory.Runtime
 
         private InventoryItem selectedInventoryItem;
 
+        void Start()
+        {
+            inventory.inventoryItems.Clear();
+        }
+
         private void OnEnable()
         {
             inventoryEventChannel.OnAddInventoryItem += AddItem;
