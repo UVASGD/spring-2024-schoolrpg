@@ -11319,6 +11319,10 @@ PrefabInstance:
       propertyPath: passDialogue.Array.data[0]
       value: Congrats! You gave me item 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
+      propertyPath: passDialogue.Array.data[1]
+      value: Congrats! You gave me item 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.66

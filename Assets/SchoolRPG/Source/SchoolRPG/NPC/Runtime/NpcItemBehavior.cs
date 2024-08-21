@@ -43,8 +43,11 @@ public class NpcItemBehavior : MonoBehaviour
             {
                 //placeholder thing for npc allowing player to pass
                 passed = true;
+                // need to auto close inventory
                 inputEventChannel.RaiseOnInventory();
                 dialogueEventChannel.RaiseOnOpenDialogueRequested(passDialogue);
+                // For some reason, an empty dialogue box appears 
+                inputEventChannel.RaiseOnInteract();
                 Debug.Log("Player has the required items for " + gameObject.name);
             }
             else
