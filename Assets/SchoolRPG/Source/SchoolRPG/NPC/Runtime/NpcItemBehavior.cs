@@ -48,6 +48,7 @@ public class NpcItemBehavior : MonoBehaviour
                 dialogueEventChannel.RaiseOnOpenDialogueRequested(passDialogue);
                 // For some reason, an empty dialogue box appears 
                 inputEventChannel.RaiseOnInteract();
+                selectedItem = null;
                 Debug.Log("Player has the required items for " + gameObject.name);
             }
             else
