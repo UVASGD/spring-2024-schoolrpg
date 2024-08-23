@@ -11,7 +11,11 @@ using UnityEngine;
 public class PlayerTalkScript: MonoBehaviour
 {
     
-    public string[] monologue;
+    public string[] blurb1;
+    public string[] blurb2;
+    public string[] blurb3;
+    private int monologueCounter;
+    private List<string[]> monologues;
 
     [SerializeField] 
     private DialogueEventChannel dialogueEventChannel;
@@ -23,16 +27,24 @@ public class PlayerTalkScript: MonoBehaviour
     // for some reason, start() will not make the dialogue visible until a small delay is implemented
     private void Start()
     {
+        monologues = new List<string[]>();
+        monologues.Add(blurb1);
+        monologues.Add(blurb2);
+        monologues.Add(blurb3); 
+    }
+
+    public void TriggerDialogueCoroutine()
+    {
         StartCoroutine(TriggerDialogueAfterDelay());
-        
     }
 
     private IEnumerator TriggerDialogueAfterDelay()
     {
         yield return new WaitForSeconds(0.1f);
         
-        dialogueEventChannel.RaiseOnOpenDialogueRequested(monologue);
+        dialogueEventChannel.RaiseOnOpenDialogueRequested(monologues[monologueCounter]);
         inputEventChannel.RaiseOnInteract();
+        monologueCounter++;
     }
 
 
