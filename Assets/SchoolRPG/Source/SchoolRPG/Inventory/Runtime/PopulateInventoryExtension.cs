@@ -66,8 +66,8 @@ namespace SchoolRPG.Inventory.Runtime
         {
             var item = inventory.inventoryItems[index];
             itemVisualElement.Q<VisualElement>(inventoryItemAssetImageName).style.backgroundImage = new StyleBackground(item.Icon);
-            itemVisualElement.Q<Label>(inventoryItemAssetCountLabelName).text = item.Count <= 1 
-                ? string.Empty : item.Count.ToString();
+            itemVisualElement.Q<Label>(inventoryItemAssetCountLabelName).text = "1"; /*item.Count <= 1 
+                ? string.Empty : item.Count.ToString(); Hopefully this works lol*/
             itemVisualElement.style.width = new StyleLength(100);
             itemVisualElement.style.height = new StyleLength(100);
         }

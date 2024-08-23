@@ -34,9 +34,9 @@ namespace SchoolRPG.Inventory.Runtime
         public Sprite FullIcon { get; set; }
 
         /// <summary>
-        /// The amount of this item. 
+        /// Whether the player has picked up this item or not. 
         /// </summary>
         [field: SerializeField]
-        public int Count { get; set; }
+        public bool IsPickedUp { get; set; }
     }
 }

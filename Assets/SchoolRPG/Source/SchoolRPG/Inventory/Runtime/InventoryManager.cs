@@ -36,7 +36,6 @@ namespace SchoolRPG.Inventory.Runtime
             {
                 var item = inventory.inventoryItems[i];
                 if (item.DisplayName != newItem.DisplayName) continue;
-                item.Count += newItem.Count;
                 break;
             }
             Debug.Log(newItem.DisplayName);
