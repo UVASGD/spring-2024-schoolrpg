@@ -29,9 +29,12 @@ public class NpcItemBehavior : MonoBehaviour
     private InventoryItem selectedItem;
     private bool isInventoryOpened;
 
+    private InventoryItem dummyItem;
+
     private void Start()
     {
         npc.IsPassed = false;
+        dummyItem = ScriptableObject.CreateInstance<InventoryItem>();
         Debug.Log("NPC item behavior activated");
     }
 
@@ -43,38 +46,37 @@ public class NpcItemBehavior : MonoBehaviour
         inputEventChannel.OnInventory -= setIsInventoryOpened;
     }
 
+    private void Update()
+    {
+        Debug.Log(InventoryManager.GetSelectedInventoryItem());
+    }
+
     private void setIsInventoryOpened(){
         isInventoryOpened = !isInventoryOpened;
         if (!isInventoryOpened){
-            InventoryEventChannel.RaiseOnSetSelectedInventoryItem(ScriptableObject.CreateInstance<InventoryItem>());
+            InventoryEventChannel.RaiseOnSetSelectedInventoryItem(dummyItem);
         }
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
         selectedItem = InventoryManager.GetSelectedInventoryItem();
-
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log(selectedItem);
-            if (selectedItem != null && !selectedItem.Equals(ScriptableObject.CreateInstance<InventoryItem>()) && !npc.IsPassed){
-                if(selectedItem.Equals(npc.RequiredItem)){
-                    //placeholder thing for npc allowing player to pass
-                    npc.IsPassed = true;
-                    // need to auto close inventory
-                    inputEventChannel.RaiseOnInventory();
-                    inventory.inventoryItems.Remove(npc.RequiredItem);
-                    dialogueEventChannel.RaiseOnOpenDialogueRequested(npc.PassDialogue);
-                    // For some reason, an empty dialogue box appears 
-                    inputEventChannel.RaiseOnInteract();
-                    selectedItem = null;
-                }
-                else{
-                    dialogueEventChannel.RaiseOnOpenDialogueRequested(npc.NoPassDialogue);
-                    inputEventChannel.RaiseOnInteract();
-                }
+        if (other.CompareTag("Player") && selectedItem != null && !selectedItem.Equals(dummyItem) && !npc.IsPassed){
+            if(selectedItem.Equals(npc.RequiredItem)){
+                //placeholder thing for npc allowing player to pass
+                npc.IsPassed = true;
+                // need to auto close inventory
+                inputEventChannel.RaiseOnInventory();
+                inventory.inventoryItems.Remove(npc.RequiredItem);
+                dialogueEventChannel.RaiseOnOpenDialogueRequested(npc.PassDialogue);
+                // For some reason, an empty dialogue box appears 
+                inputEventChannel.RaiseOnInteract();
+            }
+            else{
+                inputEventChannel.RaiseOnInventory();
+                dialogueEventChannel.RaiseOnOpenDialogueRequested(npc.NoPassDialogue);
+                inputEventChannel.RaiseOnInteract();
             }
         }
     }
-
 }

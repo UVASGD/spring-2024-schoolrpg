@@ -15,13 +15,11 @@ MonoBehaviour:
   <Name>k__BackingField: HoleHeadMan
   <RequiredItem>k__BackingField: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
   <Level>k__BackingField: 0
-  <IsPassed>k__BackingField: 1
+  <IsPassed>k__BackingField: 0
   Dialogue: []
   PassDialogue:
   - Passed!!
   AlreadyPassedDialogue:
   - You already passed!
-  - Please help me. This is my purgatory. End my suffering...
   NoPassDialogue:
   - NO PASS!! YOU LITTLE DUMMY!
-  - BOOOO!!

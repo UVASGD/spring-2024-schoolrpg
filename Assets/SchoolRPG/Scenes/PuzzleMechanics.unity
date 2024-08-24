@@ -186,6 +186,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 863873377}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
       objectReference: {fileID: 0}
@@ -7091,6 +7095,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 1eedea7aa89d499469aaf212bc815787, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 863873377}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
       objectReference: {fileID: 0}
@@ -7555,6 +7563,7 @@ MonoBehaviour:
   - sdfasdfasdfas
   - ewqrwerqwerqwerw
   dialogueEventChannel: {fileID: 11400000, guid: 058e902fcc7f70b4fb25ee4d1dae0722, type: 2}
+  playerMovement: {fileID: 863873377}
   inputEventChannel: {fileID: 11400000, guid: 91f06163d93475147af2187c808381ed, type: 2}
 --- !u!4 &1034568689 stripped
 Transform:
@@ -7577,6 +7586,10 @@ PrefabInstance:
       propertyPath: inventoryItem
       value: 
       objectReference: {fileID: 11400000, guid: ededc993ef344e54d9f25b1676d8aa52, type: 2}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 863873377}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -7647,6 +7660,10 @@ PrefabInstance:
       propertyPath: inventoryItem
       value: 
       objectReference: {fileID: 11400000, guid: d68f399aa0ba3124e95c8b1c863391fe, type: 2}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 863873377}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -8319,6 +8336,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 8117705f93b698846823bcb104673e6e, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 863873377}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
       objectReference: {fileID: 0}
@@ -8388,6 +8409,10 @@ PrefabInstance:
       propertyPath: inventoryItem
       value: 
       objectReference: {fileID: 11400000, guid: c5f760399dc615747b22875575454cdd, type: 2}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 863873377}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -10894,6 +10919,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 5ea85c5dfcd044445a7c70b2bf9d29f0, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 863873377}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
       objectReference: {fileID: 0}
@@ -10964,6 +10993,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 39aef5e2864a87d4dabc03a997e47337, type: 2}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 863873377}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
       objectReference: {fileID: 0}
@@ -11033,6 +11066,10 @@ PrefabInstance:
       propertyPath: inventoryItem
       value: 
       objectReference: {fileID: 11400000, guid: 71e17667b5b6504488f1d30f37df6787, type: 2}
+    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 863873377}
     - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: test triangle
@@ -11300,6 +11337,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 625028143}
     m_Modifications:
     - target: {fileID: -6419568393322323174, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 863873377}
+    - target: {fileID: -6419568393322323174, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: passedDialogue.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -11360,78 +11401,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
---- !u!1001 &3242190622744080988
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_Name
-      value: Carrot
-      objectReference: {fileID: 0}
-    - target: {fileID: 3212400435496964065, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3232578403521650765, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: inventoryItem
-      value: 
-      objectReference: {fileID: 11400000, guid: e025a4a7d121ed34b80716e9e7afd7f9, type: 2}
-    - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 147.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 78.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378478316705868562, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 103828890e06c984bbddd4837d3e2fa8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 863873370}
-  - {fileID: 3242190622744080988}
   - {fileID: 1198966820}
   - {fileID: 61836516}
   - {fileID: 777347849}

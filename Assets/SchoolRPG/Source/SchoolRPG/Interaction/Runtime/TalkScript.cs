@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using SchoolRPG.Character.Runtime;
 using SchoolRPG.Dialogue.Runtime;
 using SchoolRPG.Interaction.Runtime;
 
@@ -14,6 +15,9 @@ public class TalkScript: Interactable
     
     [SerializeField] 
     protected DialogueEventChannel dialogueEventChannel;
+
+    [SerializeField]
+    protected CharacterMovementComponent playerMovement;
 
     protected bool isInteractable;
 
@@ -44,10 +48,12 @@ public class TalkScript: Interactable
     protected void EnableInteraction()
     {
         isInteractable = true;
+        playerMovement.Activate();
     }
 
     protected void DisableInteraction(IList<string> _ = null)
     {
         isInteractable = false;
+        playerMovement.Deactivate();
     }
 }
