@@ -12,7 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3af6dd8b9ee3c404b8fc46765031f9de, type: 3}
   m_Name: HoleHeadMan
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: 
-  <AssignedItem>k__BackingField: 
+  <Name>k__BackingField: HoleHeadMan
+  <RequiredItem>k__BackingField: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
   <Level>k__BackingField: 0
-  <IsPassed>k__BackingField: 0
+  <IsPassed>k__BackingField: 1
+  Dialogue: []
+  PassDialogue:
+  - Passed!!
+  AlreadyPassedDialogue:
+  - You already passed!
+  - Please help me. This is my purgatory. End my suffering...
+  NoPassDialogue:
+  - NO PASS!! YOU LITTLE DUMMY!
+  - BOOOO!!

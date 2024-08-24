@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using SchoolRPG.Dialogue.Runtime;
 using SchoolRPG.Input.Runtime;
+using UnityEditor.Build;
 using UnityEngine;
 
 /// <summary>
 /// Just raises dialogue event I'm not naming this rn
 /// </summary>
-public class PlayerTalkScript: MonoBehaviour
+public class PlayerTalkScript: MonoBehaviour // honestly, no need to extend talkscript
 {
     
     public string[] monologue;

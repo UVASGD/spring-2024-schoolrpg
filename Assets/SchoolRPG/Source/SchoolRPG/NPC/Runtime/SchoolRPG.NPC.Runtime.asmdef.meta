@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/SchoolRPG/Prefabs/Player.prefab.meta
+guid: c59eec62b3aa52b478254cd2d9da96e6
+PrefabImporter:
+=======
+guid: 055b056ed9a2ac64b8126408231ad5de
+AssemblyDefinitionImporter:
+>>>>>>> inventory:Assets/SchoolRPG/Source/SchoolRPG/Inventory/Runtime/SchoolRPG.Inventory.Runtime.asmdef.meta
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11299,30 +11299,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 625028143}
     m_Modifications:
+    - target: {fileID: -6419568393322323174, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
+      propertyPath: passedDialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6419568393322323174, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
+      propertyPath: passedDialogue.Array.data[0]
+      value: Hi I'm a monster, you passed :)
+      objectReference: {fileID: 0}
     - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: InventoryManager
       value: 
       objectReference: {fileID: 18602769}
-    - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
-      propertyPath: inputEventChannel
-      value: 
-      objectReference: {fileID: 11400000, guid: 91f06163d93475147af2187c808381ed, type: 2}
-    - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
-      propertyPath: dialogueEventChannel
-      value: 
-      objectReference: {fileID: 11400000, guid: 058e902fcc7f70b4fb25ee4d1dae0722, type: 2}
-    - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
-      propertyPath: passDialogue.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
-      propertyPath: passDialogue.Array.data[0]
-      value: Congrats! You gave me item 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
-      propertyPath: passDialogue.Array.data[1]
-      value: Congrats! You gave me item 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.66
@@ -11362,10 +11350,6 @@ PrefabInstance:
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7928902730440082968, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8450992846961584966, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_Name
