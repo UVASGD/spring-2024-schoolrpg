@@ -39,11 +39,11 @@ namespace SchoolRPG.Dialogue.Runtime
         /// Callback when the dialogue box is completely closed. 
         /// </summary>
         public event Action OnCloseDialogueCompleted;
-        
+
         /// <inheritdoc cref="OnOpenDialogueRequested"/>
         /// <param name="dialogue">The dialogue to be written. Each element represents one text box.</param>
         public void RaiseOnOpenDialogueRequested(IList<string> dialogue) => OnOpenDialogueRequested?.Invoke(dialogue);
-        
+
         /// <inheritdoc cref="OnOpenDialogueCompleted"/>
         public void RaiseOnOpenDialogueCompleted() => OnOpenDialogueCompleted?.Invoke();
 
@@ -51,7 +51,7 @@ namespace SchoolRPG.Dialogue.Runtime
         public void RaiseOnNextDialogueRequested()
         {
             OnNextDialogueRequested?.Invoke();
-        } 
+        }
 
         /// <inheritdoc cref="OnNextDialogueCompleted"/>
         public void RaiseOnNextDialogueCompleted() => OnNextDialogueCompleted?.Invoke();

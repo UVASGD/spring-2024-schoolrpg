@@ -1,0 +1,17 @@
+{
+    "name": "SchoolRPG.SceneManagement.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a83209b0aa96a104ba57da60af46e27d",
+        "GUID:f6772791f1e9e2041b58a4d8602de722"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
