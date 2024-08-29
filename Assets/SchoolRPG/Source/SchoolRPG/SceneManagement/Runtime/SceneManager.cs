@@ -1,15 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SceneManager : MonoBehaviour
+public class SceneManagerScript : MonoBehaviour
 {
     //singleton
-    public static SceneManager instance = null;
+    public static SceneManagerScript instance = null;
+
+    private string lastDoorUsed;
+
+    [SerializeField] private SceneEventChannel sceneEventChannel;
+    [SerializeField] private ScreenFader screenFader;
+
     // Start is called before the first frame update
     void Awake()
     {
-        if (instance == null){
+        if (instance == null)
+        {
             DontDestroyOnLoad(gameObject);
             instance = this;
         }
@@ -19,15 +27,38 @@ public class SceneManager : MonoBehaviour
         }
     }
 
-
-    void Start()
+    public void SetLastDoorUsed(string doorID)
     {
-        
+        lastDoorUsed = doorID;
     }
 
-    // Update is called once per frame
-    void Update()
+    public string GetLastDoorUsed()
     {
-        
+        return lastDoorUsed;
+    }
+
+    private void OnEnable()
+    {
+        sceneEventChannel.OnOpenDoorRequested += HandleSceneChangeRequest;
+    }
+
+    private void OnDisable()
+    {
+        sceneEventChannel.OnOpenDoorRequested -= HandleSceneChangeRequest;
+    }
+
+    private void HandleSceneChangeRequest(string scene)
+    {
+        StartCoroutine(ChangeScene(scene));
+    }
+    private IEnumerator ChangeScene(string scene)
+    {
+        yield return StartCoroutine(screenFader.FadeOut());
+
+        SceneManager.LoadScene(scene);
+
+        yield return null;
+
+        yield return StartCoroutine(screenFader.FadeIn());
     }
 }
