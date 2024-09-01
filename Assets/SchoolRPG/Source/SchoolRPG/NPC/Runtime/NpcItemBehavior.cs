@@ -10,7 +10,7 @@ public class NpcItemBehavior : MonoBehaviour
 {
     public Inventory inventory;
     public InventoryItem requiredItem;
-    public GameObject passIndicator; // Some sort of icon to indicate the NPC has accepted the player's items
+    public ProgressTracker tracker; // Some sort of icon to indicate the NPC has accepted the player's items
     [SerializeField]
     private InventoryEventChannel InventoryEventChannel;
     [SerializeField]
