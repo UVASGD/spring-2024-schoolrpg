@@ -1,6 +1,7 @@
 using SchoolRPG.Dialogue.Runtime;
 using SchoolRPG.Input.Runtime;
 using SchoolRPG.Inventory.Runtime;
+using SchoolRPG.ProgressTracker.Runtime;
 using System;
 using System.Collections;
 using System.Collections.Generic;
