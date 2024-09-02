@@ -13,7 +13,8 @@ namespace SchoolRPG.ProgressTracker.Runtime
         /// <summary>
         /// The list of inventory items. 
         /// </summary>
-        public bool[,] tracker;
+        [SerializeField]
+        public bool[] tracker;
 
     }
 }
