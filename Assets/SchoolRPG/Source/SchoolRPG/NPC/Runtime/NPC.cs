@@ -34,25 +34,25 @@ namespace SchoolRPG.NPC.Runtime
         public bool IsPassed { get; set; }
 
         /// <summary>
-        /// Whether the NPC has or has not accepted its assigned item from the player.  
+        /// The NPC's regular dialogue
         /// </summary>
         [field: SerializeField]
         public string[] Dialogue;
 
         /// <summary>
-        /// Whether the NPC has or has not accepted its assigned item from the player.  
+        /// The NPC's dialogue when the player has passed them for the first time  
         /// </summary>
         [field: SerializeField]
         public string[] PassDialogue;
 
         /// <summary>
-        /// Whether the NPC has or has not accepted its assigned item from the player.  
+        /// The NPC's dialogue when the player has already passed them
         /// </summary>
         [field: SerializeField]
         public string[] AlreadyPassedDialogue;
 
         /// <summary>
-        /// Whether the NPC has or has not accepted its assigned item from the player.  
+        /// The NPC's dialogue when the player gives them the wrong item
         /// </summary>
         [field: SerializeField]
         public string[] NoPassDialogue;

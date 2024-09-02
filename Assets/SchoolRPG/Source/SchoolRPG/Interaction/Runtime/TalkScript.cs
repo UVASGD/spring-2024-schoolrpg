@@ -1,54 +1,59 @@
+using System;
 using System.Collections.Generic;
+using SchoolRPG.Character.Runtime;
 using SchoolRPG.Dialogue.Runtime;
+using SchoolRPG.Interaction.Runtime;
+
 using UnityEngine;
 
-namespace SchoolRPG.Interaction.Runtime
+/// <summary>
+/// Just raises dialogue event I'm not naming this rn
+/// </summary>
+public class TalkScript : Interactable
 {
-    /// <summary>
-    /// Just raises dialogue event I'm not naming this rn
-    /// </summary>
-    public class TalkScript: Interactable
+    public string[] dialogue;
+
+    [SerializeField]
+    protected DialogueEventChannel dialogueEventChannel;
+
+    [SerializeField]
+    protected CharacterMovementComponent playerMovement;
+
+    protected bool isInteractable;
+
+    private void OnEnable()
     {
-        
-        public string[] dialogue;
+        dialogueEventChannel.OnOpenDialogueRequested += DisableInteraction;
+        dialogueEventChannel.OnCloseDialogueCompleted += EnableInteraction;
+    }
 
-        [SerializeField] 
-        private DialogueEventChannel dialogueEventChannel;
+    private void OnDisable()
+    {
+        dialogueEventChannel.OnOpenDialogueRequested -= DisableInteraction;
+        dialogueEventChannel.OnCloseDialogueCompleted -= EnableInteraction;
+    }
 
-        private bool isInteractable;
+    public virtual void Start()
+    {
+        EnableInteraction();
+    }
 
-        private void OnEnable()
-        {
-            dialogueEventChannel.OnOpenDialogueRequested += DisableInteraction;
-            dialogueEventChannel.OnCloseDialogueCompleted += EnableInteraction;
-        }
-        
-        private void OnDisable()
-        {
-            dialogueEventChannel.OnOpenDialogueRequested -= DisableInteraction;
-            dialogueEventChannel.OnCloseDialogueCompleted -= EnableInteraction;
-        }
+    public override void OnInteract()
+    {
+        if (!isInteractable) return;
+        dialogueEventChannel.RaiseOnOpenDialogueRequested(dialogue);
+        DisableInteraction();
+    }
 
-        private void Start()
-        {
-            EnableInteraction();
-        }
+    protected void EnableInteraction()
+    {
+        isInteractable = true;
+        playerMovement.Activate();
+    }
 
-        public override void OnInteract()
-        {
-            if (!isInteractable) return;
-            dialogueEventChannel.RaiseOnOpenDialogueRequested(dialogue);
-            DisableInteraction();
-        }
-
-        private void EnableInteraction()
-        {
-            isInteractable = true;
-        }
-
-        private void DisableInteraction(IList<string> _ = null)
-        {
-            isInteractable = false;
-        }
+    protected void DisableInteraction(IList<string> _ = null)
+    {
+        isInteractable = false;
+        playerMovement.Deactivate();
     }
 }

@@ -50,7 +50,7 @@ public class NpcItemBehavior : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(InventoryManager.GetSelectedInventoryItem());
+        //Debug.Log(InventoryManager.GetSelectedInventoryItem());
     }
 
     private void setIsInventoryOpened()
