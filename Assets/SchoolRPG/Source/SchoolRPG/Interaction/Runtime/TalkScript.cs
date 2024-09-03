@@ -41,6 +41,7 @@ public class TalkScript : Interactable
     public override void OnInteract()
     {
         if (!isInteractable) return;
+        Debug.Log("Talking triggered");
         dialogueEventChannel.RaiseOnOpenDialogueRequested(dialogue);
         DisableInteraction();
     }
