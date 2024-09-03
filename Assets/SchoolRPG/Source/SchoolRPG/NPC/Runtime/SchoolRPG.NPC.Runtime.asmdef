@@ -1,7 +1,13 @@
 {
     "name": "SchoolRPG.NPC.Runtime",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:b19d7e316acb3e048a3277d5ace06cf0",
+        "GUID:270233a332258b2458ae209552599e80",
+        "GUID:5b1312e077b098044baaf9a7effd8915",
+        "GUID:3d894a834010af14b945173d5225b17a",
+        "GUID:e78dcd7cee7bb6d458a396e5e737e189"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

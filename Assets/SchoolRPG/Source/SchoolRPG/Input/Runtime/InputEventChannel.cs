@@ -48,7 +48,11 @@ namespace SchoolRPG.Input.Runtime
         /// <summary>
         /// Raises the <see cref="OnInventory"/> event.
         /// </summary>
-        public void RaiseOnInventory() => OnInventory?.Invoke();
+        public void RaiseOnInventory()
+        {
+            Debug.Log("Inventory activated");
+            OnInventory?.Invoke();
+        }
 
         /// <summary>
         /// Raises the <see cref="OnActivateInput"/> event. 
