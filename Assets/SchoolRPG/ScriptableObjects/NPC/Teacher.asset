@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a20418de0b3ff70499aaf375f5b274ab, type: 3}
-  m_Name: HoleHeadMan
+  m_Name: Teacher
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: HoleHeadMan
+  <Name>k__BackingField: Teacher
   <RequiredItem>k__BackingField: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
-  <Level>k__BackingField: 2
+  <Level>k__BackingField: 1
   <IsPassed>k__BackingField: 0
   Dialogue:
-  - not passed
+  - 1
   PassDialogue:
-  - you passed
+  - 2
   AlreadyPassedDialogue:
-  - already passed
+  - 3
   NoPassDialogue:
   - 4

@@ -38,5 +38,17 @@ namespace SchoolRPG.Inventory.Runtime
         /// </summary>
         [field: SerializeField]
         public int Count { get; set; }
+
+        /// <summary>
+        /// The amount of this item. 
+        /// </summary>
+        [field: SerializeField]
+        public bool Collected { get; set; }
+
+        /// <summary>
+        /// The amount of this item. 
+        /// </summary>
+        [field: SerializeField]
+        public int Id { get; set; }
     }
 }

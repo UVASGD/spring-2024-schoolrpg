@@ -15,7 +15,7 @@ namespace SchoolRPG.Inventory.Runtime
 
         void Start()
         {
-            inventory.inventoryItems.Clear();
+            //inventory.inventoryItems.Clear(); //FINISH FROM HERE
         }
 
         private void OnEnable()

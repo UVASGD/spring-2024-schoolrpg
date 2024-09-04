@@ -32,13 +32,13 @@ public class NpcItemBehavior : MonoBehaviour
     private InputEventChannel inputEventChannel;
 
     private InventoryItem selectedItem;
-    private bool isInventoryOpened;
+    private bool isInventoryOpened = false;
 
     private InventoryItem dummyItem;
 
     private void Start()
     {
-        npc.IsPassed = false;
+        //npc.IsPassed = false;
         dummyItem = ScriptableObject.CreateInstance<InventoryItem>();
         Debug.Log("NPC item behavior activated");
     }
@@ -69,17 +69,29 @@ public class NpcItemBehavior : MonoBehaviour
       
     // Marks the progresstracker scriptableobject. 
     /*
-     * Progress tracker is essentially like this: 0 - false 1 - true
+     * Progress tracker is essentially like this: 0 - false; 1 - true
      * 0 - 0 - 0 - 0 - 0 - 0 - 0 - 0 - 0
-     * Level 1 is the first three, level 2 is the second three, level 3 is the third three. This method will set the first false it sees to true in the corresponding level. Eventually, when the level is completed, all elements of that level will be true
+     * Level 1 is the first three, level 2 is the second three, level 3 is the third three. 
+     * This will set the item's respective id/number as true when called
+     * Eventually, when the level is completed, all elements of that level will be true.
      */
     private void markTracker()
     {
-        for(int i = npc.Level * 3 + 1; i < npc.Level * 3 + 3; i++)
+        progressTracker.tracker[npc.RequiredItem.Id] = true;
+    }
+
+    // Check the whole level is complete when progress is made
+    private bool levelPassed()
+    {
+        // Level 1 start: 0; Level 2 start: 3; Level 3 start: 6
+        for (int index = (npc.Level - 1) * 3; index < index + 3; index++)
         {
-            if (!progressTracker.tracker[i])
-                progressTracker.tracker[i] = true;
+            if (!progressTracker.tracker[index])
+            {
+                return false;
+            }
         }
+        return true;
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -89,15 +101,19 @@ public class NpcItemBehavior : MonoBehaviour
         {
             if (selectedItem.Equals(npc.RequiredItem))
             {
-                //placeholder thing for npc allowing player to pass
-                npc.IsPassed = true;
-                markTracker();
                 // need to auto close inventory
                 inputEventChannel.RaiseOnInventory();
                 inventory.inventoryItems.Remove(npc.RequiredItem);
                 dialogueEventChannel.RaiseOnOpenDialogueRequested(npc.PassDialogue);
                 // For some reason, an empty dialogue box appears 
                 inputEventChannel.RaiseOnInteract();
+                //Passing the match, checking completion
+                npc.IsPassed = true;
+                markTracker();
+                if (levelPassed())
+                {
+                    Debug.Log("You passed level " + npc.Level);
+                }
             }
             else
             {
