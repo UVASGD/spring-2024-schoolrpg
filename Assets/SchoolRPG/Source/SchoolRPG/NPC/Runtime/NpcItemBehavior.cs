@@ -32,7 +32,6 @@ public class NpcItemBehavior : MonoBehaviour
     private InputEventChannel inputEventChannel;
 
     private InventoryItem selectedItem;
-    private bool isInventoryOpened = false;
     private bool flag = false;
 
     private InventoryItem dummyItem;
@@ -41,31 +40,8 @@ public class NpcItemBehavior : MonoBehaviour
     {
         //npc.IsPassed = false;
         dummyItem = ScriptableObject.CreateInstance<InventoryItem>();
+        dummyItem.Id = -1;
         Debug.Log("NPC item behavior activated");
-    }
-
-    private void OnEnable()
-    {
-        inputEventChannel.OnInventory += setIsInventoryOpened;
-    }
-
-    private void OnDisable()
-    {
-        inputEventChannel.OnInventory -= setIsInventoryOpened;
-    }
-
-    private void Update()
-    {
-        //Debug.Log(InventoryManager.GetSelectedInventoryItem());
-    }
-
-    private void setIsInventoryOpened()
-    {
-        isInventoryOpened = !isInventoryOpened;
-        if (!isInventoryOpened)
-        {
-            InventoryEventChannel.RaiseOnSetSelectedInventoryItem(dummyItem);
-        }
     }
       
     // Marks the progresstracker scriptableobject. 
@@ -98,11 +74,10 @@ public class NpcItemBehavior : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         selectedItem = InventoryManager.GetSelectedInventoryItem();
-        if (other.CompareTag("Player") && selectedItem != null && !selectedItem.Equals(dummyItem) && !npc.IsPassed)
+        if (other.CompareTag("Player") && selectedItem != null && selectedItem.Id != -1 && !npc.IsPassed)
         {
             if (selectedItem.Equals(npc.RequiredItem))
             {
-                
                 // need to auto close inventory
                 inputEventChannel.RaiseOnInventory();
                 inventory.inventoryItems.Remove(npc.RequiredItem);

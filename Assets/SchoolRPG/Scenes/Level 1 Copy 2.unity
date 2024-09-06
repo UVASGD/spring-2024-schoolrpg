@@ -333,11 +333,11 @@ PrefabInstance:
       objectReference: {fileID: 18602769}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 144.68
+      value: 144.41
       objectReference: {fileID: 0}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 71.15
+      value: 71.16
       objectReference: {fileID: 0}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3930,11 +3930,11 @@ PrefabInstance:
       objectReference: {fileID: 18602769}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 147.65
+      value: 147.75
       objectReference: {fileID: 0}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 71.13
+      value: 71.14
       objectReference: {fileID: 0}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4161,6 +4161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentInteractable: {fileID: 0}
+  inputEventChannel: {fileID: 11400000, guid: 91f06163d93475147af2187c808381ed, type: 2}
+  inventoryEventChannel: {fileID: 11400000, guid: 478189ecd867e2941af814dc3677cc13, type: 2}
 --- !u!114 &863873373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5131,11 +5133,11 @@ PrefabInstance:
       objectReference: {fileID: 18602769}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 149.71
+      value: 151.08
       objectReference: {fileID: 0}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 71.13
+      value: 71.14
       objectReference: {fileID: 0}
     - target: {fileID: 5586658249552877297, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: m_LocalPosition.z

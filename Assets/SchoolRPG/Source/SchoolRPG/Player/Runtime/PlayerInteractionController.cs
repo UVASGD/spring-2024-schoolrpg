@@ -1,4 +1,6 @@
+using SchoolRPG.Input.Runtime;
 using SchoolRPG.Interaction.Runtime;
+using SchoolRPG.Inventory.Runtime;
 using UnityEngine;
 
 namespace SchoolRPG.Player.Runtime
@@ -10,6 +12,15 @@ namespace SchoolRPG.Player.Runtime
     {
         [SerializeField, ReadOnly]
         private Interactable currentInteractable;
+
+        [SerializeField]
+        private InputEventChannel inputEventChannel;
+
+        [SerializeField]
+        private InventoryEventChannel inventoryEventChannel;
+
+        private bool isInventoryOpened = false;
+        private InventoryItem dummyItem;
         
         /// <summary>
         /// The single <see cref="Interactable"/> that is able to interacted, null otherwise.
@@ -20,6 +31,26 @@ namespace SchoolRPG.Player.Runtime
         private void Start()
         {
             currentInteractable = null;
+            dummyItem = ScriptableObject.CreateInstance<InventoryItem>();
+            dummyItem.Id = -1;
+        }
+
+        private void OnEnable()
+        {
+            inputEventChannel.OnInventory += setIsInventoryOpened;
+        }
+
+        private void OnDisable()
+        {
+            inputEventChannel.OnInventory -= setIsInventoryOpened;
+        }
+        private void setIsInventoryOpened()
+        {
+            isInventoryOpened = !isInventoryOpened;
+            if (!isInventoryOpened)
+            {
+                inventoryEventChannel.RaiseOnSetSelectedInventoryItem(dummyItem);
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D other)

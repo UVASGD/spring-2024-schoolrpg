@@ -24,12 +24,16 @@ namespace SchoolRPG.Inventory.Runtime
         /// Raises the <see cref="OnAddInventoryItem"/> event. 
         /// </summary>
         /// <param name="inventoryItem">The new inventory item.</param>
-        public void RaiseOnAddInventoryItem(InventoryItem inventoryItem) => OnAddInventoryItem?.Invoke(inventoryItem); 
-        
+        public void RaiseOnAddInventoryItem(InventoryItem inventoryItem) => OnAddInventoryItem?.Invoke(inventoryItem);
+
         /// <summary>
         /// Raises the <see cref="OnSetSelectedInventoryItem"/> event. 
         /// </summary>
         /// <param name="inventoryItem"></param>
-        public void RaiseOnSetSelectedInventoryItem(InventoryItem inventoryItem) => OnSetSelectedInventoryItem?.Invoke(inventoryItem);
+        public void RaiseOnSetSelectedInventoryItem(InventoryItem inventoryItem)
+        {
+            Debug.Log(inventoryItem);
+            OnSetSelectedInventoryItem?.Invoke(inventoryItem);
+        }
     }
 }
