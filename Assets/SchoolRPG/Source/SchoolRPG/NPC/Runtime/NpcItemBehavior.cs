@@ -113,6 +113,7 @@ public class NpcItemBehavior : MonoBehaviour
                 if (levelPassed())
                 {
                     Debug.Log("You passed level " + npc.Level);
+                    // unlock some stuff here
                 }
             }
             else
