@@ -4322,6 +4322,10 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[1]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7727828722004758828, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8174738529087049054, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.77301

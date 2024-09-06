@@ -33,6 +33,7 @@ public class NpcItemBehavior : MonoBehaviour
 
     private InventoryItem selectedItem;
     private bool isInventoryOpened = false;
+    private bool flag = false;
 
     private InventoryItem dummyItem;
 
@@ -101,6 +102,7 @@ public class NpcItemBehavior : MonoBehaviour
         {
             if (selectedItem.Equals(npc.RequiredItem))
             {
+                
                 // need to auto close inventory
                 inputEventChannel.RaiseOnInventory();
                 inventory.inventoryItems.Remove(npc.RequiredItem);
@@ -116,12 +118,19 @@ public class NpcItemBehavior : MonoBehaviour
                     // unlock some stuff here
                 }
             }
-            else
+            else if (!flag)
             {
+                // This flag is to ensure that the npc will not constantly trigger opening and closing of the dialogue and inventory when the player approaches them with the wrong item
+                flag = true;
                 inputEventChannel.RaiseOnInventory();
                 dialogueEventChannel.RaiseOnOpenDialogueRequested(npc.NoPassDialogue);
                 inputEventChannel.RaiseOnInteract();
             }
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        flag = false;
     }
 }
