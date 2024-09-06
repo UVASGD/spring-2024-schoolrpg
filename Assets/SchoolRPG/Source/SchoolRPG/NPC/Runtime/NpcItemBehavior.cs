@@ -61,7 +61,7 @@ public class NpcItemBehavior : MonoBehaviour
     private bool levelPassed()
     {
         // Level 1 start: 0; Level 2 start: 3; Level 3 start: 6
-        for (int index = (npc.Level - 1) * 3; index < index + 3; index++)
+        for (int index = (npc.Level-1)*3; index < npc.Level * 3; index++)
         {
             if (!progressTracker.tracker[index])
             {
@@ -87,9 +87,10 @@ public class NpcItemBehavior : MonoBehaviour
                 //Passing the match, checking completion
                 npc.IsPassed = true;
                 markTracker();
+                //Debug.Log(levelPassed());
                 if (levelPassed())
                 {
-                    Debug.Log("You passed level " + npc.Level);
+                    Debug.Log("YOU PASSED LEVEL " + npc.Level);
                     // unlock some stuff here
                 }
             }

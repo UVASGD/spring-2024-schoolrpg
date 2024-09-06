@@ -17,10 +17,10 @@ MonoBehaviour:
   <Level>k__BackingField: 2
   <IsPassed>k__BackingField: 0
   Dialogue:
-  - not passed
+  - regular
   PassDialogue:
   - you passed
   AlreadyPassedDialogue:
-  - already passed
+  - allready passed
   NoPassDialogue:
-  - 4
+  - that's wrong
