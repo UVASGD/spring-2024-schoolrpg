@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: HoleHeadMan
   m_EditorClassIdentifier: 
   <Name>k__BackingField: HoleHeadMan
-  <RequiredItem>k__BackingField: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+  <RequiredItem>k__BackingField: {fileID: 11400000, guid: 34d4ceead4d66694b82ee8e9a62047e7, type: 2}
   <Level>k__BackingField: 2
-  <IsPassed>k__BackingField: 0
+  <IsPassed>k__BackingField: 1
   Dialogue:
   - not passed
   PassDialogue:
