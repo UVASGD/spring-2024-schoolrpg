@@ -61,7 +61,7 @@ public class NpcItemBehavior : MonoBehaviour
     private bool levelPassed()
     {
         // Level 1 start: 0; Level 2 start: 3; Level 3 start: 6
-        for (int index = (npc.Level - 1) * 3; index < index + 3; index++)
+        for (int index = (npc.Level - 1) * 3; index < npc.Level * 3; index++)
         {
             if (!progressTracker.tracker[index])
             {
