@@ -15,7 +15,7 @@ MonoBehaviour:
   <Name>k__BackingField: 8
   <RequiredItem>k__BackingField: {fileID: 11400000, guid: ededc993ef344e54d9f25b1676d8aa52, type: 2}
   <Level>k__BackingField: 3
-  <IsPassed>k__BackingField: 0
+  <IsPassed>k__BackingField: 1
   Dialogue:
   - regular
   PassDialogue:
