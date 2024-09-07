@@ -18,7 +18,6 @@ public class NPCTalkScript : TalkScript
 
     public override void OnInteract()
     {
-        Debug.Log("Attempt NPC interact");
         if (!isInteractable) return;
         if (npc.IsPassed) dialogueEventChannel.RaiseOnOpenDialogueRequested(npc.AlreadyPassedDialogue);
         else dialogueEventChannel.RaiseOnOpenDialogueRequested(npc.Dialogue);
