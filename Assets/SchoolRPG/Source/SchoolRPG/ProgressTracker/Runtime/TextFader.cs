@@ -19,9 +19,9 @@ public class TextFader : MonoBehaviour
 
     public IEnumerator FadeInAndOut()
     {
-        textDisplay.CrossFadeAlpha(1, 2f, true);
+        textDisplay.CrossFadeAlpha(1, fadeDuration, true);
         yield return new WaitForSeconds(2f);
-        textDisplay.CrossFadeAlpha(0, 2f, true);
+        textDisplay.CrossFadeAlpha(0, fadeDuration, true);
     }
 
     /*

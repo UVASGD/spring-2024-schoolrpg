@@ -60,6 +60,11 @@ public class NpcItemBehavior : MonoBehaviour
         progressTracker.tracker[npc.RequiredItem.Id] = true;
     }
 
+    private void markLevel()
+    {
+        progressTracker.levelTracker[npc.Level] = true;
+    }
+
     // Check the whole level is complete when progress is made
     private bool levelPassed()
     {
@@ -93,9 +98,16 @@ public class NpcItemBehavior : MonoBehaviour
                 if (levelPassed())
                 {
                     Debug.Log("You passed level " + npc.Level);
-
+                    markLevel();
+                    // Fade in Level unlock msg
                     StartCoroutine(textFader.FadeInAndOut());
-                    // unlock some stuff here
+                    // Unlock staircase if in the main scene of level
+                    GameObject staircase = GameObject.FindWithTag("NextStair");
+                    if (staircase){
+                        staircase.SetActive(false);
+                        Debug.Log("Staircase unlocked:" + npc.Level);
+                    }
+
                 }
             }
             else if (!flag)

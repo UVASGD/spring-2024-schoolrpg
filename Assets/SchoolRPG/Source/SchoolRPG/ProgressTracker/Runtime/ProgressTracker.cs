@@ -16,5 +16,8 @@ namespace SchoolRPG.ProgressTracker.Runtime
         [SerializeField]
         public bool[] tracker;
 
+        [SerializeField]
+        public bool[] levelTracker;
+
     }
 }

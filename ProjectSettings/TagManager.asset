@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Evidence
   - DialogueBox
+  - NextStair
   layers:
   - Default
   - TransparentFX
