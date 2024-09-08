@@ -13,6 +13,7 @@ public class DoorScript : Interactable
 
     public override void OnInteract()
     {
+        Debug.Log("Door Interacted");
         SceneManagerScript.instance.SetLastDoorUsed(doorIdentifier);
         sceneEventChannel.RaiseOnOpenDoorRequested(sceneToLoad);
     }

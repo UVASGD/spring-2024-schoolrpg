@@ -16,7 +16,7 @@ public class Stair : MonoBehaviour
     void Start()
     {
         // if level completed, remove blocker
-        if (progressTracker.levelTracker[level])
+        if (progressTracker.levelTracker[level-1])
         {
             Debug.Log("Staircase unblocked on start");
             gameObject.SetActive(false);

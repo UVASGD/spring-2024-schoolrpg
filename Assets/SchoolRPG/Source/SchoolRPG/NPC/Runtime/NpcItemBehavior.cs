@@ -62,7 +62,7 @@ public class NpcItemBehavior : MonoBehaviour
 
     private void markLevel()
     {
-        progressTracker.levelTracker[npc.Level] = true;
+        progressTracker.levelTracker[npc.Level-1] = true;
     }
 
     // Check the whole level is complete when progress is made

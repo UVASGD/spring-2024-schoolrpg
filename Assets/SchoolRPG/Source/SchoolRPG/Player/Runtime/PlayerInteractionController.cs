@@ -56,11 +56,14 @@ namespace SchoolRPG.Player.Runtime
         private void OnTriggerEnter2D(Collider2D other)
         {
             // assumes you'll only enter one interactable at a time.
+            Debug.Log("Entered other is: " + other);
             if (!other.gameObject.TryGetComponent(out currentInteractable)) return;
+            Debug.Log("Attempted grabbed interactable: " + currentInteractable);
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
+            Debug.Log("Exited other is: " + other);
             if (!other.gameObject.TryGetComponent<Interactable>(out _)) return;
             currentInteractable = null;
         }
@@ -71,6 +74,7 @@ namespace SchoolRPG.Player.Runtime
         /// <returns>True if the interaction occured, false otherwise.</returns>
         public bool TryInteract()
         {
+            Debug.Log("Attempted interaction with: " + currentInteractable);
             if (!currentInteractable) return false;
             currentInteractable.OnInteract();
             return true;

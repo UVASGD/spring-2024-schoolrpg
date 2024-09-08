@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ProgressTracker
   m_EditorClassIdentifier: 
   tracker: 010101000000000000
-  levelTracker: 000100
+  levelTracker: 010000
