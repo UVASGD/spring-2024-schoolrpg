@@ -31,6 +31,9 @@ public class NpcItemBehavior : MonoBehaviour
     [SerializeField]
     private InputEventChannel inputEventChannel;
 
+    [SerializeField]
+    private TextFader textFader;
+
     private InventoryItem selectedItem;
     private bool flag = false;
 
@@ -90,6 +93,8 @@ public class NpcItemBehavior : MonoBehaviour
                 if (levelPassed())
                 {
                     Debug.Log("You passed level " + npc.Level);
+
+                    StartCoroutine(textFader.FadeInAndOut());
                     // unlock some stuff here
                 }
             }

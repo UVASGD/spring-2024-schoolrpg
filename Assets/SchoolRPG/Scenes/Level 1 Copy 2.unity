@@ -423,6 +423,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d1b9f769489c4a0428bda9b5f7cac9d6, type: 2}
     - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
+      propertyPath: textFader
+      value: 
+      objectReference: {fileID: 1230147113}
+    - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: progressTracker
       value: 
       objectReference: {fileID: 11400000, guid: ee677ab53c69910469a0328fb7ab3063, type: 2}
@@ -4453,6 +4457,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: fa9615f6e33a9424e89f9b377b49c00d, type: 2}
     - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
+      propertyPath: textFader
+      value: 
+      objectReference: {fileID: 1230147113}
+    - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: progressTracker
       value: 
       objectReference: {fileID: 11400000, guid: ee677ab53c69910469a0328fb7ab3063, type: 2}
@@ -5341,7 +5349,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1230147111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3770276457de1254b890b9492b35283f, type: 3}
+  m_Script: {fileID: 11500000, guid: bd0626db53d793340a6d10b7d88fde9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 233049950}
@@ -6656,6 +6664,10 @@ PrefabInstance:
       propertyPath: npc
       value: 
       objectReference: {fileID: 11400000, guid: 320e0bee7439c7048a0242d43a4256d9, type: 2}
+    - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
+      propertyPath: textFader
+      value: 
+      objectReference: {fileID: 1230147113}
     - target: {fileID: 1724234160132116800, guid: ed14713c7d0f6d2409349e6b93dee596, type: 3}
       propertyPath: progressTracker
       value: 
