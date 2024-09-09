@@ -82,8 +82,13 @@ public class NpcItemBehavior : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         selectedItem = InventoryManager.GetSelectedInventoryItem();
+        if ( other.CompareTag("Player"))
+        {
+            Debug.Log("player detected");
+        }
         if (other.CompareTag("Player") && selectedItem != null && selectedItem.Id != -1 && !npc.IsPassed)
         {
+            
             if (selectedItem.Equals(npc.RequiredItem))
             {
                 // need to auto close inventory
