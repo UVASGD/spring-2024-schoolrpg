@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 79f40713df5fbc64d946eb798a0b08cf
+guid: de109968184cf28499ea2d20e7d4ce61
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,190 +110,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 4_eyes_spreedsheet_0
+      name: robber_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 21
-        height: 37
+        x: 450
+        y: 36
+        width: 171
+        height: 324
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caf94ef184d14ab46bcc410b1757979f
-      internalID: 747974171
+      spriteID: 1cbbac8d76e5a394390c207accb05683
+      internalID: 1430272177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_eyes_spreedsheet_1
+      name: robber_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 21
-        y: 0
-        width: 21
-        height: 37
+        x: 810
+        y: 36
+        width: 171
+        height: 324
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7013bdb62b87a554bb3c9763722a4972
-      internalID: -1929139407
+      spriteID: dfb9c92767dda894488471547c3498b5
+      internalID: 1129458300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_eyes_spreedsheet_2
+      name: robber_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 42
-        y: 0
-        width: 21
-        height: 37
+        x: 1170
+        y: 36
+        width: 171
+        height: 324
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f614211faa12f644bb3906473824b8d0
-      internalID: 1533350418
+      spriteID: c01f734a5ea2637449462c2b90995623
+      internalID: -637453580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_eyes_spreedsheet_3
+      name: robber_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 63
-        y: 0
-        width: 21
-        height: 37
+        x: 90
+        y: 36
+        width: 171
+        height: 324
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d782e4436884a149ad47ec319c2dd57
-      internalID: 505956026
+      spriteID: bc6f4eaf3edfe6d4791ff495da3187da
+      internalID: 1137196674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_eyes_spreedsheet_4
+      name: robber_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 84
-        y: 0
-        width: 21
-        height: 37
+        x: 1530
+        y: 36
+        width: 171
+        height: 324
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 645b98b86c01f8c4d80abf03750a0be7
-      internalID: 820686685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 4_eyes_spreedsheet_5
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 0
-        width: 21
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b705be58bb25d546ac08ac9fdfeac79
-      internalID: -957414511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 4_eyes_spreedsheet_6
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 0
-        width: 21
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 287fca2da2961794da783901a6932772
-      internalID: -2131119765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 4_eyes_spreedsheet_7
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 0
-        width: 21
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05cc44312245dbf478f29d3479a24d33
-      internalID: -940190486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 4_eyes_spreedsheet_8
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 0
-        width: 21
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e6846609b47a9e4cad8cd68da0d72d1
-      internalID: -27076673
+      spriteID: 4644f2a6e53941542a6fec3c5daa4e8e
+      internalID: 143570485
       vertices: []
       indices: 
       edges: []
@@ -309,15 +225,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      4_eyes_spreedsheet_0: 747974171
-      4_eyes_spreedsheet_1: -1929139407
-      4_eyes_spreedsheet_2: 1533350418
-      4_eyes_spreedsheet_3: 505956026
-      4_eyes_spreedsheet_4: 820686685
-      4_eyes_spreedsheet_5: -957414511
-      4_eyes_spreedsheet_6: -2131119765
-      4_eyes_spreedsheet_7: -940190486
-      4_eyes_spreedsheet_8: -27076673
+      robber_spritesheet_0: -1546849231
+      robber_spritesheet_1: 1430272177
+      robber_spritesheet_10: 1711181687
+      robber_spritesheet_11: 1297241483
+      robber_spritesheet_12: 249577685
+      robber_spritesheet_13: -8936593
+      robber_spritesheet_14: -1647174813
+      robber_spritesheet_2: 1129458300
+      robber_spritesheet_3: -637453580
+      robber_spritesheet_4: 1137196674
+      robber_spritesheet_5: -1365565411
+      robber_spritesheet_6: -1610981625
+      robber_spritesheet_7: 1160890354
+      robber_spritesheet_8: 143570485
+      robber_spritesheet_9: -546391240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
