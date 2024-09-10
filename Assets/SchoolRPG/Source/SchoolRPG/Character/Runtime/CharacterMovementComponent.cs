@@ -44,7 +44,7 @@ namespace SchoolRPG.Character.Runtime
         [field: SerializeField, Tooltip("If true, no movement will occur or be updated.")]
         private bool IsActive { get; set; }
 
-        [SerializeField]
+        [field: SerializeField, Tooltip("The Animator Component of the Player.")]
         private Animator animator;
 
         private string currentAnimation;
@@ -58,6 +58,20 @@ namespace SchoolRPG.Character.Runtime
         const string PLAYER_IDLE_DOWN = "PlayerIdleDown";
         const string PLAYER_IDLE_RIGHT = "PlayerIdleRight";
         const string PLAYER_IDLE_LEFT = "PlayerIdleLeft";
+
+        private static CharacterMovementComponent instance = null;
+        void Awake()
+        {
+            if (instance == null)
+            {
+                DontDestroyOnLoad(gameObject);
+                instance = this;
+            }
+            else if (instance != null)
+            {
+                Destroy(gameObject);
+            }
+        }
 
         protected void Start()
         {
@@ -129,6 +143,7 @@ namespace SchoolRPG.Character.Runtime
             }
         }
 
+        // animation changer function, ensures no animation fighting
         void ChangeAnimationState(string newAnimation)
         {
             if (currentAnimation == newAnimation) return;

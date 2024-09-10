@@ -13,7 +13,6 @@ public class SceneManagerScript : MonoBehaviour
     [SerializeField] private SceneEventChannel sceneEventChannel;
     [SerializeField] private ScreenFader screenFader;
 
-    // Start is called before the first frame update
     void Awake()
     {
         if (instance == null)
