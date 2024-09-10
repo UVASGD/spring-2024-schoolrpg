@@ -15,7 +15,7 @@ namespace SchoolRPG.Inventory.Runtime
 
         void Start()
         {
-            inventory.inventoryItems.Clear();
+            //inventory.inventoryItems.Clear(); //FINISH FROM HERE
         }
 
         private void OnEnable()
@@ -39,8 +39,6 @@ namespace SchoolRPG.Inventory.Runtime
                 item.Count += newItem.Count;
                 break;
             }
-            Debug.Log(newItem.DisplayName);
-            Debug.Log(newItem.DisplayDescription);
             inventory.inventoryItems.Add(newItem);
             GameObject.Find(newItem.DisplayName).SetActive(false); // pick up object
         }

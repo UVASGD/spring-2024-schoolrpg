@@ -7,10 +7,19 @@ public class CameraController : MonoBehaviour
 {
     public Transform player;
     // For now, just follows player
-    // Start is called before the first frame update
-    void Start()
+
+    private static CameraController instance;
+    void Awake()
     {
-        
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else if (instance != null)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

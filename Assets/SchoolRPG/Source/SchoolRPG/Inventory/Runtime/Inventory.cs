@@ -14,5 +14,10 @@ namespace SchoolRPG.Inventory.Runtime
         /// The list of inventory items. 
         /// </summary>
         public List<InventoryItem> inventoryItems;
+
+        public bool contains(InventoryItem item)
+        {
+            return inventoryItems.Contains(item);
+        }
     }
 }

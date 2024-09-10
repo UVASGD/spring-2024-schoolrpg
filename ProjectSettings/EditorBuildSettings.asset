@@ -9,9 +9,21 @@ EditorBuildSettings:
     path: Assets/SchoolRPG/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/SchoolRPG/Scenes/Class 1 copy.unity
+    path: Assets/SchoolRPG/Scenes/LevelTemplates/Class 1 copy.unity
     guid: d165a044840bcc84386d6f1643056b62
   - enabled: 1
-    path: Assets/SchoolRPG/Scenes/Level 1 Copy.unity
+    path: Assets/SchoolRPG/Scenes/LevelTemplates/Level 1 Copy.unity
     guid: faf8e2ee14bc6d64fad265e778dba276
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/Level 1 Copy 2.unity
+    guid: aa8272be0403d9a4cb4e8da0d10bc8df
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/Class 2.unity
+    guid: d38d95279d886d349b0dfaa09e402d0c
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/Level 2 Working.unity
+    guid: 1d74e72a281e07f409dae7c648e0fc45
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/Level 3 Working.unity
+    guid: faf4d19952967e04eb3bfcce4c1d2d2e
   m_configObjects: {}

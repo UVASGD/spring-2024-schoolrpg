@@ -42,7 +42,11 @@ namespace SchoolRPG.Dialogue.Runtime
 
         /// <inheritdoc cref="OnOpenDialogueRequested"/>
         /// <param name="dialogue">The dialogue to be written. Each element represents one text box.</param>
-        public void RaiseOnOpenDialogueRequested(IList<string> dialogue) => OnOpenDialogueRequested?.Invoke(dialogue);
+        public void RaiseOnOpenDialogueRequested(IList<string> dialogue)
+        {
+            Debug.Log("dialogue open/close");
+            OnOpenDialogueRequested?.Invoke(dialogue);
+        }
 
         /// <inheritdoc cref="OnOpenDialogueCompleted"/>
         public void RaiseOnOpenDialogueCompleted() => OnOpenDialogueCompleted?.Invoke();

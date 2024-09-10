@@ -44,9 +44,39 @@ namespace SchoolRPG.Character.Runtime
         [field: SerializeField, Tooltip("If true, no movement will occur or be updated.")]
         private bool IsActive { get; set; }
 
+        [field: SerializeField, Tooltip("The Animator Component of the Player.")]
+        private Animator animator;
+
+        private string currentAnimation;
+
+        // could be an enum but idrc
+        const string PLAYER_UP = "PlayerUp";
+        const string PLAYER_DOWN = "PlayerDown";
+        const string PLAYER_LEFT = "PlayerLeft";
+        const string PLAYER_RIGHT = "PlayerRight";
+        const string PLAYER_IDLE_UP = "PlayerIdleUp";
+        const string PLAYER_IDLE_DOWN = "PlayerIdleDown";
+        const string PLAYER_IDLE_RIGHT = "PlayerIdleRight";
+        const string PLAYER_IDLE_LEFT = "PlayerIdleLeft";
+
+        private static CharacterMovementComponent instance = null;
+        void Awake()
+        {
+            if (instance == null)
+            {
+                DontDestroyOnLoad(gameObject);
+                instance = this;
+            }
+            else if (instance != null)
+            {
+                Destroy(gameObject);
+            }
+        }
+
         protected void Start()
         {
-            IsActive = true; 
+            IsActive = true;
+            ChangeAnimationState(PLAYER_IDLE_DOWN);
         }
         
         /// <summary>
@@ -56,6 +86,21 @@ namespace SchoolRPG.Character.Runtime
         public void Move(Vector2 direction)
         {
             if (!IsActive) return;
+
+            if (direction.normalized == Vector2.left)
+            {
+                ChangeAnimationState(PLAYER_LEFT);
+            }else if (direction.normalized == Vector2.right)
+            {
+                ChangeAnimationState(PLAYER_RIGHT);
+            }else if (direction.normalized == Vector2.up)
+            {
+                ChangeAnimationState(PLAYER_UP);
+            }else if(direction.normalized == Vector2.down)
+            {
+                ChangeAnimationState(PLAYER_DOWN);
+            }
+
             MovementDirection = direction; 
         }
 
@@ -75,8 +120,37 @@ namespace SchoolRPG.Character.Runtime
             if (!IsActive) return;
             Velocity += MovementDirection * (Speed * Time.fixedDeltaTime); 
             Rb.MovePosition(Rb.position + Velocity); 
-            Velocity *= 1 - FrictionFactor; 
+            Velocity *= 1 - FrictionFactor;
+
+            if (Velocity == Vector2.zero)
+            {
+                if (currentAnimation == PLAYER_UP)
+                {
+                    ChangeAnimationState(PLAYER_IDLE_UP);
+                }
+                else if (currentAnimation == PLAYER_DOWN)
+                {
+                    ChangeAnimationState(PLAYER_IDLE_DOWN);
+                }
+                else if (currentAnimation == PLAYER_LEFT)
+                {
+                    ChangeAnimationState(PLAYER_IDLE_LEFT);
+                }
+                else if (currentAnimation == PLAYER_RIGHT)
+                {
+                    ChangeAnimationState(PLAYER_IDLE_RIGHT);
+                }
+            }
         }
-    
+
+        // animation changer function, ensures no animation fighting
+        void ChangeAnimationState(string newAnimation)
+        {
+            if (currentAnimation == newAnimation) return;
+
+            animator.Play(newAnimation);
+            currentAnimation = newAnimation;
+        }
+
     }
 }
