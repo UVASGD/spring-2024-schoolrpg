@@ -13,7 +13,7 @@ public class TextFader : MonoBehaviour
 
     public void Start()
     {
-        // textDisplay.CrossFadeAlpha(0, 0.01f, true);
+        textDisplay.CrossFadeAlpha(0, 0.01f, true);
         // StartCoroutine(FadeInAndOut());
     }
 

@@ -467,8 +467,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -746,6 +746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
   screenFader: {fileID: 1359516478}
+  SaveData: {fileID: 0}
 --- !u!4 &773026464
 Transform:
   m_ObjectHideFlags: 0
@@ -22614,7 +22615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1359516478
 MonoBehaviour:
   m_ObjectHideFlags: 0

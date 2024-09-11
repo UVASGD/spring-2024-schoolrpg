@@ -645,8 +645,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1395,6 +1395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
   screenFader: {fileID: 0}
+  SaveData: {fileID: 0}
 --- !u!4 &773026464
 Transform:
   m_ObjectHideFlags: 0
