@@ -7,7 +7,7 @@ namespace SchoolRPG.NPC.Runtime
 {
     [System.Serializable]
     [CreateAssetMenu(fileName = nameof(NPC), menuName = "ScriptableObjects/NPC/NPC")]
-    public class NPC : ScriptableObject
+    public class Npc : ScriptableObject
     {
         /// <summary>
         /// The name that represents this NPC. Also used as an id. 

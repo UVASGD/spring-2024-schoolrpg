@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using System;
 
 namespace SchoolRPG.Inventory.Runtime
 {
@@ -8,11 +9,12 @@ namespace SchoolRPG.Inventory.Runtime
     /// Represents a player inventory. 
     /// </summary>
     [CreateAssetMenu(fileName  = nameof(Inventory), menuName = "ScriptableObjects/Inventory/Inventory")]
-    public class Inventory: ScriptableObject
+    public class PlayerInventory: ScriptableObject
     {
         /// <summary>
         /// The list of inventory items. 
         /// </summary>
+        
         public List<InventoryItem> inventoryItems;
 
         public bool contains(InventoryItem item)

@@ -9,7 +9,7 @@ public class NPCTalkScript : TalkScript
 {
 
     [SerializeField]
-    private NPC npc;
+    private Npc npc;
 
     public override void Start()
     {

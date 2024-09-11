@@ -7,7 +7,7 @@ public class Stair : MonoBehaviour
 {
 
     [SerializeField]
-    private ProgressTracker progressTracker;
+    private Progress_Tracker progressTracker;
 
     [SerializeField]
     private int level; // Stair Id

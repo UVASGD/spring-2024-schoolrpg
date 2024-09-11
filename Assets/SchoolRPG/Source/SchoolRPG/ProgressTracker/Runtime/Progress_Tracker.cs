@@ -8,15 +8,13 @@ namespace SchoolRPG.ProgressTracker.Runtime
     /// Represents player progress. 
     /// </summary>
     [CreateAssetMenu(fileName = nameof(ProgressTracker), menuName = "ScriptableObjects/ProgressTracker/ProgressTracker")]
-    public class ProgressTracker : ScriptableObject
+    public class Progress_Tracker : ScriptableObject
     {
         /// <summary>
         /// The list of inventory items. 
         /// </summary>
-        [SerializeField]
         public bool[] tracker;
 
-        [SerializeField]
         public bool[] levelTracker;
 
     }
