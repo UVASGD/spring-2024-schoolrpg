@@ -5621,7 +5621,7 @@ GameObject:
   - component: {fileID: 1449023840}
   - component: {fileID: 1449023839}
   m_Layer: 0
-  m_Name: SaveObject
+  m_Name: SaveDataObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
