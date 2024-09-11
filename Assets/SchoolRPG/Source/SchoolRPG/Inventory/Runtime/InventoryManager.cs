@@ -9,7 +9,7 @@ namespace SchoolRPG.Inventory.Runtime
         private InventoryEventChannel inventoryEventChannel;
         
         [SerializeField] 
-        private Inventory inventory;
+        private PlayerInventory inventory;
 
         private InventoryItem selectedInventoryItem;
 

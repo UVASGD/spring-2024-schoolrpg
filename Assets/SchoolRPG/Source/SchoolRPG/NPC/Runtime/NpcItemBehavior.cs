@@ -11,10 +11,10 @@ using UnityEngine;
 public class NpcItemBehavior : MonoBehaviour
 {
     [SerializeField]
-    private Inventory inventory;
+    private PlayerInventory inventory;
 
     [SerializeField]
-    private ProgressTracker progressTracker;
+    private Progress_Tracker progressTracker;
 
     [SerializeField]
     private InventoryEventChannel InventoryEventChannel;
@@ -23,7 +23,7 @@ public class NpcItemBehavior : MonoBehaviour
     private InventoryManager InventoryManager;
 
     [SerializeField]
-    private NPC npc;
+    private Npc npc;
 
     [SerializeField]
     private DialogueEventChannel dialogueEventChannel;

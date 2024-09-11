@@ -1,3 +1,4 @@
+using SchoolRPG.SceneManagement.Runtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class SceneManagerScript : MonoBehaviour
 
     [SerializeField] private SceneEventChannel sceneEventChannel;
     [SerializeField] private ScreenFader screenFader;
+    [SerializeField] private SaveData SaveData;
 
     void Awake()
     {
@@ -53,9 +55,9 @@ public class SceneManagerScript : MonoBehaviour
     private IEnumerator ChangeScene(string scene)
     {
         yield return StartCoroutine(screenFader.FadeOut());
-
+        SaveData.SaveGame();
         SceneManager.LoadScene(scene);
-
+        SaveData.LoadGame();
         yield return null;
 
         yield return StartCoroutine(screenFader.FadeIn());

@@ -34,7 +34,7 @@ namespace SchoolRPG.Inventory.Runtime
         /// The inventory items to display.
         /// </summary>
         [SerializeField]
-        private Inventory inventory;
+        private PlayerInventory inventory;
 
         [SerializeField] 
         private InventoryEventChannel inventoryEventChannel; 
