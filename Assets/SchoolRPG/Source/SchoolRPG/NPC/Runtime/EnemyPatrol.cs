@@ -8,15 +8,20 @@ public class EnemyPatrol : MonoBehaviour
     public float chaseSpeed = 4f;      // Speed of the enemy while chasing the player
     public float detectionRange = 5f;  // Distance at which the enemy detects the player
     public Transform player;           // Reference to the player's transform
+    public SpriteRenderer spriteRenderer;
 
     private int currentWaypointIndex = 0;
-    private NavMeshAgent agent;        // NavMeshAgent for pathfinding
-    private bool isChasing = false;    // Flag to check if the enemy is chasing the player
+    private NavMeshAgent agent;
+    private bool isChasing = false;
+    private Vector3 previousPosition;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.speed = speed;  // Set initial patrol speed
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
+        previousPosition = transform.position;
         GoToNextWaypoint();
     }
 
@@ -38,6 +43,7 @@ public class EnemyPatrol : MonoBehaviour
             agent.speed = speed;  // Reset speed to patrol speed
             Patrol();
         }
+        FlipSprite();
     }
 
     void Patrol()
@@ -55,11 +61,27 @@ public class EnemyPatrol : MonoBehaviour
         if (waypoints.Length == 0) return;
         agent.destination = waypoints[currentWaypointIndex].position;
         currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;  // Move to next waypoint, loop back to start
+
     }
 
     void ChasePlayer()
     {
-        // Set the player's position as the destination for the NavMeshAgent
         agent.destination = player.position;
+    }
+    void FlipSprite()
+    {
+        Vector3 movementDirection = transform.position - previousPosition;
+
+
+        if (movementDirection.x < 0)
+        {
+            spriteRenderer.flipX = false;  
+        }
+        else if (movementDirection.x > 0)
+        {
+            spriteRenderer.flipX = true; 
+        }
+
+        previousPosition = transform.position;
     }
 }
