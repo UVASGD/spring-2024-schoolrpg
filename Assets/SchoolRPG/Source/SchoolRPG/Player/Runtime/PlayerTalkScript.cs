@@ -40,8 +40,7 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
     // for some reason, start() will not make the dialogue visible until a small delay is implemented
     private void Start()
     {
-        StartCoroutine(TriggerDialogueAfterDelay());
-
+        // StartCoroutine(TriggerDialogueAfterDelay());
     }
 
     private IEnumerator TriggerDialogueAfterDelay()
@@ -49,6 +48,11 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
         yield return new WaitForSeconds(0.1f);
         dialogueEventChannel.RaiseOnOpenDialogueRequested(monologue);
         inputEventChannel.RaiseOnInteract();
+    }
+
+    public void StartMonologue()
+    {
+        StartCoroutine(TriggerDialogueAfterDelay());
     }
 
     private void EnableMovement()
