@@ -18,12 +18,13 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
     [SerializeField]
     private DialogueEventChannel dialogueEventChannel;
 
-    [SerializeField]
-    protected CharacterMovementComponent playerMovement;
+    //[SerializeField]
+    //protected CharacterMovementComponent playerMovement;
 
     [SerializeField]
     private InputEventChannel inputEventChannel;
 
+    /*
     private void OnEnable()
     {
         dialogueEventChannel.OnOpenDialogueRequested += DisableMovement;
@@ -54,7 +55,7 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
     {
         StartCoroutine(TriggerDialogueAfterDelay());
     }
-
+    /*
     private void EnableMovement()
     {
         playerMovement.Activate();
@@ -63,7 +64,7 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
     private void DisableMovement(IList<string> _ = null)
     {
         playerMovement.Deactivate();
-    }
+    }*/
 
 
 }
