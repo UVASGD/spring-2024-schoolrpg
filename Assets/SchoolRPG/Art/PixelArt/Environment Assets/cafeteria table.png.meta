@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 216469a219fd0374781d698a1b293aa4
+guid: 7258cf929fc17b64bb71cb1f6a5db5c5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 350
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,106 +110,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floating_face_spritesheet_1
+      name: cafeteria table_0
       rect:
         serializedVersion: 2
-        x: 166
-        y: 164
-        width: 383
-        height: 553
+        x: 9
+        y: 7
+        width: 226
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c640445666f6e5d45a9d8c54dff3e40d
-      internalID: -2057195530
+      spriteID: 6702d13fb426fd740b4dd015e2b16168
+      internalID: 200233635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floating_face_spritesheet_3
+      name: cafeteria table_1
       rect:
         serializedVersion: 2
-        x: 945
-        y: 164
-        width: 383
-        height: 553
+        x: 18
+        y: 59
+        width: 200
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b47268ffa9df91843a657c5fa48a0805
-      internalID: 1456527616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floating_face_spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 1725
-        y: 164
-        width: 383
-        height: 553
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10b2f057e0ce07f4ab19e9a950c16249
-      internalID: 1288551804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floating_face_spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 2506
-        y: 164
-        width: 383
-        height: 553
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 591c421435b01664b9ae2b04d97f90dc
-      internalID: -1403324976
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floating_face_spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 3285
-        y: 164
-        width: 383
-        height: 553
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 676726456bb19684ea925f2345e8a160
-      internalID: 550880794
+      spriteID: a4a1480179fd49e468301d7369ca7fa8
+      internalID: -775266435
       vertices: []
       indices: 
       edges: []
@@ -225,17 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      floating_face_spritesheet_0: 1181675022
-      floating_face_spritesheet_1: -2057195530
-      floating_face_spritesheet_10: -390578365
-      floating_face_spritesheet_2: -1591602291
-      floating_face_spritesheet_3: 1456527616
-      floating_face_spritesheet_4: -505026584
-      floating_face_spritesheet_5: 1288551804
-      floating_face_spritesheet_6: -590279914
-      floating_face_spritesheet_7: -1403324976
-      floating_face_spritesheet_8: -1657600377
-      floating_face_spritesheet_9: 550880794
+      cafeteria table_0: 200233635
+      cafeteria table_1: -775266435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
