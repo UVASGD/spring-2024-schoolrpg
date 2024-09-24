@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a2243b49d714c13ae0543ed63e7881a, type: 3}
-  m_Name: 6
+  m_Name: Polaroid
   m_EditorClassIdentifier: 
-  <DisplayName>k__BackingField: Cigarette
+  <DisplayName>k__BackingField: Polaroid
   <DisplayDescription>k__BackingField: 
-  <Icon>k__BackingField: {fileID: 21300000, guid: 3c545196b77f68848be34b7bf72a0290, type: 3}
-  <FullIcon>k__BackingField: {fileID: 21300000, guid: a1d4749c067a47c4182236bbd9505b98, type: 3}
+  <Icon>k__BackingField: {fileID: 21300000, guid: 94a85a363c771c74e88c0fb3c0230bf9, type: 3}
+  <FullIcon>k__BackingField: {fileID: 21300000, guid: 0d7d083e497ac254e8bea6fbd1ad2dcf, type: 3}
   <Count>k__BackingField: 0
   <Collected>k__BackingField: 0
-  <Id>k__BackingField: 6
+  <Id>k__BackingField: 1

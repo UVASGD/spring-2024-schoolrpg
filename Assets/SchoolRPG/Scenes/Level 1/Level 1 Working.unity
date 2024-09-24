@@ -5738,7 +5738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2337510623117120205, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Name
-      value: 0
+      value: Glasses
       objectReference: {fileID: 0}
     - target: {fileID: 2337510623117120205, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_IsActive
@@ -13121,6 +13121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 46960150017946625, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2422699613390119829, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 156.9
@@ -13165,6 +13169,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 863873370}
+    - target: {fileID: 8803437725684273518, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
+      propertyPath: ignoreLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8803437725684273518, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
       propertyPath: waypoints.Array.size
       value: 7
@@ -13417,7 +13425,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.1
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
   m_NavMeshData: {fileID: 23800000, guid: 1aadcd160a055df42915ae245ef44b4d, type: 2}

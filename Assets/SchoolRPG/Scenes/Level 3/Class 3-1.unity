@@ -375,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2337510623117120205, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Name
-      value: 6
+      value: Cigarette
       objectReference: {fileID: 0}
     - target: {fileID: 2337510623117120205, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_IsActive

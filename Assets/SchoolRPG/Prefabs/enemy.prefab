@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2057195530, guid: 216469a219fd0374781d698a1b293aa4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -138,11 +138,21 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   speed: 2
   chaseSpeed: 4
   detectionRange: 5
+  fieldOfViewAngle: 45
+  searchDuration: 3
   player: {fileID: 0}
-  spriteRenderer: {fileID: 7762201321160972979}
+  ignoreLayers:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!195 &1939661592269327887
 NavMeshAgent:
   m_ObjectHideFlags: 0

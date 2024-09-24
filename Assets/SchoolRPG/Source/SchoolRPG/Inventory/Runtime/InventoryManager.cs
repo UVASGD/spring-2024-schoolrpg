@@ -40,6 +40,7 @@ namespace SchoolRPG.Inventory.Runtime
                 break;
             }
             inventory.inventoryItems.Add(newItem);
+            Debug.Log(newItem.DisplayName);
             GameObject.Find(newItem.DisplayName).SetActive(false); // pick up object
         }
 
