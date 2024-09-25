@@ -530,6 +530,8 @@ MonoBehaviour:
   currentInteractable: {fileID: 0}
   inputEventChannel: {fileID: 11400000, guid: 91f06163d93475147af2187c808381ed, type: 2}
   inventoryEventChannel: {fileID: 11400000, guid: 478189ecd867e2941af814dc3677cc13, type: 2}
+  saveData: {fileID: 1535883791}
+  sceneManagerScript: {fileID: 1821830532}
 --- !u!114 &374600961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3056,6 +3058,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d24e5de96c7ea14c9e3e318840e7d68, type: 3}
+--- !u!114 &1535883791 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9012227852872386530, guid: 3d24e5de96c7ea14c9e3e318840e7d68, type: 3}
+  m_PrefabInstance: {fileID: 1535883790}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85fa2e13a5c414499ae702e71125aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1578682387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3477,7 +3490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
   screenFader: {fileID: 1644923785}
-  SaveData: {fileID: 0}
+  SaveData: {fileID: 1535883791}
 --- !u!4 &1821830533
 Transform:
   m_ObjectHideFlags: 0

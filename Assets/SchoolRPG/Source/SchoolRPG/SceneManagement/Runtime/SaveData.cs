@@ -8,6 +8,7 @@ using UnityEngine;
 using SchoolRPG.Inventory.Runtime;
 using SchoolRPG.NPC.Runtime;
 using SchoolRPG.ProgressTracker.Runtime;
+using UnityEngine.SceneManagement;
 
 namespace SchoolRPG.SceneManagement.Runtime
 {
@@ -23,7 +24,13 @@ namespace SchoolRPG.SceneManagement.Runtime
         private InventoryItem[] items;
 
         [SerializeField]
+        public string playerRoom;
+
+        [SerializeField]
         private Progress_Tracker ProgressTracker;
+
+        [SerializeField] 
+        private SceneEventChannel sceneEventChannel;
 
         private string saveFilePath;
         private Data d;
@@ -39,6 +46,7 @@ namespace SchoolRPG.SceneManagement.Runtime
             public bool[] Items_Collected;
             public bool[] tracker;
             public bool[] levelTracker;
+            public string room;
         }
 
         // Start is called before the first frame update
@@ -72,6 +80,7 @@ namespace SchoolRPG.SceneManagement.Runtime
                 d.NPC_Pass[i] = npcs[i].IsPassed;
             for (int i = 0;i < items.Length; i++)
                 d.Items_Collected[i] = items[i].Collected;
+            d.room = SceneManager.GetActiveScene().name;
 
             saveFilePath = Application.dataPath + "/Saves/";
 
@@ -91,6 +100,8 @@ namespace SchoolRPG.SceneManagement.Runtime
                 playerInventory.inventoryItems = d.inventoryItems;
                 ProgressTracker.tracker = d.tracker;
                 ProgressTracker.levelTracker = d.levelTracker;
+                playerRoom = d.room;
+                
 
                 for (int i = 0; i < d.NPC_Pass.Length; i++)
                     npcs[i].IsPassed = d.NPC_Pass[i];

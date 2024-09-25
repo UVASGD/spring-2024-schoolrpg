@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEngine.GraphicsBuffer;
 
 public class EnemyPatrol : MonoBehaviour
 {
@@ -11,10 +12,15 @@ public class EnemyPatrol : MonoBehaviour
     [Range(0, 360)]
     public float fieldOfViewAngle; // Field of view angle for line of sight detection
     public float searchDuration;  // How long the enemy waits at the last known player location
-    public Transform player;           // Reference to the player's transform
+    //public Transform player;           // Reference to the player's transform
     public LayerMask ignoreLayers;     // Layers to ignore (e.g., ground tilemap)
     public LayerMask playerMask;       // Player layer to target
+    public float detectionTime; // Time the enemy spends detecting
+    private float detectionTimer = 0f;
 
+    private GameObject questionMark;  // Reference to the question mark sprite
+    private GameObject exclamationMark; // Reference to the exclamation mark sprite
+    private Transform player;
     private int currentWaypointIndex = 0;
     private bool playerFound = false;
     private NavMeshAgent agent;        // NavMeshAgent for pathfinding
@@ -28,25 +34,29 @@ public class EnemyPatrol : MonoBehaviour
     private float lostSightGracePeriod = 1f;
     private float timeSinceLastSeen = 0f;
 
-    private enum EnemyState { Patrolling, Chasing, Searching };
+    private enum EnemyState { Patrolling, Chasing, Searching, Detecting};
     private EnemyState currentState = EnemyState.Patrolling; // Default state is Patrolling
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         agent.speed = speed;
         previousPosition = transform.position;
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-       // GoToNextWaypoint();
+
+        questionMark = transform.GetChild(0).gameObject;
+        exclamationMark = transform.GetChild(1).gameObject;
+
         StartCoroutine(FindTargetsWithDelay(.2f));
     }
 
     void Update()
     {
         // for FOV debugging
-        Vector2 forward = agent.velocity == Vector3.zero ? agent.velocity.normalized : (agent.destination - transform.position).normalized;
+        Vector2 forward = agent.velocity == Vector3.zero ? (agent.destination - transform.position).normalized : agent.velocity.normalized;
         // Draw debug rays for the field of view
         Debug.DrawRay(transform.position, forward * detectionRange, Color.green); // Forward FOV line
         Debug.DrawRay(transform.position, Quaternion.Euler(0, 0, fieldOfViewAngle / 2f) * forward * detectionRange, Color.blue); // Right FOV boundary
@@ -56,16 +66,18 @@ public class EnemyPatrol : MonoBehaviour
         {
             case EnemyState.Patrolling:
                 Patrol();
-                //Debug.Log("Patrolling");
                 if (playerFound)
                 {
-                    StartChasing();
+                    StartDetecting();
                 }
+                break;
+
+            case EnemyState.Detecting:
+                DetectingPlayer();
                 break;
 
             case EnemyState.Chasing:
                 ChasePlayer();
-                //Debug.Log("Chasing");
                 timeSinceLastSeen += Time.deltaTime;
                 if (!playerFound && timeSinceLastSeen > lostSightGracePeriod)
                 {
@@ -74,9 +86,7 @@ public class EnemyPatrol : MonoBehaviour
                 }
                 break;
 
-            case EnemyState.Searching:
-                //Debug.Log("Searching");
-                
+            case EnemyState.Searching:                
                 SearchForPlayer();
                 break;
         }
@@ -89,7 +99,8 @@ public class EnemyPatrol : MonoBehaviour
     void Patrol()
     {
         if (isChasing) return; // Exit waypoint logic if chasing
-
+        questionMark.SetActive(false);
+        exclamationMark.SetActive(false);
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
         {
             GoToNextWaypoint();
@@ -109,6 +120,9 @@ public class EnemyPatrol : MonoBehaviour
         isChasing = true;
         currentState = EnemyState.Chasing;
         agent.speed = chaseSpeed;
+        questionMark.SetActive(false);
+        exclamationMark.SetActive(true);
+        StartCoroutine(ScaleMark(exclamationMark, Vector3.zero, Vector3.one, 0.25f));
     }
 
     void ChasePlayer()
@@ -128,12 +142,46 @@ public class EnemyPatrol : MonoBehaviour
             StartChasing();  // Stay in chase mode
             return;
         }
+        exclamationMark.SetActive(false);
+        questionMark.SetActive(true);
+        StartCoroutine(ScaleMark(questionMark, Vector3.zero, Vector3.one, 0.25f));
         isChasing = false;
         isSearching = true;
         currentState = EnemyState.Searching;
         agent.destination = lastKnownPlayerPosition;
         searchTimer = searchDuration;
     }
+
+    void StartDetecting()
+    {
+        currentState = EnemyState.Detecting;
+        detectionTimer = detectionTime;  // Reset the detection timer
+        exclamationMark.SetActive(false);
+        questionMark.SetActive(true);  // Show the question mark above the enemy
+        agent.isStopped = true;
+        agent.ResetPath();
+        StartCoroutine(ScaleMark(questionMark, Vector3.zero, Vector3.one, 0.25f));
+    }
+
+    void DetectingPlayer()
+    {
+        detectionTimer -= Time.deltaTime;    
+
+        if (detectionTimer <= 0f)
+        {
+            questionMark.SetActive(false);
+            exclamationMark.SetActive(true);
+            agent.isStopped = false;
+            StartChasing(); 
+        }
+        else if (!playerFound)  // If the player escapes during detection
+        {
+            questionMark.SetActive(false);
+            agent.isStopped = false;
+            currentState = EnemyState.Patrolling;
+        }
+    }
+
 
     void SearchForPlayer()
     {
@@ -177,7 +225,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         Collider2D targetsInViewRadius = Physics2D.OverlapCircle(transform.position, detectionRange, playerMask);
         // if agent is moving, use velocity. if agent is not moving, use destination
-        Vector3 forward = agent.velocity == Vector3.zero ? agent.velocity.normalized : (agent.destination - transform.position).normalized;
+        Vector3 forward = agent.velocity == Vector3.zero ? (agent.destination - transform.position).normalized : agent.velocity.normalized;
 
         if (targetsInViewRadius != null)
         {
@@ -210,7 +258,7 @@ public class EnemyPatrol : MonoBehaviour
         }
         else
         {
-            //Debug.Log("No player in view radius.");
+            Debug.Log("No player in view radius.");
             playerFound = false;
         }
     }
@@ -243,4 +291,17 @@ public class EnemyPatrol : MonoBehaviour
             inSightBubble = false;
         }
     }
+
+    IEnumerator ScaleMark(GameObject mark, Vector3 startScale, Vector3 endScale, float duration)
+    {
+        float time = 0f;
+        while (time < duration)
+        {
+            mark.transform.localScale = Vector3.Lerp(startScale, endScale, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        mark.transform.localScale = endScale; // Ensure it reaches the final scale
+    }
 }
+

@@ -65,4 +65,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c5f760399dc615747b22875575454cdd, type: 2}
   - {fileID: 11400000, guid: 5ea85c5dfcd044445a7c70b2bf9d29f0, type: 2}
   - {fileID: 11400000, guid: ededc993ef344e54d9f25b1676d8aa52, type: 2}
+  playerRoom: 
   ProgressTracker: {fileID: 11400000, guid: ee677ab53c69910469a0328fb7ab3063, type: 2}
+  sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
