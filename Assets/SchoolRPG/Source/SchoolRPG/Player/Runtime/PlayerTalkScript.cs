@@ -12,14 +12,14 @@ using UnityEngine;
 /// </summary>
 public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend talkscript
 {
-
+    [SerializeField]
     public string[] monologue;
-
+    
     [SerializeField]
     private DialogueEventChannel dialogueEventChannel;
-
-    //[SerializeField]
-    //protected CharacterMovementComponent playerMovement;
+    /*
+    [SerializeField]
+    protected CharacterMovementComponent playerMovement;*/
 
     [SerializeField]
     private InputEventChannel inputEventChannel;
@@ -35,15 +35,16 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
     {
         dialogueEventChannel.OnOpenDialogueRequested -= DisableMovement;
         dialogueEventChannel.OnCloseDialogueCompleted -= EnableMovement;
-    }
-
+    }*/
+    
 
     // for some reason, start() will not make the dialogue visible until a small delay is implemented
     private void Start()
     {
-        // StartCoroutine(TriggerDialogueAfterDelay());
+        //StartCoroutine(TriggerDialogueAfterDelay());
+        //playerMovement.Deactivate();
     }
-
+    
     private IEnumerator TriggerDialogueAfterDelay()
     {
         yield return new WaitForSeconds(0.1f);
