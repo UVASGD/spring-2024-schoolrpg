@@ -3874,6 +3874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053305202}
   - component: {fileID: 1053305201}
+  - component: {fileID: 1053305203}
   m_Layer: 0
   m_Name: bff
   m_TagString: Untagged
@@ -3941,13 +3942,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053305200}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.58, y: 4.45, z: 0.062339205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1436636657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1053305203
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053305200}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1174429691
 GameObject:
   m_ObjectHideFlags: 0
@@ -5046,6 +5068,8 @@ PlayableDirector:
     value: {fileID: 1241116008}
   - key: {fileID: 4764936950923731199, guid: 18061d4b5e8673b459b5cf0e74fe9de1, type: 2}
     value: {fileID: 1551622983}
+  - key: {fileID: 7066984503117320467, guid: 18061d4b5e8673b459b5cf0e74fe9de1, type: 2}
+    value: {fileID: 1053305203}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1542436676 stripped
