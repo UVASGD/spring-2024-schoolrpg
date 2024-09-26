@@ -3995,7 +3995,7 @@ PrefabInstance:
     - target: {fileID: 3202572540251526853, guid: 2159d7f99f065444a820d13c0942aad7, type: 3}
       propertyPath: playerMovement
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 863873377}
     - target: {fileID: 3366110043785563564, guid: 2159d7f99f065444a820d13c0942aad7, type: 3}
       propertyPath: textFader
       value: 
@@ -4003,7 +4003,7 @@ PrefabInstance:
     - target: {fileID: 3366110043785563564, guid: 2159d7f99f065444a820d13c0942aad7, type: 3}
       propertyPath: InventoryManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 18602769}
     - target: {fileID: 7167242489172811867, guid: 2159d7f99f065444a820d13c0942aad7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.99868995

@@ -41,7 +41,13 @@ namespace SchoolRPG.Inventory.Runtime
             }
             inventory.inventoryItems.Add(newItem);
             Debug.Log(newItem.DisplayName);
-            GameObject.Find(newItem.DisplayName).SetActive(false); // pick up object
+            GameObject _item = GameObject.Find(newItem.DisplayName);
+            Collider2D collider2D = _item.GetComponent<Collider2D>();
+            SpriteRenderer spriteRenderer = _item.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+                spriteRenderer.enabled = false;
+            if (collider2D != null)
+                collider2D.enabled = false;
         }
 
         private void SetSelectedItem(InventoryItem inventoryItem)

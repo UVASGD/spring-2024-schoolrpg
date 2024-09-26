@@ -5548,11 +5548,11 @@ PrefabInstance:
     - target: {fileID: 4078947118610753415, guid: ef50075e3d0433c45be50e930efc5ee0, type: 3}
       propertyPath: InventoryManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 18602769}
     - target: {fileID: 5729650913689280074, guid: ef50075e3d0433c45be50e930efc5ee0, type: 3}
       propertyPath: playerMovement
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 863873377}
     - target: {fileID: 7970879909084053780, guid: ef50075e3d0433c45be50e930efc5ee0, type: 3}
       propertyPath: m_Name
       value: 0p

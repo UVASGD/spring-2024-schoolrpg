@@ -347,19 +347,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Size.x
-      value: 1.364589
+      value: 2.5074577
       objectReference: {fileID: 0}
     - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Size.y
-      value: 1.3996451
+      value: 1.7221133
       objectReference: {fileID: 0}
     - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Offset.x
-      value: 0.047026247
+      value: -0.52440774
       objectReference: {fileID: 0}
     - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Offset.y
-      value: -0.020115137
+      value: -0.08771378
       objectReference: {fileID: 0}
     - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_IsTrigger
@@ -408,7 +408,7 @@ PrefabInstance:
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: playerMovement
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 863873377}
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: dialogue.Array.size
       value: 1
@@ -485,7 +485,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7727828722004758828, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1924,7 +1925,7 @@ GameObject:
   - component: {fileID: 863873375}
   - component: {fileID: 863873376}
   - component: {fileID: 863873378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4389,6 +4390,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4826383763845069496, guid: f94b416f4b94727438aab99fd5071de8, type: 3}
   m_PrefabInstance: {fileID: 1812000035}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1816468692 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9012227852872386530, guid: 3d24e5de96c7ea14c9e3e318840e7d68, type: 3}
+  m_PrefabInstance: {fileID: 1535883790}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85fa2e13a5c414499ae702e71125aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1821830531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4420,7 +4432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
   screenFader: {fileID: 1644923785}
-  SaveData: {fileID: 0}
+  SaveData: {fileID: 1816468692}
 --- !u!4 &1821830533
 Transform:
   m_ObjectHideFlags: 0

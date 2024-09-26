@@ -1487,6 +1487,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.33333334
+      objectReference: {fileID: 0}
     - target: {fileID: 2337510623117120205, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Name
       value: Lipstick
@@ -1535,6 +1543,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7727828722004758828, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727828722004758828, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.33333334
+      objectReference: {fileID: 0}
     - target: {fileID: 8174738529087049054, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_LocalPosition.x
       value: 169.293
@@ -1575,7 +1591,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7727828722004758828, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

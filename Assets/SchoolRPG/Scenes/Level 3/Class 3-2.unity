@@ -309,19 +309,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Size.x
-      value: 1.9429784
+      value: 2.0756526
       objectReference: {fileID: 0}
     - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Size.y
-      value: 1.5396965
+      value: 2.5102968
       objectReference: {fileID: 0}
     - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Offset.x
-      value: -0.013428897
+      value: 0.052901447
       objectReference: {fileID: 0}
     - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Offset.y
-      value: 0.049910545
+      value: -0.01650238
       objectReference: {fileID: 0}
     - target: {fileID: 684701272860734589, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -333,7 +333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2337510623117120205, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_Name
-      value: 7
+      value: Milk
       objectReference: {fileID: 0}
     - target: {fileID: 2337510623117120205, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: m_IsActive
@@ -366,7 +366,7 @@ PrefabInstance:
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: playerMovement
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 863873377}
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: dialogue.Array.size
       value: 1
@@ -443,7 +443,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7727828722004758828, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2830,7 +2831,7 @@ GameObject:
   - component: {fileID: 863873375}
   - component: {fileID: 863873376}
   - component: {fileID: 863873378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
