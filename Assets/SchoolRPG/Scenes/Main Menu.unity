@@ -3981,7 +3981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
-  sceneToLoad: Level 1 Working
+  sceneToLoad: Level 0
   doorIdentifier: Start
 --- !u!4 &1560953910
 Transform:
@@ -4575,7 +4575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2009416041
 MonoBehaviour:
   m_ObjectHideFlags: 0
