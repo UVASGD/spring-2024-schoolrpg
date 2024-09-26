@@ -179,6 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97921805}
   - component: {fileID: 97921806}
+  - component: {fileID: 97921807}
   m_Layer: 0
   m_Name: MC_Pixel_Sheet_12
   m_TagString: Untagged
@@ -253,6 +254,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &97921807
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97921804}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &125830261
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,8 +308,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monologue:
-  - hi
-  - test monologue
+  - "Oh. You\u2019re finally here."
+  - "We\u2019ve been waiting, ya know."
+  - "...you recognize her, don\u2019t you?"
+  - "Oh it\u2019s nothing! We were just teachin\u2019 her how to swim\u2026 in the
+    bathroom. Couple scrapes, nothing more."
+  - "She deserves it, doesn\u2019t she? Always staring us down like that."
+  - "Why don\u2019t you show her who\u2019s boss, Violet?"
+  - "Oh come on\u2026 She doesn\u2019t care about you. She never did. "
+  - She abandoned you, what kind of friend does that?
+  - "We\u2019d never do that to you. So\u2026"
+  - Okay then, just push her.
+  - "She\u2019s a monster."
+  - "Wait\u2013you\u2019re going to\u2013"
+  lineCount: 0
   dialogueEventChannel: {fileID: 11400000, guid: 058e902fcc7f70b4fb25ee4d1dae0722, type: 2}
   inputEventChannel: {fileID: 11400000, guid: 91f06163d93475147af2187c808381ed, type: 2}
 --- !u!4 &125830263
@@ -342,12 +376,27 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: 9e19fa7f4d87af94cb2b43ffb8e3b9a5, type: 2}
+    - {fileID: 11400000, guid: 41a5c5d3bff154f4884c96f20e5c489a, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 125830262}
           m_TargetAssemblyTypeName: PlayerTalkScript, SchoolRPG.Player.Runtime
           m_MethodName: StartMonologue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 125830262}
+          m_TargetAssemblyTypeName: PlayerTalkScript, SchoolRPG.Player.Runtime
+          m_MethodName: CloseMonologue
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4127,6 +4176,8 @@ PlayableDirector:
     value: {fileID: 125830264}
   - key: {fileID: 3035371555736894320, guid: 18061d4b5e8673b459b5cf0e74fe9de1, type: 2}
     value: {fileID: 519420034}
+  - key: {fileID: -4273058137028128173, guid: 18061d4b5e8673b459b5cf0e74fe9de1, type: 2}
+    value: {fileID: 97921807}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1613980008

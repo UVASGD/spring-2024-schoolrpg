@@ -14,7 +14,10 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
 {
     [SerializeField]
     public string[] monologue;
-    
+
+    [SerializeField]
+    private int lineCount = 0;
+
     [SerializeField]
     private DialogueEventChannel dialogueEventChannel;
     /*
@@ -23,7 +26,7 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
 
     [SerializeField]
     private InputEventChannel inputEventChannel;
-
+    
     /*
     private void OnEnable()
     {
@@ -47,9 +50,17 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
     
     private IEnumerator TriggerDialogueAfterDelay()
     {
+        // modify to do line by line --> timed dialogue
         yield return new WaitForSeconds(0.1f);
-        dialogueEventChannel.RaiseOnOpenDialogueRequested(monologue);
+        string[] newLine = { monologue[lineCount] };
+        dialogueEventChannel.RaiseOnOpenDialogueRequested(newLine); // make array of 
         inputEventChannel.RaiseOnInteract();
+        lineCount += 1;
+    }
+
+    public void CloseMonologue()
+    {
+        dialogueEventChannel.RaiseOnCloseDialogueRequested();
     }
 
     public void StartMonologue()
