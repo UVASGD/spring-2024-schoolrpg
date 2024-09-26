@@ -5381,7 +5381,7 @@ GameObject:
   - component: {fileID: 863873375}
   - component: {fileID: 863873376}
   - component: {fileID: 863873378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -13123,15 +13123,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46960150017946625, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2422699613390119829, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 156.9
+      value: 157.02
       objectReference: {fileID: 0}
     - target: {fileID: 2422699613390119829, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 90.36
+      value: 90.48
       objectReference: {fileID: 0}
     - target: {fileID: 2422699613390119829, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13170,8 +13170,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 863873370}
     - target: {fileID: 8803437725684273518, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
+      propertyPath: detectionTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8803437725684273518, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
+      propertyPath: playerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8803437725684273518, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
       propertyPath: ignoreLayers.m_Bits
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8803437725684273518, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
       propertyPath: waypoints.Array.size

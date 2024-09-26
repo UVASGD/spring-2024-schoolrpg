@@ -4412,11 +4412,11 @@ PrefabInstance:
     - target: {fileID: 1646022702696708569, guid: 0539424dd5bb50e44b3c4d03d6a12867, type: 3}
       propertyPath: InventoryManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 18602769}
     - target: {fileID: 2588917883348094184, guid: 0539424dd5bb50e44b3c4d03d6a12867, type: 3}
       propertyPath: playerMovement
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 863873377}
     - target: {fileID: 3466541523738853291, guid: 0539424dd5bb50e44b3c4d03d6a12867, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.78
