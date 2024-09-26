@@ -11,13 +11,10 @@ namespace SchoolRPG.ProgressTracker.Runtime
     public class Progress_Tracker : ScriptableObject
     {
         /// <summary>
-        /// The list of inventory items picked up. 
+        /// The list of inventory items. 
         /// </summary>
         public bool[] tracker;
 
-        /// <summary>
-        /// The list of levels passed 
-        /// </summary>
         public bool[] levelTracker;
 
     }

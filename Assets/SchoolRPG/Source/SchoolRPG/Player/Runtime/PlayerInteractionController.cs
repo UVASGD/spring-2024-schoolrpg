@@ -1,9 +1,7 @@
 using SchoolRPG.Input.Runtime;
 using SchoolRPG.Interaction.Runtime;
 using SchoolRPG.Inventory.Runtime;
-using SchoolRPG.SceneManagement.Runtime;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace SchoolRPG.Player.Runtime
 {
@@ -20,12 +18,6 @@ namespace SchoolRPG.Player.Runtime
 
         [SerializeField]
         private InventoryEventChannel inventoryEventChannel;
-
-        [SerializeField]
-        private SaveData saveData;
-
-        [SerializeField]
-        private SceneManagerScript sceneManagerScript;
 
         private bool isInventoryOpened = false;
         private InventoryItem dummyItem;
@@ -61,14 +53,6 @@ namespace SchoolRPG.Player.Runtime
             }
         }
 
-        private void OnCollisionEnter2D(Collision2D collision)
-        {
-            if (collision.gameObject.CompareTag("Enemy"))
-            {
-                KillPlayer();
-            }
-        }
-
         private void OnTriggerEnter2D(Collider2D other)
         {
             // assumes you'll only enter one interactable at a time.
@@ -94,14 +78,6 @@ namespace SchoolRPG.Player.Runtime
             if (!currentInteractable) return false;
             currentInteractable.OnInteract();
             return true;
-        }
-        
-        private void KillPlayer()
-        {
-            // other effects
-            saveData.LoadGame();
-            StartCoroutine(sceneManagerScript.ReloadSceneOnKill(saveData.playerRoom));
-            
-        }
+        }     
     }
 }

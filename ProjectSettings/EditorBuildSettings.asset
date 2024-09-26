@@ -47,7 +47,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SchoolRPG/Scenes/Level 0/Tutorial.unity
     guid: 439fc21b723d9664bb2135d2f5cb2aa2
-  - enabled: 1
-    path: Assets/SchoolRPG/Scenes/Level 2/Library 2-4.unity
-    guid: 82a9744515b04194bae53ad39a2787e2
   m_configObjects: {}
