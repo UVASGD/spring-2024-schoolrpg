@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 2422699613390119829}
   - component: {fileID: 7762201321160972979}
   - component: {fileID: 2223166909594094147}
-  - component: {fileID: 2860522109538927028}
   - component: {fileID: 8803437725684273518}
   - component: {fileID: 1939661592269327887}
   - component: {fileID: 7325058430097595502}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,41 +123,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!58 &2860522109538927028
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46960150017946625}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2.5
 --- !u!114 &8803437725684273518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,15 +145,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   speed: 2
-  chaseSpeed: 3
+  chaseSpeed: 4
   detectionRange: 5
-  fieldOfViewAngle: 135
+  fieldOfViewAngle: 45
   searchDuration: 3
   player: {fileID: 0}
   ignoreLayers:
-    serializedVersion: 2
-    m_Bits: 4
-  playerMask:
     serializedVersion: 2
     m_Bits: 64
 --- !u!195 &1939661592269327887
@@ -211,7 +172,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: 0
+  m_BaseOffset: 0.59
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!95 &7325058430097595502

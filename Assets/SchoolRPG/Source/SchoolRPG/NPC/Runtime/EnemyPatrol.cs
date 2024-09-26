@@ -1,22 +1,18 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyPatrol : MonoBehaviour
 {
     public Transform[] waypoints;      // Array of waypoints for patrolling
-    public float speed;           // Speed of the enemy while patrolling
-    public float chaseSpeed;      // Speed of the enemy while chasing the player
-    public float detectionRange;  // Maximum distance for detecting the player
-    [Range(0, 360)]
-    public float fieldOfViewAngle; // Field of view angle for line of sight detection
-    public float searchDuration;  // How long the enemy waits at the last known player location
+    public float speed = 2f;           // Speed of the enemy while patrolling
+    public float chaseSpeed = 4f;      // Speed of the enemy while chasing the player
+    public float detectionRange = 10f;  // Maximum distance for detecting the player
+    public float fieldOfViewAngle = 90f; // Field of view angle for line of sight detection
+    public float searchDuration = 3f;  // How long the enemy waits at the last known player location
     public Transform player;           // Reference to the player's transform
     public LayerMask ignoreLayers;     // Layers to ignore (e.g., ground tilemap)
-    public LayerMask playerMask;       // Player layer to target
 
     private int currentWaypointIndex = 0;
-    private bool playerFound = false;
     private NavMeshAgent agent;        // NavMeshAgent for pathfinding
     private bool isChasing = false;    // Flag to check if the enemy is chasing the player
     private bool isSearching = false;  // Flag to check if the enemy is searching the player
@@ -25,7 +21,7 @@ public class EnemyPatrol : MonoBehaviour
     private SpriteRenderer spriteRenderer;  // Reference to the SpriteRenderer component
     private Vector3 previousPosition;      // To track the enemy's movement direction
     private bool inSightBubble = false; // seeing the player in sight bubble collider
-    private float lostSightGracePeriod = 1f;
+    private float lostSightGracePeriod = 2f;
     private float timeSinceLastSeen = 0f;
 
     private enum EnemyState { Patrolling, Chasing, Searching };
@@ -39,25 +35,19 @@ public class EnemyPatrol : MonoBehaviour
         previousPosition = transform.position;
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-       // GoToNextWaypoint();
-        StartCoroutine(FindTargetsWithDelay(.2f));
+        GoToNextWaypoint();
     }
 
     void Update()
     {
-        // for FOV debugging
-        Vector2 forward = agent.velocity == Vector3.zero ? agent.velocity.normalized : (agent.destination - transform.position).normalized;
-        // Draw debug rays for the field of view
-        Debug.DrawRay(transform.position, forward * detectionRange, Color.green); // Forward FOV line
-        Debug.DrawRay(transform.position, Quaternion.Euler(0, 0, fieldOfViewAngle / 2f) * forward * detectionRange, Color.blue); // Right FOV boundary
-        Debug.DrawRay(transform.position, Quaternion.Euler(0, 0, -fieldOfViewAngle / 2f) * forward * detectionRange, Color.blue); // Left FOV boundary
+        
 
         switch (currentState)
         {
             case EnemyState.Patrolling:
                 Patrol();
                 //Debug.Log("Patrolling");
-                if (playerFound)
+                if (IsPlayerInLineOfSight())
                 {
                     StartChasing();
                 }
@@ -67,16 +57,15 @@ public class EnemyPatrol : MonoBehaviour
                 ChasePlayer();
                 //Debug.Log("Chasing");
                 timeSinceLastSeen += Time.deltaTime;
-                if (!playerFound && timeSinceLastSeen > lostSightGracePeriod)
+                if (!IsPlayerInLineOfSight() && timeSinceLastSeen > lostSightGracePeriod)
                 {
-                    timeSinceLastSeen = 0f;
                     StartSearching();
                 }
                 break;
 
             case EnemyState.Searching:
                 //Debug.Log("Searching");
-                
+                timeSinceLastSeen = 0f;
                 SearchForPlayer();
                 break;
         }
@@ -149,7 +138,7 @@ public class EnemyPatrol : MonoBehaviour
 
             if (hit.collider != null && hit.collider.transform == player)
             {
-                //Debug.Log("fsdsa");
+                Debug.Log("fsdsa");
                 StartChasing();
             }
             else if (searchTimer <= 0f)
@@ -163,58 +152,41 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
-    IEnumerator FindTargetsWithDelay(float delay)
+    bool IsPlayerInLineOfSight()
     {
-        while (true)
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        if (distanceToPlayer <= detectionRange)
         {
-            yield return new WaitForSeconds(delay);
-            FindVisibleTargets();
-        }
-    }
+            Vector2 directionToPlayer = (player.position - transform.position).normalized;
+            Vector2 forward = (transform.position - previousPosition).normalized;
+            float angleToPlayer = Vector2.Angle(forward, directionToPlayer);
+            //Debug.Log("In range");
 
-    // copied a lil bit from sebastian lague's tutorial where he has multiple targets, but here I only have one object, the player, as a target
-    void FindVisibleTargets()
-    {
-        Collider2D targetsInViewRadius = Physics2D.OverlapCircle(transform.position, detectionRange, playerMask);
-        // if agent is moving, use velocity. if agent is not moving, use destination
-        Vector3 forward = agent.velocity == Vector3.zero ? agent.velocity.normalized : (agent.destination - transform.position).normalized;
+            // Draw debug rays for the field of view
+            Debug.DrawRay(transform.position, forward * detectionRange, Color.green); // Forward FOV line
+            Debug.DrawRay(transform.position, Quaternion.Euler(0, 0, fieldOfViewAngle / 2f) * forward * detectionRange, Color.blue); // Right FOV boundary
+            Debug.DrawRay(transform.position, Quaternion.Euler(0, 0, -fieldOfViewAngle / 2f) * forward * detectionRange, Color.blue); // Left FOV boundary
 
-        if (targetsInViewRadius != null)
-        {
-            Transform target = targetsInViewRadius.transform; // player
-            Vector3 dirToTarget = (target.position - transform.position).normalized;
-            float angleToPlayer = Vector3.Angle(forward, dirToTarget);
-
-            //Debug.Log($"Angle to Player: {angleToPlayer}, FOV: {fieldOfViewAngle}");
-
-            if (angleToPlayer < fieldOfViewAngle / 2 || inSightBubble) // Check FOV or sight bubble
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, directionToPlayer, detectionRange, ~ignoreLayers);
+            if (angleToPlayer < fieldOfViewAngle / 2f || inSightBubble)
             {
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, dirToTarget, detectionRange, ~ignoreLayers);
-
-                if (hit.collider != null && hit.collider.transform == target)
+                // Perform a raycast, ignoring specified layers
+                
+                // Draw the ray towards the player (angleToPlayer vector)
+                Debug.DrawRay(transform.position, directionToPlayer * detectionRange, Color.red);
+                if (hit.collider != null)
                 {
-                    //Debug.Log($"Player detected within FOV or sight bubble, {inSightBubble}, {angleToPlayer}");
-                    playerFound = true;  // Player is detected
+                    Debug.Log($"Raycast hit: {hit.collider.gameObject.name}, Layer: {LayerMask.LayerToName(hit.collider.gameObject.layer)}");
                 }
-                else
+                if (hit.collider != null && hit.collider.transform == player)// the ifs handle player within sight bubble in case player is right behind them but also accounts for LOS
                 {
-                    //Debug.Log("Raycast blocked or player outside FOV.");
-                    playerFound = false;  // No clear line of sight to player
+                    return true;  // Player detected
                 }
             }
-            else
-            {
-                //Debug.Log("Player outside of FOV and not in sight bubble.");
-                playerFound = false;
-            }
         }
-        else
-        {
-            //Debug.Log("No player in view radius.");
-            playerFound = false;
-        }
+        return false;
     }
-
 
     void FlipSprite()
     {
@@ -235,10 +207,7 @@ public class EnemyPatrol : MonoBehaviour
         {
             inSightBubble = true;
         }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision != null && collision.transform == player)
+        else
         {
             inSightBubble = false;
         }
