@@ -61,4 +61,10 @@ public class ScreenFader : MonoBehaviour
         color.a = 1f;
         fadeImage.color = color;
     }
+
+    // Allows to change fade duration during a scene
+    public void SetFadeDuration(float fadeTime)
+    {
+        fadeDuration = fadeTime;
+    }
 }

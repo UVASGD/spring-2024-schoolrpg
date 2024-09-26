@@ -62,4 +62,24 @@ public class SceneManagerScript : MonoBehaviour
 
         yield return StartCoroutine(screenFader.FadeIn());
     }
+
+    public void StartSimpleSceneChange(string scene)
+    {
+        StartCoroutine(SimpleChangeScene(scene));
+    }
+
+    public void StartSuddenSceneChange(string scene)
+    {
+        screenFader.SetFadeDuration(0f);
+        StartCoroutine(SimpleChangeScene(scene));
+    }
+
+    private IEnumerator SimpleChangeScene(string scene)
+    {
+        yield return StartCoroutine(screenFader.FadeOut());
+        SceneManager.LoadScene(scene);
+        yield return null;
+
+        yield return StartCoroutine(screenFader.FadeIn());
+    }
 }
