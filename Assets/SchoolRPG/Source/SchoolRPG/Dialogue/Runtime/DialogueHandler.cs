@@ -130,7 +130,8 @@ namespace SchoolRPG.Dialogue.Runtime
         {
             dialogueCanvas.enabled = false;
             dialogue = Array.Empty<string>();
-            dialogueIndex = -1; 
+            dialogueIndex = -1;
+            Debug.Log("Hey, dialogue close");
             
             dialogueEventChannel.RaiseOnCloseDialogueCompleted();
             pauseEventChannel.RequestOnPauseStateChanged(PauseState.NotPaused);

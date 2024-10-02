@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a2243b49d714c13ae0543ed63e7881a, type: 3}
-  m_Name: 3
+  m_Name: Glasses
   m_EditorClassIdentifier: 
-  <DisplayName>k__BackingField: Lipstick
+  <DisplayName>k__BackingField: Glasses
   <DisplayDescription>k__BackingField: 
-  <Icon>k__BackingField: {fileID: 21300000, guid: 22d605e2397f64542a95781eed87fada, type: 3}
-  <FullIcon>k__BackingField: {fileID: 21300000, guid: 4ea016e3403d39d42940cbc635be608b, type: 3}
+  <Icon>k__BackingField: {fileID: 21300000, guid: 46d06f888e485884799623e89c0e285d, type: 3}
+  <FullIcon>k__BackingField: {fileID: 21300000, guid: a3a9672622e9522449352348b68b386c, type: 3}
   <Count>k__BackingField: 0
   <Collected>k__BackingField: 0
-  <Id>k__BackingField: 3
+  <Id>k__BackingField: 0
