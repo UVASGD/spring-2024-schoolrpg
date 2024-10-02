@@ -15,12 +15,12 @@ MonoBehaviour:
   <Name>k__BackingField: Four Eyes
   <RequiredItem>k__BackingField: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
   <Level>k__BackingField: 1
-  <IsPassed>k__BackingField: 1
+  <IsPassed>k__BackingField: 0
   Dialogue:
-  - 1
+  - dialogue
   PassDialogue:
-  - 2
+  - you passed
   AlreadyPassedDialogue:
-  - 3
+  - already passed
   NoPassDialogue:
-  - 4
+  - no pass

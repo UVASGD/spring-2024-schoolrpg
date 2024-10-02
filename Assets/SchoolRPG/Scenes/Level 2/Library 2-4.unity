@@ -970,8 +970,8 @@ Tilemap:
   - first: {x: 148, y: 72, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -980,8 +980,8 @@ Tilemap:
   - first: {x: 149, y: 72, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1069,11 +1069,15 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 18
+  - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: eef78cfe1ed19404c9350c1359b153f1, type: 2}
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: 0207c0d2e93586142a09ca2d46861608, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 18
+  - m_RefCount: 16
     m_Data: {fileID: 21300000, guid: 85083a9652027454d8cf81d019cccf5b, type: 3}
+  - m_RefCount: 2
+    m_Data: {fileID: -8658191, guid: 4c5b61bc9306f4f4bbe020e25bfc1584, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 18
     m_Data:
@@ -5011,7 +5015,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.031334996, y: -0.9061419}
+  m_Offset: {x: 0.0564816, y: -1.207573}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5022,7 +5026,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.525938, y: 2.092673}
+  m_Size: {x: 3.955851, y: 2.7457812}
   m_EdgeRadius: 0
 --- !u!50 &1264673465
 Rigidbody2D:
@@ -7275,11 +7279,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7846195744476406252, guid: 04f62b65f0b4e6d40add985eb7f784b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 148.85
+      value: 148.97
       objectReference: {fileID: 0}
     - target: {fileID: 7846195744476406252, guid: 04f62b65f0b4e6d40add985eb7f784b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 73.43
+      value: 72.55
       objectReference: {fileID: 0}
     - target: {fileID: 7846195744476406252, guid: 04f62b65f0b4e6d40add985eb7f784b7, type: 3}
       propertyPath: m_LocalPosition.z

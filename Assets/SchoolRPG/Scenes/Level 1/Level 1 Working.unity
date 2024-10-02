@@ -1369,7 +1369,7 @@ PrefabInstance:
     - target: {fileID: 6895725222541454072, guid: 731a6b101bb357a45bf1e0755a6aff61, type: 3}
       propertyPath: textFader
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1230147113}
     - target: {fileID: 6895725222541454072, guid: 731a6b101bb357a45bf1e0755a6aff61, type: 3}
       propertyPath: InventoryManager
       value: 
@@ -6329,7 +6329,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1508797748}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6837,6 +6837,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1508797748}
+  - component: {fileID: 1508797749}
   m_Layer: 0
   m_Name: Canvases
   m_TagString: Untagged
@@ -6859,8 +6860,21 @@ Transform:
   m_Children:
   - {fileID: 2009416044}
   - {fileID: 1230147112}
+  - {fileID: 1359516484}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1508797749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508797747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868acaad5dbbbfa4684036d56b3a69f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1613980008
 GameObject:
   m_ObjectHideFlags: 0
@@ -13519,7 +13533,6 @@ SceneRoots:
   - {fileID: 1508797748}
   - {fileID: 1855450409}
   - {fileID: 1868036555}
-  - {fileID: 1359516484}
   - {fileID: 773026464}
   - {fileID: 1059970739}
   - {fileID: 4632802348680770344}
