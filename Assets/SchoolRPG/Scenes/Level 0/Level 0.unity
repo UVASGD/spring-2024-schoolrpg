@@ -197,7 +197,7 @@ Transform:
   m_GameObject: {fileID: 33219460}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.17, y: 4.64, z: 0}
+  m_LocalPosition: {x: 5.3, y: -13.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0ef5109ad150c488401cd7af42b268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorIdentifier: Start
+  doorIdentifier: Entrance
 --- !u!61 &33219464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9352,7 +9352,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
-  screenFader: {fileID: 1359516478}
   SaveData: {fileID: 1449023839}
 --- !u!4 &773026464
 Transform:

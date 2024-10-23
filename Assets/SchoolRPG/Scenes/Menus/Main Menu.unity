@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
-  sceneToLoad: Credits Moving
+  sceneToLoad: Credits
   doorIdentifier: Credits
 --- !u!4 &922273467
 Transform:
@@ -4254,7 +4254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
-  screenFader: {fileID: 1644923785}
   SaveData: {fileID: 212452413}
 --- !u!4 &1821830533
 Transform:
