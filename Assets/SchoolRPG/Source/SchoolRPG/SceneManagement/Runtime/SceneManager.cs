@@ -52,6 +52,7 @@ public class SceneManagerScript : MonoBehaviour
     {
         StartCoroutine(ChangeScene(scene));
     }
+
     private IEnumerator ChangeScene(string scene)
     {
         yield return StartCoroutine(screenFader.FadeOut());
@@ -63,23 +64,26 @@ public class SceneManagerScript : MonoBehaviour
         yield return StartCoroutine(screenFader.FadeIn());
     }
 
-    public void StartSimpleSceneChange(string scene)
-    {
-        StartCoroutine(SimpleChangeScene(scene));
-    }
+    // For cutscenes, without save data
 
-    public void StartSuddenSceneChange(string scene)
-    {
-        screenFader.SetFadeDuration(0f);
-        StartCoroutine(SimpleChangeScene(scene));
-    }
-
-    private IEnumerator SimpleChangeScene(string scene)
+    public IEnumerator PlayerlessChangeScene(string scene)
     {
         yield return StartCoroutine(screenFader.FadeOut());
         SceneManager.LoadScene(scene);
         yield return null;
 
         yield return StartCoroutine(screenFader.FadeIn());
+    }
+
+    public void SimpleChangeScene(string scene)
+    {
+        StartCoroutine(PlayerlessChangeScene(scene));
+    }
+
+    public void SuddenChangeScene(string scene)
+    {
+        screenFader.SetFadeDuration(0f);
+        StartCoroutine(PlayerlessChangeScene(scene));
+        screenFader.SetFadeDuration(1f);
     }
 }

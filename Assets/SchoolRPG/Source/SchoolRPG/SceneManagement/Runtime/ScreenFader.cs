@@ -11,7 +11,7 @@ public class ScreenFader : MonoBehaviour
 
     private void Awake()
     {
-        /*if (Instance == null)
+        if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
@@ -19,7 +19,7 @@ public class ScreenFader : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }*/
+        }
     }
 
     private void Start()
@@ -43,6 +43,7 @@ public class ScreenFader : MonoBehaviour
 
         color.a = 0f;
         fadeImage.color = color;
+        Debug.Log(fadeImage.color);
     }
 
     public IEnumerator FadeOut()
@@ -60,6 +61,7 @@ public class ScreenFader : MonoBehaviour
 
         color.a = 1f;
         fadeImage.color = color;
+        Debug.Log(fadeImage.color);
     }
 
     // Allows to change fade duration during a scene
