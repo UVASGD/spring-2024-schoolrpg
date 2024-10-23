@@ -59,6 +59,7 @@ public class SceneManagerScript : MonoBehaviour
     }
     private IEnumerator ChangeScene(string scene)
     {
+        Debug.Log(screenFader);
         yield return StartCoroutine(screenFader.FadeOut());
         SaveData.SaveGame();
         SceneManager.LoadScene(scene);
