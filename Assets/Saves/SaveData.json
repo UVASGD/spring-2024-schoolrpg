@@ -1,1 +1,1 @@
-{"inventoryItems":[],"NPC_Pass":[true,true,true,true,true,true,true,true,true],"Items_Collected":[false,false,false,false,false,false,false,false,false],"tracker":[true,true,true,true,true,true,true,true,true],"levelTracker":[true,true,true]}
+{"inventoryItems":[{"instanceID":26570},{"instanceID":26570},{"instanceID":26576}],"NPC_Pass":[false,false,false,false,false,false,false,false,false],"Items_Collected":[false,false,true,false,false,false,false,false,false],"tracker":[true,true,true,true,true,true,true,true,true],"levelTracker":[true,true,true]}

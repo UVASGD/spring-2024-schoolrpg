@@ -43,17 +43,18 @@ public class TalkScript : Interactable
         if (!isInteractable) return;
         Debug.Log("Talking triggered");
         dialogueEventChannel.RaiseOnOpenDialogueRequested(dialogue);
-        DisableInteraction();
     }
 
     protected void EnableInteraction()
     {
+        Debug.Log("Activated");
         isInteractable = true;
         playerMovement.Activate();
     }
 
     protected void DisableInteraction(IList<string> _ = null)
     {
+        Debug.Log("Deactivated");
         isInteractable = false;
         playerMovement.Deactivate();
     }

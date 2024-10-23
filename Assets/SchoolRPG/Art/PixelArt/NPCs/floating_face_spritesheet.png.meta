@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 350
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,10 +113,10 @@ TextureImporter:
       name: floating_face_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 167
-        y: 206
+        x: 166
+        y: 164
         width: 383
-        height: 525
+        height: 553
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: floating_face_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 947
-        y: 193
+        x: 945
+        y: 164
         width: 383
-        height: 525
+        height: 553
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,8 +155,8 @@ TextureImporter:
       name: floating_face_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1726
-        y: 178
+        x: 1725
+        y: 164
         width: 383
         height: 553
       alignment: 0
@@ -176,10 +176,10 @@ TextureImporter:
       name: floating_face_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 2507
-        y: 193
+        x: 2506
+        y: 164
         width: 383
-        height: 525
+        height: 553
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: floating_face_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 3286
-        y: 218
+        x: 3285
+        y: 164
         width: 383
-        height: 525
+        height: 553
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

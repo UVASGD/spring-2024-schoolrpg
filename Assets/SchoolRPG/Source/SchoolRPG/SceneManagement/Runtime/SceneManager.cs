@@ -12,7 +12,7 @@ public class SceneManagerScript : MonoBehaviour
     private string lastDoorUsed;
 
     [SerializeField] private SceneEventChannel sceneEventChannel;
-    [SerializeField] private ScreenFader screenFader;
+    private ScreenFader screenFader;
     [SerializeField] private SaveData SaveData;
 
     void Awake()
@@ -26,6 +26,11 @@ public class SceneManagerScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        screenFader = GameObject.Find("FadeCanvas").GetComponent<ScreenFader>();
     }
 
     public void SetLastDoorUsed(string doorID)
@@ -55,13 +60,16 @@ public class SceneManagerScript : MonoBehaviour
 
     private IEnumerator ChangeScene(string scene)
     {
+        Debug.Log(screenFader);
         yield return StartCoroutine(screenFader.FadeOut());
         SaveData.SaveGame();
         SceneManager.LoadScene(scene);
         SaveData.LoadGame();
+        screenFader = GameObject.Find("FadeCanvas").GetComponent<ScreenFader>();
+        Debug.Log(screenFader);
         yield return null;
 
-        yield return StartCoroutine(screenFader.FadeIn());
+        //yield return StartCoroutine(screenFader.FadeIn());
     }
 
     // For cutscenes, without save data

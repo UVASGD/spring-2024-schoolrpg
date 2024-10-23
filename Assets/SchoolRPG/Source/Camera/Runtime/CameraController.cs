@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour
     public Transform player;
     public SceneManager sceneManager;
     // For now, just follows player
+    
 
     private static CameraController instance;
     void Awake()
@@ -21,6 +22,15 @@ public class CameraController : MonoBehaviour
         else if (instance != null)
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Start()
+    {
+        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
+        foreach (var source in allAudioSources)
+        {
+            Debug.Log(source);
         }
     }
 

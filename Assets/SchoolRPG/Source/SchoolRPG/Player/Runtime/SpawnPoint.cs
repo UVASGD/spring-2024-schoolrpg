@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class SpawnPoint : MonoBehaviour
 {
@@ -6,9 +7,8 @@ public class SpawnPoint : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(SceneManagerScript.instance);
-        Debug.Log(SceneManagerScript.instance.GetLastDoorUsed());
-        if (SceneManagerScript.instance.GetLastDoorUsed() != null && SceneManagerScript.instance.GetLastDoorUsed() == doorIdentifier)
+        string lastDoorUsed = SceneManagerScript.instance.GetLastDoorUsed();
+        if (lastDoorUsed != null && lastDoorUsed.Equals(doorIdentifier))
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = transform.position;

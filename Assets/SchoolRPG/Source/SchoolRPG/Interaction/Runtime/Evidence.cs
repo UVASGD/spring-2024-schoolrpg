@@ -17,7 +17,12 @@ namespace SchoolRPG.Interaction.Runtime
             // despawn if collected on load
             if (inventoryItem.Collected)
             {
-                Destroy(gameObject);
+                Collider2D collider2D = GetComponent<Collider2D>();
+                SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null)
+                    spriteRenderer.enabled = false;
+                if (collider2D != null)
+                    collider2D.enabled = false;
             } 
         }
 
