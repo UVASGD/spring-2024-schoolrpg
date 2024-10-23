@@ -211,10 +211,10 @@ MonoBehaviour:
     be gone for a while, or in the worst case I\u2019ll transfer schools."
   - "But! I think I might be able to stay. It\u2019s complicated, but I really hope
     I do."
-  - "Even if it means we have to deal with those bullies again, I\u2019ll be happy
-    just being in the club with you."
+  - "Even if it means we have to deal with trouble again, I\u2019ll be happy just
+    being in the club with you."
   - I miss you. Like a lot.
-  - I hope you get this letter soon.
+  - I hope you get this letter soon. I can't wait for second year.
   - 'XOXO, Sophie '
   lineCount: 0
   dialogueEventChannel: {fileID: 11400000, guid: 058e902fcc7f70b4fb25ee4d1dae0722, type: 2}
@@ -1370,7 +1370,7 @@ MonoBehaviour:
   textComponent: {fileID: 1412758831}
   dialogueEventChannel: {fileID: 11400000, guid: 058e902fcc7f70b4fb25ee4d1dae0722, type: 2}
   pauseEventChannel: {fileID: 11400000, guid: 24abbf46df0285842a0897ddea2ffd9f, type: 2}
-  defaultTextDelay: 0.04
+  defaultTextDelay: 0.06
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

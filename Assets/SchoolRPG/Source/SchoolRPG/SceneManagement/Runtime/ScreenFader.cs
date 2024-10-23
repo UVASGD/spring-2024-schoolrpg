@@ -11,7 +11,7 @@ public class ScreenFader : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
+        /*if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
@@ -19,7 +19,7 @@ public class ScreenFader : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }
+        }*/
     }
 
     private void Start()

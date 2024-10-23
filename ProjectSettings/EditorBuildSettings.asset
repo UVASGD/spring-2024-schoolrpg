@@ -51,7 +51,7 @@ EditorBuildSettings:
     path: Assets/SchoolRPG/Scenes/Menus/Main Menu.unity
     guid: 45ed9bfe67a8d7645a1126de492ae580
   - enabled: 1
-    path: Assets/SchoolRPG/Scenes/Menus/Credits Moving.unity
+    path: Assets/SchoolRPG/Scenes/Menus/Credits.unity
     guid: 4c0dc48c664350e47a7a8f4798942aa0
   - enabled: 1
     path: Assets/SchoolRPG/Scenes/Level 0/Level 0.unity

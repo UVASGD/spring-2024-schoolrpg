@@ -6,7 +6,9 @@ public class SpawnPoint : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManagerScript.instance.GetLastDoorUsed() == doorIdentifier)
+        Debug.Log(SceneManagerScript.instance);
+        Debug.Log(SceneManagerScript.instance.GetLastDoorUsed());
+        if (SceneManagerScript.instance.GetLastDoorUsed() != null && SceneManagerScript.instance.GetLastDoorUsed() == doorIdentifier)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = transform.position;
