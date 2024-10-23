@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SchoolRPG/Scenes/Final Levels/Letter Scene.unity
     guid: 7baf99c2b803b894e8fc4377b5ad2859
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/Final Levels/End Credits.unity
+    guid: 69e87d0577c3b104ba0dcab48b7c5c56
   m_configObjects: {}
