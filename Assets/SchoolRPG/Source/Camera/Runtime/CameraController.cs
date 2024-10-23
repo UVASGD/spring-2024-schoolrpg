@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class CameraController : MonoBehaviour
 {
     public Transform player;
+    public SceneManager sceneManager;
     // For now, just follows player
     
 
@@ -35,6 +37,6 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position + new Vector3(0, 0,-8);
+        transform.position = player.transform.position + new Vector3(0, 0, -8);
     }
 }

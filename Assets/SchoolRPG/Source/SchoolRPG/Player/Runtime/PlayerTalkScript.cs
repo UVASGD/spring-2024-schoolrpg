@@ -12,18 +12,22 @@ using UnityEngine;
 /// </summary>
 public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend talkscript
 {
-
+    [SerializeField]
     public string[] monologue;
 
     [SerializeField]
-    private DialogueEventChannel dialogueEventChannel;
+    private int lineCount = 0;
 
     [SerializeField]
-    protected CharacterMovementComponent playerMovement;
+    private DialogueEventChannel dialogueEventChannel;
+    /*
+    [SerializeField]
+    protected CharacterMovementComponent playerMovement;*/
 
     [SerializeField]
     private InputEventChannel inputEventChannel;
-
+    
+    /*
     private void OnEnable()
     {
         dialogueEventChannel.OnOpenDialogueRequested += DisableMovement;
@@ -34,23 +38,36 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
     {
         dialogueEventChannel.OnOpenDialogueRequested -= DisableMovement;
         dialogueEventChannel.OnCloseDialogueCompleted -= EnableMovement;
-    }
-
+    }*/
+    
 
     // for some reason, start() will not make the dialogue visible until a small delay is implemented
     private void Start()
     {
-        StartCoroutine(TriggerDialogueAfterDelay());
-
+        //StartCoroutine(TriggerDialogueAfterDelay());
+        //playerMovement.Deactivate();
     }
-
+    
     private IEnumerator TriggerDialogueAfterDelay()
     {
+        // modify to do line by line --> timed dialogue
         yield return new WaitForSeconds(0.1f);
-        dialogueEventChannel.RaiseOnOpenDialogueRequested(monologue);
+        string[] newLine = { monologue[lineCount] };
+        dialogueEventChannel.RaiseOnOpenDialogueRequested(newLine); // make array of 
         inputEventChannel.RaiseOnInteract();
+        lineCount += 1;
     }
 
+    public void CloseMonologue()
+    {
+        dialogueEventChannel.RaiseOnCloseDialogueRequested();
+    }
+
+    public void StartMonologue()
+    {
+        StartCoroutine(TriggerDialogueAfterDelay());
+    }
+    /*
     private void EnableMovement()
     {
         playerMovement.Activate();
@@ -59,7 +76,7 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
     private void DisableMovement(IList<string> _ = null)
     {
         playerMovement.Deactivate();
-    }
+    }*/
 
 
 }
