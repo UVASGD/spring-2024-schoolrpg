@@ -1,4 +1,7 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace SchoolRPG.Character.Runtime
 {
@@ -62,15 +65,24 @@ namespace SchoolRPG.Character.Runtime
         private static CharacterMovementComponent instance = null;
         void Awake()
         {
-            if (instance == null)
-            {
-                DontDestroyOnLoad(gameObject);
-                instance = this;
-            }
-            else if (instance != null)
+            List<string> cutscenes = new List<string> { "Final Scene", "Letter Scene", "Hospital" };
+            if (cutscenes.Contains(SceneManager.GetActiveScene().name))
             {
                 Destroy(gameObject);
+                Debug.Log("Destroyed player");
+            } else
+            {
+                if (instance == null)
+                {
+                    DontDestroyOnLoad(gameObject);
+                    instance = this;
+                }
+                else if (instance != null)
+                {
+                    Destroy(gameObject);
+                }
             }
+            
         }
 
         protected void Start()

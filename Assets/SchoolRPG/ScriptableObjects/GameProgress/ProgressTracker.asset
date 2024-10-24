@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4225e1abdb39a46478db9665e68765d0, type: 3}
   m_Name: ProgressTracker
   m_EditorClassIdentifier: 
-  tracker: 000000000000000000
-  levelTracker: 000000
+  tracker: 010101010101010101
+  levelTracker: 010101

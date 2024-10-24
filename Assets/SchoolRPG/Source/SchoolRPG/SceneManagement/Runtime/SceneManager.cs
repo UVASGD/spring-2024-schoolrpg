@@ -100,10 +100,7 @@ public class SceneManagerScript : MonoBehaviour
         SceneManager.LoadScene(scene);
         
         screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
-
-        CharacterMovementComponent playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovementComponent>();
-        playerMovement.Activate();
-        playerMovement.Move(Vector2.zero);
+   
 
         yield return null;
         //yield return StartCoroutine(screenFader.FadeIn());
