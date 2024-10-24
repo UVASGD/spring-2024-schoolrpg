@@ -28,6 +28,12 @@ public class SoundPlayer : MonoBehaviour
         dialogueEventChannel.OnNextDialogueRequested -= PlayDialogueClick;
 
     }
+
+    private void Start()
+    {
+        musicSource.PlayOneShot(music);
+    }
+
     private void PlayItemPickupSound(InventoryItem item)
     {
         sfxSource.PlayOneShot(itemPickupSound);
