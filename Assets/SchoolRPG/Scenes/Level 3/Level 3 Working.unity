@@ -248,7 +248,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorIdentifier: -2
-  IsRespawn: 1
 --- !u!114 &202823737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15208,7 +15207,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorIdentifier: 3-3
-  IsRespawn: 0
 --- !u!61 &820970487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23480,7 +23478,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -26347,7 +26345,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorIdentifier: 3-2
-  IsRespawn: 0
 --- !u!61 &1401371522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27669,7 +27666,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorIdentifier: 3-1
-  IsRespawn: 0
 --- !u!61 &1888744275
 BoxCollider2D:
   m_ObjectHideFlags: 0
