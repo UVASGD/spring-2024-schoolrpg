@@ -244,4 +244,4 @@ MonoBehaviour:
   sfxSource: {fileID: 1308734864273118}
   music: {fileID: 8300000, guid: 7b68483c02f2a14468aecc402fb66be6, type: 3}
   dialogueClick: {fileID: 8300000, guid: 0269575b03a6ba34caefae38df0f355a, type: 3}
-  itemPickupSound: {fileID: 8300000, guid: 319896cae0303e443879f7d62baa32e6, type: 3}
+  itemPickupSound: {fileID: 8300000, guid: 82bfe502343ac8744977fa820c02ca40, type: 3}
