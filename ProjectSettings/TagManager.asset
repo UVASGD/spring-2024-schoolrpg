@@ -7,6 +7,7 @@ TagManager:
   - Evidence
   - DialogueBox
   - NextStair
+  - FadeCanvas
   layers:
   - Default
   - TransparentFX

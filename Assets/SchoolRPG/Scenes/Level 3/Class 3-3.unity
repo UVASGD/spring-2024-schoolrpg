@@ -3785,7 +3785,7 @@ GameObject:
   - component: {fileID: 1901823462}
   m_Layer: 5
   m_Name: FadeCanvas
-  m_TagString: Untagged
+  m_TagString: FadeCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
