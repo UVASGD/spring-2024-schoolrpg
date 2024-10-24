@@ -587,7 +587,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
-  screenFader: {fileID: 1724158339}
   SaveData: {fileID: 1736664665}
 --- !u!4 &735672507
 Transform:
@@ -833,33 +832,37 @@ MonoBehaviour:
 
     Caitlyn Helzer
 
+    Stephanie Zhang
 
-    Hayley Davis
 
-    Aissatou
-    Barry
+    Hayley
+    Davis
+
+    Aissatou Barry
 
     Irene Si
 
-    Daria Slowinska
-
-    Kyuri Park
-
+    Catherine Xu
 
     Daria Slowinska
 
-    Aadarsh
-    Natarajan
+    Kyuri
+    Park
+
+
+    Daria Slowinska
+
+    Aadarsh Natarajan
 
     Clark Pagels
 
-    Catherine Xu
+    Catherine
+    Xu
 
 
     Aidan Mayhue
 
-    Vincent
-    Martinez
+    Vincent Martinez
 
 
     Caitlyn Helzer
@@ -2312,7 +2315,9 @@ MonoBehaviour:
 
 
 
+
     Writers
+
 
 
 

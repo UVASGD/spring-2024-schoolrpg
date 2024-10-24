@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20418de0b3ff70499aaf375f5b274ab, type: 3}
+  m_Name: 2_Claws
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Claws
+  <RequiredItem>k__BackingField: {fileID: 11400000, guid: 1eedea7aa89d499469aaf212bc815787, type: 2}
+  <Level>k__BackingField: 1
+  <IsPassed>k__BackingField: 0
+  Dialogue:
+  - "UUrrHghhhh.. Wh AT do YOU w ant ? Don\u2019t you see I \u2018m busy ??"
+  - "I\u2019m doing my brows\u2026 TOUCH me and I WILL KILL YOU."
+  - "WhAT? It\u2019s true. I\u2019m prettier than, like, 97% of the people in this
+    school. And, who are you again?"
+  - 'Do I know anyone else here? AS IF I would care about all these absolute NOBODIES!
+    Especially the four-eyed fr ea k. Has anyone ever told her that she can get,
+    like, CONTACTS??? '
+  - "Not that it would fix her face, but it\u2019s a start\u2026"
+  PassDialogue:
+  - "My SCISSORS! Hhand them over! I don\u2019t want your grubby handss to get them
+    all dirty! You know, the only people I let people touch any part of my favorite
+    s-scissors are when I\u2019m giving them a\u2026*makeover*. "
+  - "Ssomeone thinks they can talk back to me? A little *SNIP-SNIP* should sshut
+    them up!  Anyone who\u2019s prettier than me? I\u2019ll make sure to humble them
+    with a cut or two\u2026  "
+  - "And YOU, you were oh, so prettyyy with that long hair of yoursss\u2026 what
+    a cute little first year! I just knew that I had to correct your attitude."
+  - 'Even as you cried and begged, oh, it was so fun! '
+  - "HAaA! Like, you\u2019ve GOT to let me know when your hair finishess growing
+    back. I\u2019ve gotta give you a makeover again !!"
+  AlreadyPassedDialogue:
+  - Do I look like a nerd to you? Buzz off.
+  NoPassDialogue:
+  - What is this trasssh?? You find this in the dump??

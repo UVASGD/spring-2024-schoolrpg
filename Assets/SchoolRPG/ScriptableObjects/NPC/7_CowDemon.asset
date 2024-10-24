@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20418de0b3ff70499aaf375f5b274ab, type: 3}
+  m_Name: 7_CowDemon
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Cow Demon
+  <RequiredItem>k__BackingField: {fileID: 11400000, guid: 5ea85c5dfcd044445a7c70b2bf9d29f0, type: 2}
+  <Level>k__BackingField: 3
+  <IsPassed>k__BackingField: 0
+  Dialogue:
+  - "You\u2019re late"
+  - 'You shoulda been here 20 minutes ago. '
+  - "That\u2019s rude of you."
+  - Class? Class~~~~
+  - "What a lame excuse. You don\u2019t NEED to stay. \u2018Specially when I ASK
+    you to do something."
+  - 'You do it. You k-know? Of course you kno w. '
+  - I kn ow y ou d o.
+  - "Besides\u2013nothin\u2019 anyone else says is important, but you know that."
+  - Go o d, right?
+  - "Haha, don\u2019t look at me that way"
+  - Hahahahaah aha ha HAHAHAAaa Aaa AA
+  - "So come over he e r e and smile. L-let\u2019 s ta ke a picture, hm?"
+  PassDialogue:
+  - "Haha\u2026 so, you remember. Hah!"
+  - "Since I\u2019m here with you, and you\u2019re here with me."
+  - And this little gift is back in your hands.
+  - You know what you did when you poured that on her head.
+  - HAHAHAHAHAA!
+  - You K N O W what y ou did!
+  - "You picked your old best friend! Oh mann~ you didn\u2019t have to\u2013I gave
+    you choices alright."
+  - "But I guess you can\u2019t forgive her for up and leavin\u2019 you like tha
+    t"
+  - "You sure gave her the coldest shoulder for goin\u2019 missing that long, not
+    even a text!"
+  - "Oh~ but she\u2019ll NEVER forgive you for that year of misery you caused her."
+  - "What a loser\u2013man. The look of shock and betrayal on her face. It was priceless\u2013HA!!!"
+  - "Ohhhhhh it was so good. Th a t\u2019 s wh at I lik e abou t yo u. You\u2019re
+    loyal."
+  - "Ohhhhhh it was so good. Th a t\u2019 s wh at I lik e abou t yo u. You\u2019re
+    loyal."
+  - "Li ke a cu te p up py\u2026 ha ha ha \u2026"
+  AlreadyPassedDialogue:
+  - "Come back again. Let\u2019s hang ou t, al righ t?"
+  - Y-
+  - Y-
+  - Yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+  - You know what you did.
+  NoPassDialogue:
+  - "Haha\u2026 and what\u2019s this supposed to be?"
+  - "Is this supposed to mean somethin\u2019 to me? Don\u2019t joke, honey."

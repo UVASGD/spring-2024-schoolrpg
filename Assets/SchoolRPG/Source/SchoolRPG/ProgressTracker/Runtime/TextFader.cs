@@ -16,7 +16,7 @@ public class TextFader : MonoBehaviour
         textDisplay.color = color;*/
         textDisplay.CrossFadeAlpha(0, 0.001f, true);
         //textDisplay.enabled = false;
-        StartCoroutine(FadeInAndOut());
+        //StartCoroutine(FadeInAndOut());
     }
 
     public IEnumerator FadeInAndOut()

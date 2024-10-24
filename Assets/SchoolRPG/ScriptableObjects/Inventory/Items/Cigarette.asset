@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a2243b49d714c13ae0543ed63e7881a, type: 3}
   m_Name: Cigarette
   m_EditorClassIdentifier: 
-  <DisplayName>k__BackingField: Cigarette
-  <DisplayDescription>k__BackingField: 
-  <Icon>k__BackingField: {fileID: 21300000, guid: 3c545196b77f68848be34b7bf72a0290, type: 3}
+  <DisplayName>k__BackingField: Cigarettes
+  <DisplayDescription>k__BackingField: 'A fresh pack of cigarettes. You have this
+    brand memorized, for some reason. '
+  <Icon>k__BackingField: {fileID: 21300000, guid: a1d4749c067a47c4182236bbd9505b98, type: 3}
   <FullIcon>k__BackingField: {fileID: 21300000, guid: a1d4749c067a47c4182236bbd9505b98, type: 3}
   <Count>k__BackingField: 0
   <Collected>k__BackingField: 0

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20418de0b3ff70499aaf375f5b274ab, type: 3}
+  m_Name: )_FourEyes
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Four Eyes
+  <RequiredItem>k__BackingField: {fileID: 11400000, guid: 22e1c53c391f7c5459337a72f570030f, type: 2}
+  <Level>k__BackingField: 1
+  <IsPassed>k__BackingField: 0
+  Dialogue:
+  - "Sorry! I didn\u2019t see you there. M-many eyes, I, um, can\u2019t see very
+    well right now. (How embarrassing\u2026) "
+  - "No, uh, I\u2019m not anyone important. A-As in I\u2019m not too popular at this
+    school, especially with the bullies. (Ugh, I\u2019m making things worse. I should
+    just stop talking\u2026) "
+  - "H-hey, I remember you\u2026 y-you\u2019re the new transfer st-student? Ah- ah..
+    hI I don \u2018t rem ember \u2026"
+  PassDialogue:
+  - "My glasses\u2026 They\u2019re broken. D-Don\u2019t feel bad. I know you weren\u2019t
+    the one who broke them."
+  - 'You gave them back to me that day. '
+  - 'I know you wanted to h-help. When they were r-roughing me up in the bathroom. '
+  - "Y-you shouldn\u2019t have\u2026 P-people are mean at this school, you know?
+    It\u2019s bette r not to get involved \u2018cause then they\u2019ll--"
+  - "Then they\u2019ll\u2013"
+  - "bad\u2026 um, things and people\u2026 they\u2019ll never be satisfied."
+  - "but\u2013I\u2019m grateful. I\u2019m nobody\u2026 but you\u2019r e a good p-pers
+    on."
+  AlreadyPassedDialogue:
+  - "y-you\u2019 re a good person \u2026 "
+  NoPassDialogue:
+  - "um m\u2026 What is that? I can\u2019t really se-e\u2026"

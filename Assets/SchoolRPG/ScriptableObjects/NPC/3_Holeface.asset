@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20418de0b3ff70499aaf375f5b274ab, type: 3}
+  m_Name: 3_Holeface
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Holeface
+  <RequiredItem>k__BackingField: {fileID: 11400000, guid: 71e17667b5b6504488f1d30f37df6787, type: 2}
+  <Level>k__BackingField: 2
+  <IsPassed>k__BackingField: 0
+  Dialogue:
+  - "W Why are you looking at me like that? It\u2019s because I\u2019m so beautiful
+    you can\u2019t look away, right? RIGHT?"
+  - "Sorry, I wasn\u2019t paying attention to whatever you just said. I\u2019m too
+    busy making sure that I look absolutely perfect\u2026"
+  - "I know, but I could do better\u2026 Makeup! That\u2019s it! I need more makeup! "
+  - "Blush, eyeliner, mascara\u2026 Not good enough. I need something that will make
+    my face, *pop*, you know? "
+  - "Ah, who am I kidding\u2026 No matter how much I cover up my face, it\u2019s
+    like putting lipstick on a pig\u2026 "
+  - "Oh no no no no, I can\u2019t\u2013I can\u2019t show my face. D-don\u2019t look
+    at me."
+  PassDialogue:
+  - "Your kindness almost makes me forgive you. \u2026Almost. "
+  - "That\u2019s right\u2026 lipstick. Just what I needed to enhance my look! "
+  - "I remember you now. I can\u2019t quite forgive you for that day. "
+  - "I remember you now. I can\u2019t quite forgive you for that day. "
+  - That day when you ruined my life. When you ruined MY life to benefit YOURS
+  - "Pimples, Zit Head, Holeface. How could you? You could have ignored it all\u2026
+    you could have just shut your mouth."
+  - You were so nice our first year, you kept to yourself and your club and your
+    friend...
+  - You were so nice our first year, you kept to yourself and your club and your
+    friend...
+  - What happened?
+  - "\u2026let me tell you a secret. I don\u2019t think you\u2019re heartless."
+  - "Yo u\u2019 re jus t\u2026 a coward."
+  AlreadyPassedDialogue:
+  - L-let m-me take a look.
+  NoPassDialogue:
+  - "I don\u2019t need this."

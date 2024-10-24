@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Polaroid
   m_EditorClassIdentifier: 
   <DisplayName>k__BackingField: Polaroid
-  <DisplayDescription>k__BackingField: 
-  <Icon>k__BackingField: {fileID: 21300000, guid: 94a85a363c771c74e88c0fb3c0230bf9, type: 3}
+  <DisplayDescription>k__BackingField: A small instant camera. It looks well used
+    and the film is out.
+  <Icon>k__BackingField: {fileID: 21300000, guid: 0d7d083e497ac254e8bea6fbd1ad2dcf, type: 3}
   <FullIcon>k__BackingField: {fileID: 21300000, guid: 0d7d083e497ac254e8bea6fbd1ad2dcf, type: 3}
   <Count>k__BackingField: 0
   <Collected>k__BackingField: 0
