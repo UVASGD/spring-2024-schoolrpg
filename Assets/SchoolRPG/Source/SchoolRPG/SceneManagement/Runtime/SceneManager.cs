@@ -30,7 +30,7 @@ public class SceneManagerScript : MonoBehaviour
 
     private void Start()
     {
-        screenFader = GameObject.Find("FadeCanvas").GetComponent<ScreenFader>();
+        screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
     }
 
     public void SetLastDoorUsed(string doorID)
@@ -60,13 +60,14 @@ public class SceneManagerScript : MonoBehaviour
 
     private IEnumerator ChangeScene(string scene)
     {
-        Debug.Log(screenFader);
+        screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
+        Debug.Log(screenFader + " from exited scene");
         yield return StartCoroutine(screenFader.FadeOut());
         SaveData.SaveGame();
         SceneManager.LoadScene(scene);
         SaveData.LoadGame();
-        screenFader = GameObject.Find("FadeCanvas").GetComponent<ScreenFader>();
-        Debug.Log(screenFader);
+        screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
+        Debug.Log(screenFader + " from new loaded scene");
         yield return null;
 
         //yield return StartCoroutine(screenFader.FadeIn());
@@ -79,7 +80,7 @@ public class SceneManagerScript : MonoBehaviour
         yield return StartCoroutine(screenFader.FadeOut());
         SceneManager.LoadScene(scene);
         yield return null;
-
+        screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
         yield return StartCoroutine(screenFader.FadeIn());
     }
 
