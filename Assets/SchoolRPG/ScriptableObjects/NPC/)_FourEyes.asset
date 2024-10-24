@@ -23,19 +23,19 @@ MonoBehaviour:
     school, especially with the bullies. (Ugh, I\u2019m making things worse. I should
     just stop talking\u2026) "
   - "H-hey, I remember you\u2026 y-you\u2019re the new transfer st-student? Ah- ah..
-    hI I don \u2018t rem ember \u2026"
+    I-I don \u2018t rem ember \u2026"
   PassDialogue:
   - "My glasses\u2026 They\u2019re broken. D-Don\u2019t feel bad. I know you weren\u2019t
     the one who broke them."
   - 'You gave them back to me that day. '
   - 'I know you wanted to h-help. When they were r-roughing me up in the bathroom. '
   - "Y-you shouldn\u2019t have\u2026 P-people are mean at this school, you know?
-    It\u2019s bette r not to get involved \u2018cause then they\u2019ll--"
+    It\u2019s better not to get involved \u2018cause then they\u2019ll--"
   - "Then they\u2019ll\u2013"
-  - "bad\u2026 um, things and people\u2026 they\u2019ll never be satisfied."
-  - "but\u2013I\u2019m grateful. I\u2019m nobody\u2026 but you\u2019r e a good p-pers
-    on."
+  - "Bad\u2026 um, things and people\u2026 they\u2019ll never be satisfied."
+  - "but\u2013I\u2019m grateful. I\u2019m nobody\u2026 but you\u2019re a good p-pers-on."
   AlreadyPassedDialogue:
-  - "y-you\u2019 re a good person \u2026 "
+  - "y-you\u2019 re a good person\u2026 "
+  - ...
   NoPassDialogue:
-  - "um m\u2026 What is that? I can\u2019t really se-e\u2026"
+  - "um-m\u2026 What is that? I can\u2019t really se-e\u2026"

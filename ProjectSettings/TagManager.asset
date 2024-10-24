@@ -8,6 +8,7 @@ TagManager:
   - DialogueBox
   - NextStair
   - FadeCanvas
+  - Enemy
   layers:
   - Default
   - TransparentFX

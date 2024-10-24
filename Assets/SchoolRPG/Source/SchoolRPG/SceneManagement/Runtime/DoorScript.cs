@@ -19,6 +19,8 @@ public class DoorScript : Interactable
     {
         doorOpen1 = Resources.Load<AudioClip>("Audio/Sound/creaky_door_open");
         doorOpen2 = Resources.Load<AudioClip>("Audio/Sound/door_open_3");
+        Debug.Log(doorOpen1);
+        Debug.Log(doorOpen2);
     }
 
     public override void OnInteract()
@@ -26,8 +28,15 @@ public class DoorScript : Interactable
         Debug.Log("Door Interacted");
         AudioSource audio = gameObject.GetComponent<AudioSource>();
 
-        int rand = Random.Range(0, 2);
-        audio.PlayOneShot(rand == 0 ? doorOpen1 : doorOpen2);
+        int rand = new System.Random().Next(0,2);
+        if (rand == 0)
+        {
+            Debug.Log(doorOpen1 == null);
+
+            audio.PlayOneShot(doorOpen1);
+        }
+        else
+            audio.PlayOneShot(doorOpen2);
         
         SceneManagerScript.instance.SetLastDoorUsed(doorIdentifier);
         sceneEventChannel.RaiseOnOpenDoorRequested(sceneToLoad);

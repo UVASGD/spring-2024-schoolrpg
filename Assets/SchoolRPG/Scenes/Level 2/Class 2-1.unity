@@ -4532,7 +4532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneEventChannel: {fileID: 11400000, guid: c29c250acecc43848ad6c3d9948629f1, type: 2}
   sceneToLoad: Level 2 Working
-  doorIdentifier: 2 - 1
+  doorIdentifier: 2-1
 --- !u!82 &1264673472
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4545,8 +4545,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7653a9d21b61ead4f9818fec4d85577b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.738
+  m_Pitch: 0.08
   Loop: 0
   Mute: 0
   Spatialize: 0

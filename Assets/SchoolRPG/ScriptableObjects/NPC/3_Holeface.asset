@@ -29,20 +29,17 @@ MonoBehaviour:
   - "Oh no no no no, I can\u2019t\u2013I can\u2019t show my face. D-don\u2019t look
     at me."
   PassDialogue:
-  - "Your kindness almost makes me forgive you. \u2026Almost. "
+  - "Your kindness almost makes me forgive you\u2026Almost. "
   - "That\u2019s right\u2026 lipstick. Just what I needed to enhance my look! "
   - "I remember you now. I can\u2019t quite forgive you for that day. "
-  - "I remember you now. I can\u2019t quite forgive you for that day. "
-  - That day when you ruined my life. When you ruined MY life to benefit YOURS
+  - That day when you ruined my life. When you ruined MY life to benefit YOURS.
   - "Pimples, Zit Head, Holeface. How could you? You could have ignored it all\u2026
     you could have just shut your mouth."
   - You were so nice our first year, you kept to yourself and your club and your
     friend...
-  - You were so nice our first year, you kept to yourself and your club and your
-    friend...
   - What happened?
   - "\u2026let me tell you a secret. I don\u2019t think you\u2019re heartless."
-  - "Yo u\u2019 re jus t\u2026 a coward."
+  - "Yo u\u2019 re ju-st\u2026 a coward."
   AlreadyPassedDialogue:
   - L-let m-me take a look.
   NoPassDialogue:

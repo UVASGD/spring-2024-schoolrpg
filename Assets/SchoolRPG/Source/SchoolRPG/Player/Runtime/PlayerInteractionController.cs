@@ -63,7 +63,7 @@ namespace SchoolRPG.Player.Runtime
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collision != null && collision.gameObject.name.Equals("enemy")) { // die and reset level, don't save
+            if (collision != null && collision.gameObject.CompareTag("Enemy")) { // die and reset level, don't save
                 movementComponent.Deactivate();
                 sceneEventChannel.RaiseOnPlayerDeathReload(SceneManager.GetActiveScene().name);
             }

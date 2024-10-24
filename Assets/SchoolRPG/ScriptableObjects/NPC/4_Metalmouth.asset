@@ -17,24 +17,22 @@ MonoBehaviour:
   <Level>k__BackingField: 2
   <IsPassed>k__BackingField: 0
   Dialogue:
-  - "Ah\u2013Wwhat a revelation to find you sauntering g arounnd my general perip
-    he ry. "
+  - "Ah \u2013 w-what a revelation to find you sauntering-g arounnd my general periph-er-y. "
   - If you want help in acquiring knowledge in any discipline from algebra to world
-    languages, then I sh all be y ou r courier
-  - "There\u2019s no need to be so reticent with you r inquiries; I\u2019ve even
-    succored the occasional pedagogue with their curric ula."
+    languages, then I sh-all be y-ou-r courier!
+  - "There\u2019s no need to be so reticent with your inquiries; I\u2019ve even succored
+    the occasional pedagogue with their curric-c-ula."
   - '*ahem* (And I would always be content to assist a prepossessing demoiselle such
     as yourself)'
-  - "Though, our existence rig ht now s e e ms\u2026 irre gu lar. I seem to have
-    enc countered the loss of some episodic memory. How p ecu li ar\u2026"
+  - "Though, our existence ri-ght now s-eeee-ms\u2026 irreg-u-lar. I seem to have
+    enc-countered the loss of some episodic memory. How p-ecu-li ar\u2026"
   PassDialogue:
-  - "Ah\u2026 such spectacular academic evaluat ions\u2026Yours?"
+  - "Ah\u2026 such spectacular academic evalua-tions\u2026Yours?"
   - "Now it\u2019s returning to me."
   - "Wasn\u2019t it pleasant, studying with someone who treated you so dearly?"
-  - Why did you tear us apar t?
+  - Why did you tear us apart?
   - "For your new\u2026 \u201Cfriends.\u201D For your new\u2026 \u201Cfriends?\u201D "
-  - "For your new\u2026 \u201Cfriends.\u201D For your new\u2026 \u201Cfriends?\u201D "
-  - "Because yo u did n\u2019t wan t to be seen w ith so m eo n e \u2026like me?"
+  - "Because y-ou did-n\u2019t want to be seen with so m eo n e \u2026like me?"
   AlreadyPassedDialogue:
   - "I still \u2026"
   - "\u2026"

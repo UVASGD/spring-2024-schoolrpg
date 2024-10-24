@@ -65,7 +65,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SchoolRPG/Scenes/Final Levels/End Credits.unity
     guid: 69e87d0577c3b104ba0dcab48b7c5c56
-  - enabled: 1
-    path: Assets/SchoolRPG/Scenes/Final Levels/Final Class.unity
+  - enabled: 0
+    path: Assets/SchoolRPG/Scenes/Final Levels/Final Class 2 Workin.unity
     guid: ec9f957acb66cc24a9f107eefd5c4c33
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/Level 3/Class 3-2.unity
+    guid: f653dab160de20c4db410edfbcc4bad4
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/Level 3/Class 3-1.unity
+    guid: cdf0435febb77d74c85a15c96a7a87ab
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/Level 3/Class 3-3.unity
+    guid: bd09da35812f4334eaa6129b1fc0cffc
+  - enabled: 1
+    path: Assets/SchoolRPG/Scenes/Level 2/Library 2-4.unity
+    guid: 82a9744515b04194bae53ad39a2787e2
   m_configObjects: {}
