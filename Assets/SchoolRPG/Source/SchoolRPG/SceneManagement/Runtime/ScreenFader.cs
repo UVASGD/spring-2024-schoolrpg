@@ -48,7 +48,7 @@ public class ScreenFader : MonoBehaviour
 
         color.a = 1f;
         fadeImage.color = color;
-        Debug.Log(fadeImage.color);
+        //Debug.Log(fadeImage.color);
     }
 
     // Allows to change fade duration during a scene
