@@ -1,7 +1,9 @@
+using SchoolRPG.Character.Runtime;
 using SchoolRPG.Input.Runtime;
 using SchoolRPG.Interaction.Runtime;
 using SchoolRPG.Inventory.Runtime;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace SchoolRPG.Player.Runtime
 {
@@ -17,10 +19,14 @@ namespace SchoolRPG.Player.Runtime
         private InputEventChannel inputEventChannel;
 
         [SerializeField]
+        private SceneEventChannel sceneEventChannel;
+
+        [SerializeField]
         private InventoryEventChannel inventoryEventChannel;
 
         private bool isInventoryOpened = false;
         private InventoryItem dummyItem;
+        private CharacterMovementComponent movementComponent;
         
         /// <summary>
         /// The single <see cref="Interactable"/> that is able to interacted, null otherwise.
@@ -33,6 +39,8 @@ namespace SchoolRPG.Player.Runtime
             currentInteractable = null;
             dummyItem = ScriptableObject.CreateInstance<InventoryItem>();
             dummyItem.Id = -1;
+            movementComponent = GetComponent<CharacterMovementComponent>();
+            movementComponent.Activate();
         }
 
         private void OnEnable()
@@ -50,6 +58,14 @@ namespace SchoolRPG.Player.Runtime
             if (!isInventoryOpened)
             {
                 inventoryEventChannel.RaiseOnSetSelectedInventoryItem(dummyItem);
+            }
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision != null && collision.gameObject.name.Equals("enemy")) { // die and reset level, don't save
+                movementComponent.Deactivate();
+                sceneEventChannel.RaiseOnPlayerDeathReload(SceneManager.GetActiveScene().name);
             }
         }
 

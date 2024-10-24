@@ -1,3 +1,4 @@
+using SchoolRPG.Character.Runtime;
 using SchoolRPG.SceneManagement.Runtime;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ public class SceneManagerScript : MonoBehaviour
     //singleton
     public static SceneManagerScript instance = null;
 
-    private string lastDoorUsed;
+    private string lastDoorUsed = "";
 
     [SerializeField] private SceneEventChannel sceneEventChannel;
     private ScreenFader screenFader;
@@ -46,42 +47,66 @@ public class SceneManagerScript : MonoBehaviour
     private void OnEnable()
     {
         sceneEventChannel.OnOpenDoorRequested += HandleSceneChangeRequest;
+        sceneEventChannel.OnPlayerDeathReload += HandlePlayerDeathReloadScene;
     }
 
     private void OnDisable()
     {
         sceneEventChannel.OnOpenDoorRequested -= HandleSceneChangeRequest;
+        sceneEventChannel.OnPlayerDeathReload -= HandlePlayerDeathReloadScene;
+
     }
 
     private void HandleSceneChangeRequest(string scene)
     {
-        StartCoroutine(ChangeScene(scene));
+        StartCoroutine(ChangeScene(scene, true));
     }
 
-    private IEnumerator ChangeScene(string scene)
+    private void HandlePlayerDeathReloadScene(string scene)
+    {
+        StartCoroutine(ChangeScene(scene, false));
+    }
+
+    /// <summary>
+    /// Handles scene changes. Will do fade in and fade out, and save the game state before loading into the new scene, where it will load the data into the new one. Handles scene reloads by making the loaded scene the same as the current one and setting "save" to false. 
+    /// </summary>
+    /// <param name="scene">The scene name. Use the same scene name for scene reloads. </param>
+    /// <param name="save"> Whether to make this act as a scene reload or as a scene transition. If save == false, the scene name needs to be the same, otherwise items collected in previous scenes, etc. will not carry over to the new scene.</param>
+    /// <returns></returns>
+    private IEnumerator ChangeScene(string scene, bool save)
     {
         screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
-        Debug.Log(screenFader + " from exited scene");
         yield return StartCoroutine(screenFader.FadeOut());
-        SaveData.SaveGame();
+        if (save) SaveData.SaveGame();
         SceneManager.LoadScene(scene);
+
         SaveData.LoadGame();
         screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
-        Debug.Log(screenFader + " from new loaded scene");
+
+        CharacterMovementComponent playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovementComponent>();
+        playerMovement.Activate();
+        playerMovement.Move(Vector2.zero);
+
         yield return null;
 
         //yield return StartCoroutine(screenFader.FadeIn());
     }
 
-    // For cutscenes, without save data
-
+    // For changing scenes without using the save data
     public IEnumerator PlayerlessChangeScene(string scene)
     {
+        screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
         yield return StartCoroutine(screenFader.FadeOut());
         SceneManager.LoadScene(scene);
-        yield return null;
+        
         screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
-        yield return StartCoroutine(screenFader.FadeIn());
+
+        CharacterMovementComponent playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovementComponent>();
+        playerMovement.Activate();
+        playerMovement.Move(Vector2.zero);
+
+        yield return null;
+        //yield return StartCoroutine(screenFader.FadeIn());
     }
 
     public void SimpleChangeScene(string scene)
