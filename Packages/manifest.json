@@ -3,7 +3,7 @@
     "com.h8man.2d.navmeshplus": "https://github.com/h8man/NavMeshPlus.git",
     "com.mackysoft.serializereference-extensions": "1.3.1",
     "com.mushakushi.attributes": "https://github.com/Mushakushi/UnityAttributes.git",
-    "com.mushakushi.menuframework": "https://github.com/Mushakushi/UIToolkitMenuFramework.git?path=Assets/Mushakushi.MenuFramework",
+    "com.mushakushi.menuframework": "file:C:/Users/Catherine/Downloads/mushakushi ui-toolkit-menu-framework v1.0.0 Assets-Mushakushi.MenuFramework",
     "com.mushakushi.uitoolkitautofitting": "https://github.com/Mushakushi/UIToolkitAutofitting.git",
     "com.mushakushi.unitypooling": "https://github.com/Mushakushi/UnityPooling.git",
     "com.rotaryheart.serializabledictionarylite": "2.6.11",

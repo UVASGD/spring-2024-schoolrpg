@@ -22,14 +22,13 @@
       "hash": "55ed30dab260ea547f7168bc6e0f0cb01cabcb00"
     },
     "com.mushakushi.menuframework": {
-      "version": "https://github.com/Mushakushi/UIToolkitMenuFramework.git?path=Assets/Mushakushi.MenuFramework",
+      "version": "file:C:/Users/Catherine/Downloads/mushakushi ui-toolkit-menu-framework v1.0.0 Assets-Mushakushi.MenuFramework",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.unity.ui": "1.0.0",
         "com.unity.inputsystem": "1.7.0"
-      },
-      "hash": "785fd3d2c45cc8b379a3c82f76fd284043f50089"
+      }
     },
     "com.mushakushi.uitoolkitautofitting": {
       "version": "https://github.com/Mushakushi/UIToolkitAutofitting.git",
