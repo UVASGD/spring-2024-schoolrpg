@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20418de0b3ff70499aaf375f5b274ab, type: 3}
+  m_Name: 5_Robber
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Robber
+  <RequiredItem>k__BackingField: {fileID: 11400000, guid: d68f399aa0ba3124e95c8b1c863391fe, type: 2}
+  <Level>k__BackingField: 2
+  <IsPassed>k__BackingField: 0
+  Dialogue:
+  - KEHEHEH
+  - KEHEHEHEHEHEHEEHHEH
+  - "\u2026ah"
+  - "Wasn\u2019t it fun, being at my side?"
+  - Nothing wrong with a little crime.
+  - Sweet little you, new to the crew,
+  - "Haven\u2019t you got much better to do?"
+  - "Pretend what you want, you\u2019re just dead weight,"
+  - So let me show you how the big girls play.
+  - What belongs to you belongs to me,
+  - "So I\u2019ll take that gift from your family."
+  - KEHAH!
+  PassDialogue:
+  - "\u2026Looooks like you\u2019ve found it again,"
+  - "Maybe you\u2019ve still got a working head."
+  - "But don\u2019t kid yourself, you\u2019re just a drag,"
+  - "A real friend you\u2019ll never have."
+  - KEHAHAHAHAAHAAA
+  AlreadyPassedDialogue:
+  - "Seems your brain isn\u2019t working, brat."
+  - "What you\u2019ve brought is someone else\u2019s crap."
+  NoPassDialogue:
+  - "\u2026 keheheHA"
+  - HAHAHAHAHAHAHAHA
+  - HAHAHAHAHAHAHA HA AHAH AHA A AH AH AAH A A HA HA AH A H A A H A H A  AA A A

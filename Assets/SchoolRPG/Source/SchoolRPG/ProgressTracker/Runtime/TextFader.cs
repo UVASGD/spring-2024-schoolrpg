@@ -11,21 +11,23 @@ public class TextFader : MonoBehaviour
 
     public void Start()
     {
-        Color color = textDisplay.color;
+        /*Color color = textDisplay.color;
         color.a = 0;
-        textDisplay.color = color;
-        //textDisplay.CrossFadeAlpha(0, 0.01f, true);
-        textDisplay.enabled = false;
-        // StartCoroutine(FadeInAndOut());
+        textDisplay.color = color;*/
+        textDisplay.CrossFadeAlpha(0, 0.001f, true);
+        //textDisplay.enabled = false;
+        //StartCoroutine(FadeInAndOut());
     }
 
     public IEnumerator FadeInAndOut()
     {
-        textDisplay.enabled = true;
+        Debug.Log("FadeInAndOutTriggered");
+        //textDisplay.enabled = true;
         textDisplay.CrossFadeAlpha(1, fadeDuration, true);
         yield return new WaitForSeconds(2f);
         textDisplay.CrossFadeAlpha(0, fadeDuration, true);
-        textDisplay.enabled = false;
+        Debug.Log(textDisplay.color);
+        //textDisplay.enabled = false;
     }
 
     /*

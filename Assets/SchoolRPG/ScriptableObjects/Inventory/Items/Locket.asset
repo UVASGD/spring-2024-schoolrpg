@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Locket
   m_EditorClassIdentifier: 
   <DisplayName>k__BackingField: Locket
-  <DisplayDescription>k__BackingField: 
+  <DisplayDescription>k__BackingField: An old locket with a picture of a blue-haired
+    family. The faces appear blurry, but smiling.
   <Icon>k__BackingField: {fileID: 21300000, guid: f05857b4940d3624cba897787df60722, type: 3}
   <FullIcon>k__BackingField: {fileID: 0}
   <Count>k__BackingField: 0

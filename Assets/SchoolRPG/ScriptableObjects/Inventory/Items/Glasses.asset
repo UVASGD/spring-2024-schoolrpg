@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Glasses
   m_EditorClassIdentifier: 
   <DisplayName>k__BackingField: Glasses
-  <DisplayDescription>k__BackingField: 
-  <Icon>k__BackingField: {fileID: 21300000, guid: 46d06f888e485884799623e89c0e285d, type: 3}
+  <DisplayDescription>k__BackingField: A pair of round broken glasses. The lenses
+    are real, and completely shattered.
+  <Icon>k__BackingField: {fileID: 21300000, guid: a3a9672622e9522449352348b68b386c, type: 3}
   <FullIcon>k__BackingField: {fileID: 21300000, guid: a3a9672622e9522449352348b68b386c, type: 3}
   <Count>k__BackingField: 0
   <Collected>k__BackingField: 0

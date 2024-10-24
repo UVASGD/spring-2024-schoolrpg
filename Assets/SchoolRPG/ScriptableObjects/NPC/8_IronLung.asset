@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20418de0b3ff70499aaf375f5b274ab, type: 3}
+  m_Name: 8_IronLung
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: IronLung
+  <RequiredItem>k__BackingField: {fileID: 11400000, guid: ededc993ef344e54d9f25b1676d8aa52, type: 2}
+  <Level>k__BackingField: 3
+  <IsPassed>k__BackingField: 0
+  Dialogue:
+  - '*COUGH* *COUGH*'
+  - '*WHEEZE* COUGH* *COUGH*'
+  - '*COUGH*'
+  - "\u2026"
+  - "Oh, no I\u2019m\u2013*COUGH*\u2013FINE *COUGH*"
+  - "Despite being in the nurse\u2019s office T H ERE\u2019 S NO NURSE TO BE FO UND.
+    So instead I\u2019m just SUFFERI N G"
+  - '*WHEEZE*'
+  - "\u2026. "
+  PassDialogue:
+  - "\u2026"
+  - "\u2026"
+  - "\u2026Oh, so you remember now?"
+  - "Remembering doesn\u2019t excuse you. You returned what you stole? TOO LATE"
+  - A ND NO W I S OU N D L I KE T H I S
+  - I H AD  TO SU F F ER W E ALL HA D T O S U F F ER
+  - B E CA US E OF Y O U
+  - I W-W AS SE NT TO T HE H OS PITA L
+  - M Y B RE A TH  I N G---I B A R EL Y
+  - "\u2026"
+  - "\u2026at least I survived."
+  - N-n-not a-a-a-all of u-us are so l-l-l-ucky, huh?
+  - "W-w-w-onder if she\u2019s even alive? W-wh-at a hard push o-ut the w-w-i-n-dow\u2026"
+  - "Y-y-your a-ang-er a-nd h--h-h-a-te\u2026 \u2026you\u2019re unforgivable"
+  AlreadyPassedDialogue:
+  - "I h-h-h-hope you\u2019re happy with what you did."
+  NoPassDialogue:
+  - '*COUGH* *COUGH* *COUGH*'
+  - Is *COUGH* this a joke?
+  - '*WHEEEZE*'

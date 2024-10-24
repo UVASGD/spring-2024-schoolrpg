@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Report Card
   m_EditorClassIdentifier: 
   <DisplayName>k__BackingField: Report Card
-  <DisplayDescription>k__BackingField: 
-  <Icon>k__BackingField: {fileID: 21300000, guid: 98398eedcbdef534bb29f172b6c046cc, type: 3}
+  <DisplayDescription>k__BackingField: "Somebody\u2019s report card. The grades range
+    from barely passing to certainly failing. "
+  <Icon>k__BackingField: {fileID: 21300000, guid: 94db32b068d395e48890e7b8bc7a963a, type: 3}
   <FullIcon>k__BackingField: {fileID: 21300000, guid: 94db32b068d395e48890e7b8bc7a963a, type: 3}
   <Count>k__BackingField: 0
   <Collected>k__BackingField: 0

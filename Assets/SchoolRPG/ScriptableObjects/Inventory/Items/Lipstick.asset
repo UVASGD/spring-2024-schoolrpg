@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Lipstick
   m_EditorClassIdentifier: 
   <DisplayName>k__BackingField: Lipstick
-  <DisplayDescription>k__BackingField: 
-  <Icon>k__BackingField: {fileID: 21300000, guid: 22d605e2397f64542a95781eed87fada, type: 3}
+  <DisplayDescription>k__BackingField: 'A stick of red lipstick. The tip has been
+    crushed and left exposed. '
+  <Icon>k__BackingField: {fileID: 21300000, guid: 4ea016e3403d39d42940cbc635be608b, type: 3}
   <FullIcon>k__BackingField: {fileID: 21300000, guid: 4ea016e3403d39d42940cbc635be608b, type: 3}
   <Count>k__BackingField: 0
   <Collected>k__BackingField: 0
