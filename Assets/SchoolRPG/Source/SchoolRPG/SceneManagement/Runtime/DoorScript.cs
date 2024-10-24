@@ -11,14 +11,23 @@ public class DoorScript : Interactable
     [SerializeField] private string sceneToLoad;
     [SerializeField] private string doorIdentifier; // Unique ID for each door
 
+    private AudioClip doorOpen1;
+    private AudioClip doorOpen2;
+
+
+    private void Start()
+    {
+        doorOpen1 = Resources.Load<AudioClip>("Audio/Sound/creaky_door_open");
+        doorOpen2 = Resources.Load<AudioClip>("Audio/Sound/door_open_3");
+    }
 
     public override void OnInteract()
     {
         Debug.Log("Door Interacted");
         AudioSource audio = gameObject.GetComponent<AudioSource>();
-        AudioClip audioClip = (AudioClip)Resources.Load<AudioClip>("Audio/Sound/creaky_door_open");
-        Debug.Log(audioClip);
-        audio.PlayOneShot(audioClip);
+
+        int rand = Random.Range(0, 2);
+        audio.PlayOneShot(rand == 0 ? doorOpen1 : doorOpen2);
         
         SceneManagerScript.instance.SetLastDoorUsed(doorIdentifier);
         sceneEventChannel.RaiseOnOpenDoorRequested(sceneToLoad);

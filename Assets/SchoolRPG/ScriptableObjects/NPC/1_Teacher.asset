@@ -18,15 +18,13 @@ MonoBehaviour:
   <IsPassed>k__BackingField: 0
   Dialogue:
   - "Oh, it\u2019s you!"
-  - "Huh? \u2026.Are you asking if I know you? "
-  - " I believe it\u2019s hard to truly know someone: All their hopes, their dreams,
-    their desires, their fears, their secrets\u2026 "
+  - "Huh? \u2026. Are you asking if I know you? "
   - " I believe it\u2019s hard to truly know someone: All their hopes, their dreams,
     their desires, their fears, their secrets\u2026 "
   - "Sometimes, we don\u2019t even know that about *ourselves* I wonder if you\u2019re
     one of the lucky few that can say that you truly know yourself\u2026 "
-  - "Oh, I was thinking out loud, wasn\u2019t I? Got a little off track there, didn\u2019t
-    I?"
+  - "Oh, I was thinking out loud, wasn\u2019t I? Got a little off track there, I
+    guess."
   PassDialogue:
   - "Oh, the camera you\u2019re holding in your hands\u2026 It reminds me of when
     you were just getting started with the craft. I can picture you now\u2013your
@@ -37,6 +35,6 @@ MonoBehaviour:
     d e r\u2026 Hh How lovel y. See her aga ain. "
   - Can you picture anyth ing more beautiful than that?
   AlreadyPassedDialogue:
-  - Can.. can you pic..picture ? Dear child, your humble
+  - Can.. can you pic..picture ?
   NoPassDialogue:
   - "Hmm\u2026 doesn\u2019t look familiar to me. Were you trying to show me something?"

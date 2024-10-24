@@ -48,6 +48,7 @@ public class ScreenFader : MonoBehaviour
 
         color.a = 1f;
         fadeImage.color = color;
+        yield return new WaitForSeconds(1.5f);
         //Debug.Log(fadeImage.color);
     }
 
