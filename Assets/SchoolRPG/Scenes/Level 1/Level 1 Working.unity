@@ -13326,34 +13326,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8475759669425987503, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
-      propertyPath: Priority
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8475759669425987503, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
-      propertyPath: m_Volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8475759669425987503, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
-      propertyPath: MaxDistance
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8475759669425987503, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
-      propertyPath: MinDistance
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8475759669425987503, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 55f69b18e3d4c4b4888d9eb9048c7cff, type: 3}
-    - target: {fileID: 8475759669425987503, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8475759669425987503, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8803437725684273518, guid: 16c7c5c19fffb55448da94ff6e7d4f09, type: 3}
       propertyPath: player
       value: 
@@ -13541,6 +13513,10 @@ PrefabInstance:
       propertyPath: inventoryEventChannel
       value: 
       objectReference: {fileID: 11400000, guid: 478189ecd867e2941af814dc3677cc13, type: 2}
+    - target: {fileID: 1308734864273118, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0.8138889
+      objectReference: {fileID: 0}
     - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 156.97
@@ -13583,7 +13559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3256350688542968159, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3256350688542968159, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
       propertyPath: m_audioClip

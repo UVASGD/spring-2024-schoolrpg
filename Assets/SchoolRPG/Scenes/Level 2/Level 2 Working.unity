@@ -3751,7 +3751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorIdentifier: -1
-  IsRespawn: 0
+  IsRespawn: 1
 --- !u!114 &1016449046
 MonoBehaviour:
   m_ObjectHideFlags: 0
