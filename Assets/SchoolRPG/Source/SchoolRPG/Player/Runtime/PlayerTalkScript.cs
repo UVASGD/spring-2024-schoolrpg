@@ -65,6 +65,7 @@ public class PlayerTalkScript : MonoBehaviour // honestly, no need to extend tal
 
     public void StartMonologue()
     {
+        Debug.Log("monologue triggered");
         StartCoroutine(TriggerDialogueAfterDelay());
     }
     /*

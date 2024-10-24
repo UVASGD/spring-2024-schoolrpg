@@ -1251,8 +1251,8 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420034}
   m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
+  m_Name: CutsceneCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3289,6 +3289,7 @@ GameObject:
   - component: {fileID: 834354567}
   - component: {fileID: 834354566}
   - component: {fileID: 834354568}
+  - component: {fileID: 834354569}
   m_Layer: 0
   m_Name: CutsceneAssistant
   m_TagString: Untagged
@@ -3353,6 +3354,18 @@ MonoBehaviour:
             m_StringArgument: Letter Scene
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &834354569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834354565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb84083aa4bae141a8e510d0fc33e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &870574343 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4172412102628538841, guid: 4c4db1dde1373cb40b2e66b81cef1b9f, type: 3}
@@ -4558,7 +4571,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorIdentifier: Final Class
-  IsRespawn: 0
 --- !u!4 &1348793679
 Transform:
   m_ObjectHideFlags: 0

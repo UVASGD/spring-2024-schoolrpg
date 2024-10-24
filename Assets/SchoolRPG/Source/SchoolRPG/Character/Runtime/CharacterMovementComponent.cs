@@ -65,24 +65,15 @@ namespace SchoolRPG.Character.Runtime
         private static CharacterMovementComponent instance = null;
         void Awake()
         {
-            List<string> cutscenes = new List<string> { "Final Scene", "Letter Scene", "Hospital" };
-            if (cutscenes.Contains(SceneManager.GetActiveScene().name))
+            if (instance == null)
+            {
+                DontDestroyOnLoad(gameObject);
+                instance = this;
+            }
+            else if (instance != null)
             {
                 Destroy(gameObject);
-                Debug.Log("Destroyed player");
-            } else
-            {
-                if (instance == null)
-                {
-                    DontDestroyOnLoad(gameObject);
-                    instance = this;
-                }
-                else if (instance != null)
-                {
-                    Destroy(gameObject);
-                }
             }
-            
         }
 
         protected void Start()

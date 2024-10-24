@@ -14,14 +14,14 @@ public class CameraController : MonoBehaviour
     private static CameraController instance;
     void Awake()
     {
-        List<string> cutscenes = new List<string>{ "Final Scene", "Letter Scene", "Hospital" };
+        /*List<string> cutscenes = new List<string>{ "Final Class", "Letter Scene", "Hospital" };
         if (cutscenes.Contains(SceneManager.GetActiveScene().name))
         {
             Destroy(gameObject);
             Debug.Log("Final Class Cam deleted");
         }
         else
-        {
+        {*/
             if (instance == null)
             {
                 DontDestroyOnLoad(gameObject);
@@ -31,7 +31,7 @@ public class CameraController : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-        }
+        
         
     }
 
