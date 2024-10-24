@@ -241,24 +241,24 @@ public class EnemyPatrol : MonoBehaviour
 
                 if (hit.collider != null && hit.collider.transform == target)
                 {
-                    Debug.Log($"Player detected within FOV or sight bubble, {inSightBubble}, {angleToPlayer}");
+                    //Debug.Log($"Player detected within FOV or sight bubble, {inSightBubble}, {angleToPlayer}");
                     playerFound = true;  // Player is detected
                 }
                 else
                 {
-                    Debug.Log("Raycast blocked or player outside FOV.");
+                    //Debug.Log("Raycast blocked or player outside FOV.");
                     playerFound = false;  // No clear line of sight to player
                 }
             }
             else
             {
-                Debug.Log("Player outside of FOV and not in sight bubble.");
+                //Debug.Log("Player outside of FOV and not in sight bubble.");
                 playerFound = false;
             }
         }
         else
         {
-            Debug.Log("No player in view radius.");
+            //Debug.Log("No player in view radius.");
             playerFound = false;
         }
     }
