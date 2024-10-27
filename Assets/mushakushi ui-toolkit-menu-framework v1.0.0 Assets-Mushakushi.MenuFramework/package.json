@@ -1,0 +1,17 @@
+{
+	"name": "com.mushakushi.menuframework",
+  	"version": "1.0.0",
+  	"displayName": "Menu Framework",
+  	"description": "A framework for expediting the creation of menus using UI toolkit. ",
+  	"unity": "2022.3",
+ 	"keywords": [ "UI Toolkit", "UI", "Input System", "Menus", "Utility" ],
+    "dependencies": {
+        "com.unity.ui": "1.0.0",
+        "com.unity.inputsystem": "1.7.0"
+    },
+  	"author": {
+   		"name": "Mushakushi",
+        "email": "info@mushakushi.com",
+        "url": "https://www.mushakushi.com"
+  	}
+}
