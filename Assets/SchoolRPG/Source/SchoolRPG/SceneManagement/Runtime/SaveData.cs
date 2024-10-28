@@ -73,7 +73,7 @@ namespace SchoolRPG.SceneManagement.Runtime
             for (int i = 0;i < items.Length; i++)
                 d.Items_Collected[i] = items[i].Collected;
 
-            saveFilePath = Application.dataPath + "/Saves/";
+            saveFilePath = Application.temporaryCachePath;
 
             string saveData = JsonUtility.ToJson(d);
 
