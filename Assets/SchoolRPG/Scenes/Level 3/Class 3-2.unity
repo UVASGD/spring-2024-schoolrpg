@@ -2885,7 +2885,7 @@ PrefabInstance:
     - target: {fileID: -5613300511712867402, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
       propertyPath: music
       value: 
-      objectReference: {fileID: 8300000, guid: 9bcd1b78a4ed6274895953a16d55f4da, type: 3}
+      objectReference: {fileID: 8300000, guid: 915ad1ac7d2d5e34fb9faa1df85314c9, type: 3}
     - target: {fileID: -5613300511712867402, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
       propertyPath: dialogueEventChannel
       value: 
@@ -5171,7 +5171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorIdentifier: 3-2
-  IsRespawn: 0
 --- !u!1001 &1984430920
 PrefabInstance:
   m_ObjectHideFlags: 0
