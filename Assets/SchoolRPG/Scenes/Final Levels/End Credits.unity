@@ -1652,7 +1652,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5613300511712867402, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
       propertyPath: delay
-      value: 2.5
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: -5613300511712867402, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
       propertyPath: music

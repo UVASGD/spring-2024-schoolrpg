@@ -79,13 +79,15 @@ public class SceneManagerScript : MonoBehaviour
         yield return StartCoroutine(screenFader.FadeOut());
         if (save) SaveData.SaveGame();
         SceneManager.LoadScene(scene);
-
         SaveData.LoadGame();
         screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
 
-        CharacterMovementComponent playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovementComponent>();
-        playerMovement.Activate();
-        playerMovement.Move(Vector2.zero);
+        if (SceneManager.GetActiveScene().name != "Final Class")
+        {
+            CharacterMovementComponent playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovementComponent>();
+            playerMovement.Activate();
+            playerMovement.Move(Vector2.zero);
+        }
 
         yield return null;
 
@@ -95,11 +97,9 @@ public class SceneManagerScript : MonoBehaviour
     // For changing scenes without using the save data
     public IEnumerator PlayerlessChangeScene(string scene)
     {
-        screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
         yield return StartCoroutine(screenFader.FadeOut());
-        yield return new WaitForSeconds(1.5f); //maybe?
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene(scene);
-        
         screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
    
 
@@ -109,13 +109,14 @@ public class SceneManagerScript : MonoBehaviour
 
     public void SimpleChangeScene(string scene)
     {
+        screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
         StartCoroutine(PlayerlessChangeScene(scene));
     }
 
     public void SuddenChangeScene(string scene)
     {
+        screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
         screenFader.SetFadeDuration(0f);
         StartCoroutine(PlayerlessChangeScene(scene));
-        screenFader.SetFadeDuration(1f);
     }
 }

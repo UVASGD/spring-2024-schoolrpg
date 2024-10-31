@@ -17,6 +17,11 @@ public class DeletePlayer : MonoBehaviour
         {
             Destroy(camera);
         }
+        GameObject saveData = GameObject.Find("SaveDataObject");
+        if (saveData != null)
+        {
+            Destroy(saveData);
+        }
     }
 
     // Update is called once per frame

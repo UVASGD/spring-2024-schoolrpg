@@ -9,18 +9,11 @@ public class HospitalSoundPlayer : MonoBehaviour
 {
 
     [SerializeField] private AudioSource musicSource;
-    [SerializeField] private AudioSource bgSFXSource;
 
     [SerializeField] private AudioClip music;
-    [SerializeField] private AudioClip bgSFX;
 
     public void PlaySecondMusic()
     {
         musicSource.PlayOneShot(music);
-    }
-
-    public void PlayBGSFX()
-    {
-        bgSFXSource.PlayOneShot(bgSFX);
     }
 }
