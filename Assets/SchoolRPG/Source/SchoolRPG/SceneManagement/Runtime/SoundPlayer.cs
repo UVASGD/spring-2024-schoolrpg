@@ -44,6 +44,20 @@ public class SoundPlayer : MonoBehaviour
         sfxSource.PlayOneShot(dialogueClick);
     }
 
+    //for cutscene (?)
+    public void StopMusic()
+    {
+        if (musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
+    }
+
+    public void PlayPush()
+    {
+        sfxSource.PlayOneShot(Resources.Load<AudioClip>("Audio/Sound/push"));
+    }
+
     void OnDestroy()
     {
         // Ensure the audio stops when the object is destroyed
