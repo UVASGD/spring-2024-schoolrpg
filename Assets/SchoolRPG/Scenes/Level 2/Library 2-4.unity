@@ -6599,7 +6599,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: 4
+      value: Somebody's report card. The grades range from barely passing to definitely
+        failing.
       objectReference: {fileID: 0}
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: dialogue.Array.data[1]

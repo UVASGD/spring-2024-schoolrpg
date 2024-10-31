@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: 8
+      value: A small blue inhaler. Someone must have lost it here.
       objectReference: {fileID: 0}
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: dialogue.Array.data[1]
@@ -3394,7 +3394,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorIdentifier: 3-3
-  IsRespawn: 0
 --- !u!1001 &2060032037
 PrefabInstance:
   m_ObjectHideFlags: 0

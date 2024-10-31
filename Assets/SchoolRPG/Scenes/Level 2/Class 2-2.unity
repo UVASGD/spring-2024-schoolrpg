@@ -2515,7 +2515,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: 5
+      value: An old locket with a picture of a blue-haired family. The faces appear
+        blurry, but still smiling.
       objectReference: {fileID: 0}
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: dialogue.Array.data[1]
@@ -3005,7 +3006,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorIdentifier: 2-2
-  IsRespawn: 0
 --- !u!1 &1926146744
 GameObject:
   m_ObjectHideFlags: 0

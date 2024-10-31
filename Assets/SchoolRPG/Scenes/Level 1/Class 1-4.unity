@@ -3745,7 +3745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: 1
+      value: A small instant camera. It looks wel used and the film is out.
       objectReference: {fileID: 0}
     - target: {fileID: 7623328057920384482, guid: 6da84dedd86fafd4f811b5aeab097659, type: 3}
       propertyPath: dialogue.Array.data[1]
@@ -4106,7 +4106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorIdentifier: 1-4
-  IsRespawn: 0
 --- !u!1 &1928391305
 GameObject:
   m_ObjectHideFlags: 0
