@@ -1524,6 +1524,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1890520552137268800, guid: 4da74d29bbc5b7142b6c833cc4ab34a3, type: 3}
+      propertyPath: fadeDuration
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3025801642988017695, guid: 4da74d29bbc5b7142b6c833cc4ab34a3, type: 3}
       propertyPath: m_Name
       value: Canvases
@@ -2021,7 +2025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1839514421
 Transform:
   m_ObjectHideFlags: 0

@@ -30,7 +30,7 @@ public class ScreenFader : MonoBehaviour
 
         color.a = 0f;
         fadeImage.color = color;
-        Debug.Log(fadeImage.color);
+        Debug.Log("fading in: " + fadeImage.color);
     }
 
     public IEnumerator FadeOut()
