@@ -4995,6 +4995,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f94b416f4b94727438aab99fd5071de8, type: 3}
+--- !u!1 &1465077386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8126643166888863134, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+  m_PrefabInstance: {fileID: 2106409933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1465077387 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -5613300511712867402, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+  m_PrefabInstance: {fileID: 2106409933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465077386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3505d0c5869a6440a5e3bddc8bcc60f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1465077391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465077386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: b8cf42a0fb92846478248274525e2cd7, type: 2}
+    - {fileID: 11400000, guid: 8e02c0627a332294f9ccacfecc2b8c8d, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1465077387}
+          m_TargetAssemblyTypeName: SoundPlayer, SchoolRPG.SceneManagement.Runtime
+          m_MethodName: PlayPush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1465077387}
+          m_TargetAssemblyTypeName: SoundPlayer, SchoolRPG.SceneManagement.Runtime
+          m_MethodName: StopMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1466507488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5134,6 +5195,8 @@ PlayableDirector:
     value: {fileID: 1053305203}
   - key: {fileID: -3024960175650606927, guid: 18061d4b5e8673b459b5cf0e74fe9de1, type: 2}
     value: {fileID: 834354568}
+  - key: {fileID: 3414127993040735554, guid: 18061d4b5e8673b459b5cf0e74fe9de1, type: 2}
+    value: {fileID: 1465077391}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1542436676 stripped
@@ -6840,6 +6903,98 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1001 &2106409933
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -5613300511712867402, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 8300000, guid: 3294cf0409059c3409377ed73901c371, type: 3}
+    - target: {fileID: -5613300511712867402, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: dialogueEventChannel
+      value: 
+      objectReference: {fileID: 11400000, guid: 058e902fcc7f70b4fb25ee4d1dae0722, type: 2}
+    - target: {fileID: -5613300511712867402, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: inventoryEventChannel
+      value: 
+      objectReference: {fileID: 11400000, guid: 478189ecd867e2941af814dc3677cc13, type: 2}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.88299996
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.91438997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 144.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 79
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417660366959781834, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256350688542968159, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_Pitch
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256350688542968159, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_Volume
+      value: 0.424
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256350688542968159, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3294cf0409059c3409377ed73901c371, type: 3}
+    - target: {fileID: 8126643166888863134, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      propertyPath: m_Name
+      value: MusicSource
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8126643166888863134, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1465077391}
+  m_SourcePrefab: {fileID: 100100000, guid: 1fa2766b906f8104a82a1b20bd8ffb1e, type: 3}
 --- !u!1001 &2120961268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7150,3 +7305,4 @@ SceneRoots:
   - {fileID: 1736664664}
   - {fileID: 1536620741}
   - {fileID: 834354567}
+  - {fileID: 2106409933}

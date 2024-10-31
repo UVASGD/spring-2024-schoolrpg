@@ -97,6 +97,7 @@ public class SceneManagerScript : MonoBehaviour
     {
         screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
         yield return StartCoroutine(screenFader.FadeOut());
+        yield return new WaitForSeconds(1.5f); //maybe?
         SceneManager.LoadScene(scene);
         
         screenFader = GameObject.FindGameObjectWithTag("FadeCanvas").GetComponent<ScreenFader>();
