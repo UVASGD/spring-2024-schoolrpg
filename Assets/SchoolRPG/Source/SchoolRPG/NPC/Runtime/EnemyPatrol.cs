@@ -40,7 +40,10 @@ public class EnemyPatrol : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("sflskdfjslkfjsdlkf");
+        Debug.Log("Starting EnemyPatrol script...");
+
+        Debug.Log("Ignore Layers: " + LayerMask.LayerToName(Mathf.RoundToInt(Mathf.Log(ignoreLayers.value, 2))));
+        Debug.Log("Player Mask: " + LayerMask.LayerToName(Mathf.RoundToInt(Mathf.Log(playerMask.value, 2))));
         agent = GetComponent<NavMeshAgent>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
