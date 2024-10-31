@@ -9,6 +9,7 @@ public class SoundPlayer : MonoBehaviour
 {
     [SerializeField] private DialogueEventChannel dialogueEventChannel;
     [SerializeField] private InventoryEventChannel inventoryEventChannel;
+    [SerializeField] private float delay = 0f;
 
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
@@ -31,6 +32,19 @@ public class SoundPlayer : MonoBehaviour
 
     private void Start()
     {
+        if (delay > 0)
+        {
+            StartCoroutine(PlayDelayed(delay));
+        }
+        else
+        {
+            musicSource.PlayOneShot(music);
+        }
+    }
+
+    private IEnumerator PlayDelayed(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         musicSource.PlayOneShot(music);
     }
 

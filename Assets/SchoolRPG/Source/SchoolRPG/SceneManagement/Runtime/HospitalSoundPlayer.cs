@@ -14,7 +14,7 @@ public class HospitalSoundPlayer : MonoBehaviour
     [SerializeField] private AudioClip music;
     [SerializeField] private AudioClip bgSFX;
 
-    public void PlayMusicEnd()
+    public void PlaySecondMusic()
     {
         musicSource.PlayOneShot(music);
     }
