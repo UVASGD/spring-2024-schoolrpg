@@ -1,3 +1,4 @@
+using SchoolRPG.Input.Runtime;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
@@ -34,11 +35,12 @@ public class EnemyPatrol : MonoBehaviour
     private float lostSightGracePeriod = 1f;
     private float timeSinceLastSeen = 0f;
 
-    private enum EnemyState { Patrolling, Chasing, Searching, Detecting };
-    private EnemyState currentState = EnemyState.Patrolling; // Default state is Patrolling
+    public enum EnemyState { Patrolling, Chasing, Searching, Detecting , KilledPlayer};
+    public EnemyState currentState = EnemyState.Patrolling; // Default state is Patrolling
 
     void Start()
     {
+        Debug.Log("sflskdfjslkfjsdlkf");
         agent = GetComponent<NavMeshAgent>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -58,9 +60,9 @@ public class EnemyPatrol : MonoBehaviour
         // for FOV debugging
         Vector2 forward = agent.velocity == Vector3.zero ? (agent.destination - transform.position).normalized : agent.velocity.normalized;
         // Draw debug rays for the field of view
-        Debug.DrawRay(transform.position, forward * detectionRange, Color.green); // Forward FOV line
+        /*Debug.DrawRay(transform.position, forward * detectionRange, Color.green); // Forward FOV line
         Debug.DrawRay(transform.position, Quaternion.Euler(0, 0, fieldOfViewAngle / 2f) * forward * detectionRange, Color.blue); // Right FOV boundary
-        Debug.DrawRay(transform.position, Quaternion.Euler(0, 0, -fieldOfViewAngle / 2f) * forward * detectionRange, Color.blue); // Left FOV boundary
+        Debug.DrawRay(transform.position, Quaternion.Euler(0, 0, -fieldOfViewAngle / 2f) * forward * detectionRange, Color.blue); // Left FOV boundary*/
 
         switch (currentState)
         {
@@ -85,7 +87,9 @@ public class EnemyPatrol : MonoBehaviour
                     StartSearching();
                 }
                 break;
-
+            case EnemyState.KilledPlayer:
+                StopChasing();
+                break;
             case EnemyState.Searching:
                 SearchForPlayer();
                 break;
@@ -123,6 +127,15 @@ public class EnemyPatrol : MonoBehaviour
         questionMark.SetActive(false);
         exclamationMark.SetActive(true);
         StartCoroutine(ScaleMark(exclamationMark, Vector3.zero, Vector3.one, 0.25f));
+    }
+
+    public void StopChasing()
+    {
+        if (isChasing)
+        {
+            isChasing = false;
+            agent.ResetPath();
+        }
     }
 
     void ChasePlayer()

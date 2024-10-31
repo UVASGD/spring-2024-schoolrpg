@@ -2,8 +2,10 @@ using SchoolRPG.Character.Runtime;
 using SchoolRPG.Input.Runtime;
 using SchoolRPG.Interaction.Runtime;
 using SchoolRPG.Inventory.Runtime;
+using SchoolRPG.SceneManagement.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using SchoolRPG.NPC.Runtime;
 
 namespace SchoolRPG.Player.Runtime
 {
@@ -66,6 +68,9 @@ namespace SchoolRPG.Player.Runtime
             if (collision != null && collision.gameObject.CompareTag("Enemy")) { // die and reset level, don't save
                 movementComponent.Deactivate();
                 sceneEventChannel.RaiseOnPlayerDeathReload(SceneManager.GetActiveScene().name);
+                // this is super hacky lol
+                EnemyPatrol enemyPatrol = collision.gameObject.GetComponent<EnemyPatrol>();
+                enemyPatrol.currentState = EnemyPatrol.EnemyState.KilledPlayer;
             }
         }
 
